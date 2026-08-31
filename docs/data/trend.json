@@ -48,5 +48,15 @@
     "issuePrStale": 0,
     "prLongOpen": 6,
     "issueNoPr": 5
+  },
+  {
+    "week": "2026-W36",
+    "generatedAt": "2026-08-31T05:25:38.214Z",
+    "openIssues": 62,
+    "openPrs": 60,
+    "issuePrClosed": 3,
+    "issuePrStale": 0,
+    "prLongOpen": 5,
+    "issueNoPr": 6
   }
 ]

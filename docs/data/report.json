@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T01:54:41.185Z",
+  "generatedAt": "2026-08-31T05:25:38.214Z",
   "repo": "kubernetes/website",
   "label": "language/ko",
   "thresholds": {
@@ -8,8 +8,8 @@
     "noPrDays": 30
   },
   "totals": {
-    "openIssues": 52,
-    "openPrs": 49
+    "openIssues": 62,
+    "openPrs": 60
   },
   "sections": [
     {
@@ -30,8 +30,8 @@
           ],
           "createdAt": "2023-10-21T18:00:41Z",
           "updatedAt": "2025-08-07T10:46:34Z",
-          "ageDays": 1037,
-          "idleDays": 381,
+          "ageDays": 1044,
+          "idleDays": 388,
           "comments": 11,
           "labels": [
             "kind/bug",
@@ -51,8 +51,8 @@
               "createdAt": "2025-08-10T07:43:24Z",
               "updatedAt": "2026-03-26T11:32:20Z",
               "mergedAt": null,
-              "ageDays": 378,
-              "idleDays": 150,
+              "ageDays": 385,
+              "idleDays": 157,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -83,8 +83,8 @@
               "createdAt": "2024-01-28T10:31:03Z",
               "updatedAt": "2024-08-29T10:58:44Z",
               "mergedAt": null,
-              "ageDays": 938,
-              "idleDays": 724,
+              "ageDays": 945,
+              "idleDays": 731,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -112,8 +112,8 @@
               "createdAt": "2024-01-28T09:24:50Z",
               "updatedAt": "2024-01-28T10:45:52Z",
               "mergedAt": null,
-              "ageDays": 938,
-              "idleDays": 938,
+              "ageDays": 945,
+              "idleDays": 945,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -130,7 +130,7 @@
               }
             }
           ],
-          "sortKey": 381
+          "sortKey": 388
         },
         {
           "number": 53682,
@@ -142,8 +142,8 @@
           ],
           "createdAt": "2025-12-18T11:00:22Z",
           "updatedAt": "2025-12-28T04:17:30Z",
-          "ageDays": 248,
-          "idleDays": 238,
+          "ageDays": 255,
+          "idleDays": 246,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -162,8 +162,8 @@
               "createdAt": "2025-12-18T16:54:47Z",
               "updatedAt": "2026-06-25T22:29:24Z",
               "mergedAt": null,
-              "ageDays": 248,
-              "idleDays": 59,
+              "ageDays": 255,
+              "idleDays": 66,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -182,7 +182,7 @@
               }
             }
           ],
-          "sortKey": 238
+          "sortKey": 246
         },
         {
           "number": 53555,
@@ -194,8 +194,8 @@
           ],
           "createdAt": "2025-12-09T13:19:46Z",
           "updatedAt": "2026-03-22T02:33:34Z",
-          "ageDays": 257,
-          "idleDays": 154,
+          "ageDays": 264,
+          "idleDays": 162,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -215,8 +215,8 @@
               "createdAt": "2026-02-18T13:38:12Z",
               "updatedAt": "2026-08-05T12:35:47Z",
               "mergedAt": null,
-              "ageDays": 186,
-              "idleDays": 18,
+              "ageDays": 193,
+              "idleDays": 25,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -234,7 +234,7 @@
               }
             }
           ],
-          "sortKey": 154
+          "sortKey": 162
         }
       ]
     },
@@ -263,8 +263,8 @@
           "createdAt": "2026-03-05T09:25:53Z",
           "updatedAt": "2026-05-19T12:22:53Z",
           "mergedAt": null,
-          "ageDays": 171,
-          "idleDays": 96,
+          "ageDays": 178,
+          "idleDays": 103,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -290,45 +290,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 171
-        },
-        {
-          "closingIssues": [
-            {
-              "number": 54583,
-              "url": "https://github.com/kubernetes/website/issues/54583",
-              "title": "[ko] Update 'Horizontal Pod Autoscaling' page",
-              "state": "OPEN"
-            }
-          ],
-          "number": 55320,
-          "title": "[ko] Update /concepts/workloads/autoscaling/horizontal-pod-autoscaling.md",
-          "url": "https://github.com/kubernetes/website/pull/55320",
-          "state": "OPEN",
-          "isDraft": false,
-          "author": "Eundms",
-          "createdAt": "2026-04-12T03:03:30Z",
-          "updatedAt": "2026-08-20T13:27:08Z",
-          "mergedAt": null,
-          "ageDays": 133,
-          "idleDays": 3,
-          "reviewDecision": null,
-          "labels": [
-            "cncf-cla: yes",
-            "size/L",
-            "sig/docs",
-            "tide/merge-method-squash",
-            "language/ko",
-            "area/localization"
-          ],
-          "flags": {
-            "lgtm": false,
-            "approved": false,
-            "hold": false,
-            "needsRebase": false,
-            "cncfUnsigned": false
-          },
-          "sortKey": 133
+          "sortKey": 178
         },
         {
           "number": 55761,
@@ -340,8 +302,8 @@
           "createdAt": "2026-05-13T17:50:05Z",
           "updatedAt": "2026-06-20T06:32:47Z",
           "mergedAt": null,
-          "ageDays": 102,
-          "idleDays": 64,
+          "ageDays": 109,
+          "idleDays": 71,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -360,7 +322,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 102
+          "sortKey": 109
         },
         {
           "closingIssues": [
@@ -380,8 +342,8 @@
           "createdAt": "2026-05-29T17:08:42Z",
           "updatedAt": "2026-07-22T11:32:51Z",
           "mergedAt": null,
-          "ageDays": 86,
-          "idleDays": 32,
+          "ageDays": 93,
+          "idleDays": 39,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -413,7 +375,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 86
+          "sortKey": 93
         },
         {
           "number": 56016,
@@ -425,8 +387,8 @@
           "createdAt": "2026-06-04T17:55:22Z",
           "updatedAt": "2026-07-16T22:24:14Z",
           "mergedAt": null,
-          "ageDays": 80,
-          "idleDays": 38,
+          "ageDays": 87,
+          "idleDays": 45,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -449,7 +411,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 80
+          "sortKey": 87
         },
         {
           "closingIssues": [
@@ -469,8 +431,8 @@
           "createdAt": "2026-06-09T06:35:32Z",
           "updatedAt": "2026-07-16T22:24:30Z",
           "mergedAt": null,
-          "ageDays": 75,
-          "idleDays": 38,
+          "ageDays": 82,
+          "idleDays": 45,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -496,7 +458,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 75
+          "sortKey": 82
         }
       ]
     },
@@ -517,8 +479,8 @@
           ],
           "createdAt": "2026-02-14T14:53:26Z",
           "updatedAt": "2026-03-16T05:40:05Z",
-          "ageDays": 190,
-          "idleDays": 160,
+          "ageDays": 197,
+          "idleDays": 167,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -526,7 +488,7 @@
             "triage/accepted"
           ],
           "linkedPrs": [],
-          "sortKey": 190
+          "sortKey": 197
         },
         {
           "number": 55166,
@@ -538,8 +500,8 @@
           ],
           "createdAt": "2026-03-30T14:28:18Z",
           "updatedAt": "2026-07-08T14:17:31Z",
-          "ageDays": 146,
-          "idleDays": 46,
+          "ageDays": 153,
+          "idleDays": 53,
           "comments": 4,
           "labels": [
             "kind/feature",
@@ -548,7 +510,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 146
+          "sortKey": 153
         },
         {
           "number": 55568,
@@ -560,8 +522,8 @@
           ],
           "createdAt": "2026-04-27T11:47:49Z",
           "updatedAt": "2026-04-27T11:47:56Z",
-          "ageDays": 118,
-          "idleDays": 118,
+          "ageDays": 125,
+          "idleDays": 125,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -570,7 +532,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 118
+          "sortKey": 125
         },
         {
           "number": 56426,
@@ -582,8 +544,8 @@
           ],
           "createdAt": "2026-07-07T16:18:06Z",
           "updatedAt": "2026-07-07T16:19:47Z",
-          "ageDays": 47,
-          "idleDays": 47,
+          "ageDays": 54,
+          "idleDays": 54,
           "comments": 3,
           "labels": [
             "kind/feature",
@@ -592,7 +554,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 47
+          "sortKey": 54
         },
         {
           "number": 56561,
@@ -604,8 +566,8 @@
           ],
           "createdAt": "2026-07-21T15:21:22Z",
           "updatedAt": "2026-07-21T15:21:30Z",
-          "ageDays": 33,
-          "idleDays": 33,
+          "ageDays": 40,
+          "idleDays": 40,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -614,7 +576,29 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 33
+          "sortKey": 40
+        },
+        {
+          "number": 56677,
+          "title": "[ko] Update content/ko/docs/concepts/security/pod-security-standards.md",
+          "url": "https://github.com/kubernetes/website/issues/56677",
+          "author": "S0okJu",
+          "assignees": [
+            "S0okJu"
+          ],
+          "createdAt": "2026-07-30T14:07:11Z",
+          "updatedAt": "2026-07-30T14:17:10Z",
+          "ageDays": 31,
+          "idleDays": 31,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "triage/accepted",
+            "area/localization"
+          ],
+          "linkedPrs": [],
+          "sortKey": 31
         }
       ]
     }
