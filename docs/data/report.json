@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T04:29:44.129Z",
+  "generatedAt": "2026-09-14T04:48:23.796Z",
   "repo": "kubernetes/website",
   "label": "language/ko",
   "thresholds": {
@@ -8,8 +8,8 @@
     "noPrDays": 30
   },
   "totals": {
-    "openIssues": 63,
-    "openPrs": 61
+    "openIssues": 69,
+    "openPrs": 70
   },
   "sections": [
     {
@@ -30,8 +30,8 @@
           ],
           "createdAt": "2023-10-21T18:00:41Z",
           "updatedAt": "2025-08-07T10:46:34Z",
-          "ageDays": 1051,
-          "idleDays": 395,
+          "ageDays": 1058,
+          "idleDays": 402,
           "comments": 11,
           "labels": [
             "kind/bug",
@@ -51,8 +51,8 @@
               "createdAt": "2025-08-10T07:43:24Z",
               "updatedAt": "2026-03-26T11:32:20Z",
               "mergedAt": null,
-              "ageDays": 392,
-              "idleDays": 164,
+              "ageDays": 399,
+              "idleDays": 171,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -83,8 +83,8 @@
               "createdAt": "2024-01-28T10:31:03Z",
               "updatedAt": "2024-08-29T10:58:44Z",
               "mergedAt": null,
-              "ageDays": 952,
-              "idleDays": 738,
+              "ageDays": 959,
+              "idleDays": 745,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -112,8 +112,8 @@
               "createdAt": "2024-01-28T09:24:50Z",
               "updatedAt": "2024-01-28T10:45:52Z",
               "mergedAt": null,
-              "ageDays": 952,
-              "idleDays": 952,
+              "ageDays": 959,
+              "idleDays": 959,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -130,7 +130,7 @@
               }
             }
           ],
-          "sortKey": 395
+          "sortKey": 402
         },
         {
           "number": 53682,
@@ -142,8 +142,8 @@
           ],
           "createdAt": "2025-12-18T11:00:22Z",
           "updatedAt": "2025-12-28T04:17:30Z",
-          "ageDays": 262,
-          "idleDays": 253,
+          "ageDays": 269,
+          "idleDays": 260,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -162,8 +162,8 @@
               "createdAt": "2025-12-18T16:54:47Z",
               "updatedAt": "2026-06-25T22:29:24Z",
               "mergedAt": null,
-              "ageDays": 262,
-              "idleDays": 73,
+              "ageDays": 269,
+              "idleDays": 80,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -182,7 +182,7 @@
               }
             }
           ],
-          "sortKey": 253
+          "sortKey": 260
         },
         {
           "number": 53555,
@@ -194,8 +194,8 @@
           ],
           "createdAt": "2025-12-09T13:19:46Z",
           "updatedAt": "2026-03-22T02:33:34Z",
-          "ageDays": 271,
-          "idleDays": 169,
+          "ageDays": 278,
+          "idleDays": 176,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -215,8 +215,8 @@
               "createdAt": "2026-02-18T13:38:12Z",
               "updatedAt": "2026-08-05T12:35:47Z",
               "mergedAt": null,
-              "ageDays": 200,
-              "idleDays": 32,
+              "ageDays": 207,
+              "idleDays": 39,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -234,7 +234,7 @@
               }
             }
           ],
-          "sortKey": 169
+          "sortKey": 176
         },
         {
           "number": 57296,
@@ -246,8 +246,8 @@
           ],
           "createdAt": "2026-08-30T05:52:52Z",
           "updatedAt": "2026-08-30T05:53:00Z",
-          "ageDays": 7,
-          "idleDays": 7,
+          "ageDays": 14,
+          "idleDays": 14,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -266,8 +266,8 @@
               "createdAt": "2026-08-30T05:57:59Z",
               "updatedAt": "2026-09-06T22:49:00Z",
               "mergedAt": null,
-              "ageDays": 7,
-              "idleDays": 0,
+              "ageDays": 14,
+              "idleDays": 7,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -285,7 +285,7 @@
               }
             }
           ],
-          "sortKey": 7
+          "sortKey": 14
         }
       ]
     },
@@ -297,57 +297,6 @@
       "metric": "PR 미갱신",
       "items": [
         {
-          "number": 56747,
-          "title": "[ko] Move and update the PersistentVolume storage tutorial",
-          "url": "https://github.com/kubernetes/website/issues/56747",
-          "author": "hong-p",
-          "assignees": [
-            "hong-p"
-          ],
-          "createdAt": "2026-08-02T08:30:55Z",
-          "updatedAt": "2026-08-02T08:31:03Z",
-          "ageDays": 35,
-          "idleDays": 35,
-          "comments": 1,
-          "labels": [
-            "kind/feature",
-            "language/ko",
-            "needs-triage",
-            "area/localization"
-          ],
-          "linkedPrs": [
-            {
-              "number": 56748,
-              "title": "[ko] Move and update persistentvolume docs",
-              "url": "https://github.com/kubernetes/website/pull/56748",
-              "state": "OPEN",
-              "isDraft": false,
-              "author": "hong-p",
-              "createdAt": "2026-08-02T09:53:09Z",
-              "updatedAt": "2026-08-06T09:12:38Z",
-              "mergedAt": null,
-              "ageDays": 35,
-              "idleDays": 31,
-              "reviewDecision": null,
-              "labels": [
-                "cncf-cla: yes",
-                "size/L",
-                "sig/docs",
-                "language/ko",
-                "area/localization"
-              ],
-              "flags": {
-                "lgtm": false,
-                "approved": false,
-                "hold": false,
-                "needsRebase": false,
-                "cncfUnsigned": false
-              }
-            }
-          ],
-          "sortKey": 31
-        },
-        {
           "number": 56624,
           "title": "[ko] Add language guidance to localization guide",
           "url": "https://github.com/kubernetes/website/issues/56624",
@@ -357,8 +306,8 @@
           ],
           "createdAt": "2026-07-27T07:51:27Z",
           "updatedAt": "2026-07-31T02:19:34Z",
-          "ageDays": 41,
-          "idleDays": 38,
+          "ageDays": 48,
+          "idleDays": 45,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -377,8 +326,8 @@
               "createdAt": "2026-07-27T14:46:11Z",
               "updatedAt": "2026-08-07T12:21:17Z",
               "mergedAt": null,
-              "ageDays": 41,
-              "idleDays": 30,
+              "ageDays": 48,
+              "idleDays": 37,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -396,7 +345,59 @@
               }
             }
           ],
-          "sortKey": 30
+          "sortKey": 37
+        },
+        {
+          "number": 56756,
+          "title": "[ko] Update content/ko/docs/concepts/architecture/cgroups.md",
+          "url": "https://github.com/kubernetes/website/issues/56756",
+          "author": "ytjdud",
+          "assignees": [
+            "ytjdud"
+          ],
+          "createdAt": "2026-08-02T14:03:11Z",
+          "updatedAt": "2026-08-04T13:35:58Z",
+          "ageDays": 42,
+          "idleDays": 40,
+          "comments": 6,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 56404,
+              "title": "[ko] update outdated concepts/architecture/cgroups",
+              "url": "https://github.com/kubernetes/website/pull/56404",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "seokho-son",
+              "createdAt": "2026-07-06T18:32:06Z",
+              "updatedAt": "2026-08-13T12:51:03Z",
+              "mergedAt": null,
+              "ageDays": 69,
+              "idleDays": 31,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "lgtm",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": true,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 31
         }
       ]
     },
@@ -417,8 +418,8 @@
           "createdAt": "2026-03-05T09:25:53Z",
           "updatedAt": "2026-05-19T12:22:53Z",
           "mergedAt": null,
-          "ageDays": 185,
-          "idleDays": 110,
+          "ageDays": 192,
+          "idleDays": 117,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -444,7 +445,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 185
+          "sortKey": 192
         },
         {
           "number": 55761,
@@ -456,8 +457,8 @@
           "createdAt": "2026-05-13T17:50:05Z",
           "updatedAt": "2026-06-20T06:32:47Z",
           "mergedAt": null,
-          "ageDays": 116,
-          "idleDays": 78,
+          "ageDays": 123,
+          "idleDays": 85,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -476,7 +477,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 116
+          "sortKey": 123
         },
         {
           "closingIssues": [
@@ -484,7 +485,7 @@
               "number": 55578,
               "url": "https://github.com/kubernetes/website/issues/55578",
               "title": "Update website footer to new LF Projects Series LLC trademark disclaimer",
-              "state": "OPEN"
+              "state": "CLOSED"
             }
           ],
           "number": 55958,
@@ -494,14 +495,15 @@
           "isDraft": false,
           "author": "yashisrani",
           "createdAt": "2026-05-29T17:08:42Z",
-          "updatedAt": "2026-07-22T11:32:51Z",
+          "updatedAt": "2026-09-14T03:24:56Z",
           "mergedAt": null,
-          "ageDays": 100,
-          "idleDays": 46,
+          "ageDays": 107,
+          "idleDays": 0,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
             "size/M",
+            "needs-rebase",
             "sig/docs",
             "language/en",
             "language/ko",
@@ -526,10 +528,10 @@
             "lgtm": false,
             "approved": false,
             "hold": false,
-            "needsRebase": false,
+            "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 100
+          "sortKey": 107
         },
         {
           "number": 56016,
@@ -541,8 +543,8 @@
           "createdAt": "2026-06-04T17:55:22Z",
           "updatedAt": "2026-07-16T22:24:14Z",
           "mergedAt": null,
-          "ageDays": 94,
-          "idleDays": 52,
+          "ageDays": 101,
+          "idleDays": 59,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -565,7 +567,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 94
+          "sortKey": 101
         },
         {
           "closingIssues": [
@@ -585,8 +587,8 @@
           "createdAt": "2026-06-09T06:35:32Z",
           "updatedAt": "2026-07-16T22:24:30Z",
           "mergedAt": null,
-          "ageDays": 89,
-          "idleDays": 52,
+          "ageDays": 96,
+          "idleDays": 59,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -612,7 +614,7 @@
             "needsRebase": true,
             "cncfUnsigned": false
           },
-          "sortKey": 89
+          "sortKey": 96
         },
         {
           "number": 56376,
@@ -624,8 +626,8 @@
           "createdAt": "2026-07-03T22:49:21Z",
           "updatedAt": "2026-08-18T17:33:57Z",
           "mergedAt": null,
-          "ageDays": 65,
-          "idleDays": 19,
+          "ageDays": 72,
+          "idleDays": 26,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -642,7 +644,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 65
+          "sortKey": 72
         },
         {
           "number": 56405,
@@ -654,8 +656,8 @@
           "createdAt": "2026-07-06T18:53:16Z",
           "updatedAt": "2026-08-02T07:13:49Z",
           "mergedAt": null,
-          "ageDays": 62,
-          "idleDays": 35,
+          "ageDays": 69,
+          "idleDays": 42,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -671,7 +673,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 62
+          "sortKey": 69
         },
         {
           "number": 56404,
@@ -683,8 +685,8 @@
           "createdAt": "2026-07-06T18:32:06Z",
           "updatedAt": "2026-08-13T12:51:03Z",
           "mergedAt": null,
-          "ageDays": 62,
-          "idleDays": 24,
+          "ageDays": 69,
+          "idleDays": 31,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -701,7 +703,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 62
+          "sortKey": 69
         },
         {
           "number": 56419,
@@ -713,8 +715,8 @@
           "createdAt": "2026-07-07T08:57:19Z",
           "updatedAt": "2026-07-20T17:54:18Z",
           "mergedAt": null,
-          "ageDays": 61,
-          "idleDays": 48,
+          "ageDays": 68,
+          "idleDays": 55,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -730,7 +732,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 61
+          "sortKey": 68
         },
         {
           "number": 56417,
@@ -742,8 +744,8 @@
           "createdAt": "2026-07-07T08:28:44Z",
           "updatedAt": "2026-07-12T08:33:35Z",
           "mergedAt": null,
-          "ageDays": 61,
-          "idleDays": 56,
+          "ageDays": 68,
+          "idleDays": 63,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -759,7 +761,7 @@
             "needsRebase": false,
             "cncfUnsigned": false
           },
-          "sortKey": 61
+          "sortKey": 68
         }
       ]
     },
@@ -780,8 +782,8 @@
           ],
           "createdAt": "2026-02-14T14:53:26Z",
           "updatedAt": "2026-03-16T05:40:05Z",
-          "ageDays": 204,
-          "idleDays": 174,
+          "ageDays": 211,
+          "idleDays": 181,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -789,29 +791,7 @@
             "triage/accepted"
           ],
           "linkedPrs": [],
-          "sortKey": 204
-        },
-        {
-          "number": 55166,
-          "title": "[ko] Translate content/en/docs/concepts/workloads/workload-api/policies into Korean",
-          "url": "https://github.com/kubernetes/website/issues/55166",
-          "author": "kamothi",
-          "assignees": [
-            "kamothi"
-          ],
-          "createdAt": "2026-03-30T14:28:18Z",
-          "updatedAt": "2026-07-08T14:17:31Z",
-          "ageDays": 160,
-          "idleDays": 60,
-          "comments": 4,
-          "labels": [
-            "kind/feature",
-            "language/ko",
-            "triage/accepted",
-            "area/localization"
-          ],
-          "linkedPrs": [],
-          "sortKey": 160
+          "sortKey": 211
         },
         {
           "number": 55568,
@@ -823,8 +803,8 @@
           ],
           "createdAt": "2026-04-27T11:47:49Z",
           "updatedAt": "2026-04-27T11:47:56Z",
-          "ageDays": 132,
-          "idleDays": 132,
+          "ageDays": 139,
+          "idleDays": 139,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -833,7 +813,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 132
+          "sortKey": 139
         },
         {
           "number": 56426,
@@ -845,8 +825,8 @@
           ],
           "createdAt": "2026-07-07T16:18:06Z",
           "updatedAt": "2026-07-07T16:19:47Z",
-          "ageDays": 61,
-          "idleDays": 61,
+          "ageDays": 68,
+          "idleDays": 68,
           "comments": 3,
           "labels": [
             "kind/feature",
@@ -855,7 +835,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 61
+          "sortKey": 68
         },
         {
           "number": 56561,
@@ -867,8 +847,8 @@
           ],
           "createdAt": "2026-07-21T15:21:22Z",
           "updatedAt": "2026-07-21T15:21:30Z",
-          "ageDays": 47,
-          "idleDays": 47,
+          "ageDays": 54,
+          "idleDays": 54,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -877,7 +857,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 47
+          "sortKey": 54
         },
         {
           "number": 56677,
@@ -889,8 +869,8 @@
           ],
           "createdAt": "2026-07-30T14:07:11Z",
           "updatedAt": "2026-07-30T14:17:10Z",
-          "ageDays": 38,
-          "idleDays": 38,
+          "ageDays": 45,
+          "idleDays": 45,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -899,7 +879,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 38
+          "sortKey": 45
         },
         {
           "number": 56829,
@@ -911,8 +891,8 @@
           ],
           "createdAt": "2026-08-06T06:31:39Z",
           "updatedAt": "2026-08-06T06:31:48Z",
-          "ageDays": 31,
-          "idleDays": 31,
+          "ageDays": 38,
+          "idleDays": 38,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -921,7 +901,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 31
+          "sortKey": 38
         }
       ]
     }
