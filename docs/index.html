@@ -92,6 +92,53 @@ button,input,select{font:inherit; color:inherit}
 .main{overflow-y:auto; padding:14px; display:flex; flex-direction:column; gap:12px; min-width:0}
 
 .tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.tiles.lanes{grid-template-columns:repeat(5,1fr)}
+/* 우리 차례가 아닌 레인은 채도를 낮춰 시야에서 뒤로 물린다 */
+.tile.idle{opacity:.62}
+.tile.idle:hover{opacity:1}
+
+/* ── 오늘의 부하 요약 ─────────────────────────────────────────────────
+   워크리스트의 첫 문장은 "몇 건"이 아니라 "몇 분"이어야 한다.
+   건수는 부담을 과대평가하게 만든다 — 19건 중 4건은 5분짜리다. */
+.load{display:flex; align-items:center; gap:0; background:var(--panel);
+  border:1px solid var(--hair); border-radius:8px; box-shadow:var(--shadow); overflow:hidden}
+.load .seg{padding:11px 15px; display:flex; flex-direction:column; gap:3px; min-width:0}
+.load .seg + .seg{border-left:1px solid var(--hair-soft)}
+.load .seg.grow{flex:1}
+.load .k{font-size:10px; letter-spacing:.11em; text-transform:uppercase; color:var(--fg-3); font-weight:600}
+.load .v{font-size:19px; font-weight:700; letter-spacing:-.03em; line-height:1.1}
+.load .v small{font-size:11.5px; font-weight:500; color:var(--fg-3); letter-spacing:0}
+.load .mix{display:flex; gap:4px; align-items:center; flex-wrap:wrap; margin-top:2px}
+@media (max-width:860px){
+  .load{flex-wrap:wrap}
+  .load .seg{flex:1 1 44%}
+  .load .seg + .seg{border-left:0}
+  .tiles.lanes{grid-template-columns:repeat(3,1fr)}
+}
+
+/* ── 뷰 전환 ─────────────────────────────────────────────────────────── */
+.viewsw{display:flex; gap:4px; padding:0 12px 10px}
+.viewsw button{flex:1; background:var(--panel-2); border:1px solid var(--hair);
+  border-radius:6px; padding:6px 8px; font-size:11.5px; color:var(--fg-2); cursor:pointer}
+.viewsw button[aria-current="true"]{background:var(--raise); color:var(--fg);
+  border-color:var(--link); font-weight:600}
+
+/* ── 다음 행동 셀 ─────────────────────────────────────────────────────── */
+td.act{width:1%; white-space:nowrap}
+td.next{min-width:210px}
+.next .do{font-size:12px; font-weight:600; color:var(--fg)}
+.next .why{font-size:11px; color:var(--fg-3); margin-top:2px;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.next .none{font-size:11.5px; color:var(--fg-3)}
+.cmd{font-family:"JetBrains Mono",monospace; font-size:10.5px; background:var(--raise);
+  border:1px solid var(--hair); border-radius:4px; padding:1px 5px; color:var(--fg-2)}
+.acts{display:flex; gap:4px}
+.act-btn{background:var(--panel-2); border:1px solid var(--hair); border-radius:5px;
+  padding:3px 7px; font-size:10.5px; color:var(--fg-2); cursor:pointer; white-space:nowrap}
+.act-btn:hover{color:var(--fg); border-color:var(--fg-3)}
+.act-btn.done{color:var(--s1); border-color:currentColor}
+td.cost{width:1%; white-space:nowrap; font-size:11.5px; color:var(--fg-2)}
+td.cost .m{font-weight:600; color:var(--fg)}
 .tile{background:var(--panel); border:1px solid var(--hair); border-radius:8px;
   padding:11px 13px 12px; cursor:pointer; text-align:left; box-shadow:var(--shadow);
   display:flex; flex-direction:column; gap:8px; min-width:0}
@@ -240,7 +287,12 @@ a.pill:hover{border-color:currentColor}
 
   <nav class="rail">
     <div class="railgroup">
-      <h3>분류</h3>
+      <h3>보기</h3>
+      <div class="viewsw" id="viewsw">
+        <button data-view="queue">워크리스트</button>
+        <button data-view="backlog">주간 백로그</button>
+      </div>
+      <h3 id="rail-head">대기 주체</h3>
       <div id="rail-cats"></div>
     </div>
     <div class="railgroup thr">
@@ -255,6 +307,8 @@ a.pill:hover{border-color:currentColor}
 
   <main class="main">
     <div id="banner" hidden class="banner"></div>
+
+    <div class="load" id="load" hidden></div>
 
     <div class="tiles" id="tiles"></div>
 
@@ -289,17 +343,7 @@ a.pill:hover{border-color:currentColor}
       </div>
       <div class="tablewrap">
         <table>
-          <thead>
-            <tr>
-              <th class="sev" aria-label="심각도"></th>
-              <th class="sortable" data-sort="number">항목<span class="arrow">↓</span></th>
-              <th>제목</th>
-              <th id="th-cat" hidden>분류</th>
-              <th>작성자</th>
-              <th class="sortable" data-sort="dwell">체류<span class="arrow">↓</span></th>
-              <th>연결</th>
-            </tr>
-          </thead>
+          <thead id="thead"></thead>
           <tbody id="tbody"></tbody>
         </table>
       </div>
@@ -312,6 +356,19 @@ a.pill:hover{border-color:currentColor}
 /* ─────────────────────────── 데모 폴백 데이터 ─────────────────────────── */
 const DEMO={demo:true,generatedAt:new Date().toISOString(),repo:"kubernetes/website",label:"language/ko",
 thresholds:{staleDays:30,longOpenDays:60,noPrDays:30},totals:{openIssues:38,openPrs:21},
+lanes:[
+ {id:"review", title:"리뷰 차례",   ours:true,  hint:"차단 요소가 없고 lgtm 도 없습니다. 우리가 볼 차례입니다."},
+ {id:"approve",title:"승인 대기",   ours:true,  hint:"lgtm 은 붙었지만 approved 가 없습니다. 어프루버에게 넘기세요."},
+ {id:"author", title:"작성자 대기", ours:false, hint:"공이 작성자 코트에 있습니다."},
+ {id:"merge",  title:"머지 대기",   ours:false, hint:"lgtm + approved. tide 가 머지합니다."},
+ {id:"blocked",title:"보류 · 초안", ours:false, hint:"hold 또는 draft 로 의도적으로 멈춰 있습니다."}],
+queue:[
+ {number:57015,title:"[ko] Update controller documentation",url:"#",author:"contributor-b",ageDays:12,idleDays:7,labels:["language/ko","size/S"],flags:{lgtm:false,approved:false,hold:false,needsRebase:false,cncfUnsigned:false},ci:"passed",ciFailed:[],koOnly:true,firstReview:false,closingIssues:[],lane:"review",reason:"작성자가 응답함 — 재확인 필요",action:{text:"리뷰 후 lgtm",command:"/lgtm",comment:null},cost:{size:"S",minutes:5,bucket:"quick"},lifecycle:null},
+ {number:56820,title:"[ko] Sync Deployment concept with English source",url:"#",author:"contributor-e",ageDays:31,idleDays:8,labels:["language/ko","size/L"],flags:{lgtm:false,approved:false,hold:false,needsRebase:false,cncfUnsigned:false},ci:"passed",ciFailed:[],koOnly:true,firstReview:true,closingIssues:[],lane:"review",reason:"아직 리뷰어가 붙지 않음",action:{text:"리뷰 후 lgtm",command:"/lgtm",comment:null},cost:{size:"L",minutes:30,bucket:"normal"},lifecycle:null},
+ {number:56404,title:"[ko] update outdated concepts/architecture/cgroups",url:"#",author:"contributor-c",ageDays:40,idleDays:14,labels:["language/ko","size/M","lgtm"],flags:{lgtm:true,approved:false,hold:false,needsRebase:false,cncfUnsigned:false},ci:"passed",ciFailed:[],koOnly:true,firstReview:false,closingIssues:[],lane:"approve",reason:"lgtm 완료 — 어프루버 승인만 남음",action:{text:"어프루버 승인",command:"/approve",comment:null},cost:{size:"M",minutes:15,bucket:"normal"},lifecycle:null},
+ {number:55761,title:"[ko] Localize storage concepts batch 2",url:"#",author:"contributor-f",ageDays:102,idleDays:64,labels:["language/ko","size/XXL","needs-rebase"],flags:{lgtm:false,approved:false,hold:false,needsRebase:true,cncfUnsigned:false},ci:"passed",ciFailed:[],koOnly:false,firstReview:false,closingIssues:[],lane:"author",reason:"master 와 충돌 — rebase 필요",action:{text:"rebase 요청",command:null,comment:"@contributor-f 안녕하세요! master 와 충돌이 생겨 needs-rebase 라벨이 붙었습니다."},cost:{size:"XXL",minutes:90,bucket:"long"},lifecycle:"stale"},
+ {number:56016,title:"[ko] Update kubectl reference pages",url:"#",author:"contributor-g",ageDays:80,idleDays:38,labels:["language/ko","size/M"],flags:{lgtm:false,approved:false,hold:false,needsRebase:false,cncfUnsigned:false},ci:"failed",ciFailed:[{name:"deploy/netlify",url:"#"}],koOnly:true,firstReview:false,closingIssues:[],lane:"author",reason:"CI 실패 (deploy/netlify) — 수정 전에는 머지 불가",action:{text:"CI 수정 요청",command:null,comment:"@contributor-g 안녕하세요! CI 검사가 실패하고 있습니다."},cost:{size:"M",minutes:15,bucket:"normal"},lifecycle:null},
+ {number:54777,title:"Rework localization landing pages",url:"#",author:"contributor-a",ageDays:171,idleDays:96,labels:["language/ko","size/XL","do-not-merge/hold","approved"],flags:{lgtm:false,approved:true,hold:true,needsRebase:true,cncfUnsigned:false},ci:"passed",ciFailed:[],koOnly:false,firstReview:false,closingIssues:[],lane:"blocked",reason:"do-not-merge/hold 로 보류 중입니다",action:null,cost:{size:"XL",minutes:60,bucket:"long"},lifecycle:"rotten"}],
 sections:[
 {id:"issue-pr-closed",title:"Issue O / PR closed",kind:"issue",metric:"마지막 활동",hint:"작업 중단",items:[
  {number:43628,title:"[ko] Translate concepts/workloads/pods to Korean",url:"#",author:"contributor-a",labels:["language/ko"],comments:6,ageDays:842,idleDays:611,sortKey:611,linkedPrs:[{number:43701,url:"#",state:"CLOSED",author:"contributor-a",idleDays:600}]},
@@ -346,6 +403,20 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const CATCOLOR={"issue-pr-closed":"s4","issue-pr-stale":"s3","pr-long-open":"s2","issue-no-pr":"mute"};
 
+/* 레인 색은 체류 심각도와 다른 축이다 — "우리가 손댈 것인가"만 인코딩한다.
+   대기 레인(author/merge/blocked)이 무채색인 건 색이 없어서가 아니라
+   당번의 시선을 끌면 안 되기 때문이다. */
+const LANECOLOR={review:"s1",approve:"s2",author:"mute",merge:"mute",blocked:"mute"};
+const LANE_FALLBACK=[
+ {id:"review", title:"리뷰 차례",   ours:true,  hint:"차단 요소가 없고 lgtm 도 없습니다. 우리가 볼 차례입니다."},
+ {id:"approve",title:"승인 대기",   ours:true,  hint:"lgtm 은 붙었지만 approved 가 없습니다."},
+ {id:"author", title:"작성자 대기", ours:false, hint:"공이 작성자 코트에 있습니다."},
+ {id:"merge",  title:"머지 대기",   ours:false, hint:"tide 가 머지합니다. 할 일이 없습니다."},
+ {id:"blocked",title:"보류 · 초안", ours:false, hint:"의도적으로 멈춰 있습니다."}
+];
+const COSTLABEL={quick:"빠름",normal:"보통",long:"김"};
+const fmtMin=m=>m>=60?`${Math.floor(m/60)}시간 ${m%60?`${m%60}분`:""}`.trim():`${m}분`;
+
 /* 심각도 4단계 — 임의 구간이 아니라 Prow 실제 임계값에 맞춘다.
    14일: SIG Docs PR wrangler 가 close 를 검토하는 시점 (사람 시계)
    90일: k8s-triage-robot 이 lifecycle/stale 부착 (봇 시계)
@@ -368,8 +439,17 @@ const CAP=150;
 const barPct=d=>Math.sqrt(Math.min(Math.max(d,0),CAP))/Math.sqrt(CAP)*100;
 
 /* ─────────────────────────── 상태 ─────────────────────────── */
-let DATA=null, ROWS=[];
-const S={cat:"all", q:"", sev:new Set(), bin:null, sort:"dwell", dir:-1};
+let DATA=null, ROWS_BACKLOG=[], ROWS_QUEUE=[], LANES=LANE_FALLBACK;
+/* view: queue(워크리스트) | backlog(주간 백로그)
+   cat 은 두 뷰가 공유한다 — queue 에선 레인 id, backlog 에선 섹션 id.
+   "ours" 는 review+approve 를 합친 가상 분류(= 당번이 실제로 볼 것). */
+const S={view:"queue", cat:"ours", q:"", sev:new Set(), bin:null, cost:null, sort:"dwell", dir:-1};
+
+const isQueue=()=>S.view==="queue";
+const ROWS=()=>isQueue()?ROWS_QUEUE:ROWS_BACKLOG;
+const groups=()=>isQueue()
+  ? LANES.map(l=>({id:l.id,title:l.title,hint:l.hint,color:LANECOLOR[l.id]}))
+  : DATA.sections.map(sec=>({id:sec.id,title:sec.title,hint:sec.hint,color:CATCOLOR[sec.id]}));
 
 function flatten(data){
   const out=[];
@@ -382,24 +462,35 @@ function flatten(data){
   return out;
 }
 
+/* 워크리스트 항목을 백로그 행과 같은 모양으로 맞춘다.
+   dwell/sev/cat 만 통일해두면 필터·정렬·히스토그램·칩을 그대로 재사용할 수 있다. */
+function flattenQueue(data){
+  const ours=new Set(LANES.filter(l=>l.ours).map(l=>l.id));
+  const title=Object.fromEntries(LANES.map(l=>[l.id,l.title]));
+  return (data.queue??[]).map(q=>({
+    ...q, cat:q.lane, catTitle:title[q.lane]??q.lane, kind:"pr", metric:"미갱신",
+    dwell:q.idleDays, sev:sevOf(q.idleDays), ours:ours.has(q.lane)
+  }));
+}
+
 function filtered({ignore}={}){
   const q=S.q.trim().toLowerCase();
-  return ROWS.filter(r=>{
-    if(ignore!=="cat" && S.cat!=="all" && r.cat!==S.cat) return false;
+  return ROWS().filter(r=>{
+    if(ignore!=="cat" && S.cat==="ours" && !r.ours) return false;
+    if(ignore!=="cat" && S.cat!=="all" && S.cat!=="ours" && r.cat!==S.cat) return false;
     if(ignore!=="sev" && S.sev.size && !S.sev.has(r.sev)) return false;
     if(ignore!=="bin" && S.bin!==null && binOf(r.dwell)!==S.bin) return false;
+    if(S.cost && r.cost?.bucket!==S.cost) return false;
     if(q && !(r.title.toLowerCase().includes(q) || String(r.number).includes(q)
              || (r.author||"").toLowerCase().includes(q))) return false;
     return true;
   });
 }
 
+const SORTVAL={number:r=>r.number, dwell:r=>r.dwell, cost:r=>r.cost?.minutes??0};
 function sorted(rows){
-  const key=S.sort;
-  return [...rows].sort((a,b)=>{
-    const av=key==="number"?a.number:a.dwell, bv=key==="number"?b.number:b.dwell;
-    return (av-bv)*S.dir || a.number-b.number;
-  });
+  const f=SORTVAL[S.sort]??SORTVAL.dwell;
+  return [...rows].sort((a,b)=>(f(a)-f(b))*S.dir || a.number-b.number);
 }
 
 /* ─────────────────────────── 렌더 ─────────────────────────── */
@@ -411,32 +502,96 @@ function renderRail(){
       <span class="dot" style="background:${colorKey?`var(--${colorKey})`:"var(--fg-3)"}"></span>
       <span class="lbl">${esc(label)}</span><span class="n mono">${n}</span>
     </button>`;
-  let html=mk("all","전체",all.length,null);
-  for(const sec of DATA.sections){
-    html+=mk(sec.id,sec.title,all.filter(r=>r.cat===sec.id).length,CATCOLOR[sec.id]);
-  }
+  $("#rail-head").textContent=isQueue()?"대기 주체":"분류";
+  // 워크리스트의 기본 진입점은 "전체"가 아니라 "우리 차례"다.
+  let html=isQueue()?mk("ours","우리 차례",all.filter(r=>r.ours).length,"link"):"";
+  html+=mk("all","전체",all.length,null);
+  for(const g of groups()) html+=mk(g.id,g.title,all.filter(r=>r.cat===g.id).length,g.color);
   el.innerHTML=html;
   el.querySelectorAll(".railitem").forEach(b=>b.onclick=()=>{ S.cat=b.dataset.cat; S.bin=null; render(); });
+
+  $("#viewsw").querySelectorAll("button").forEach(b=>{
+    b.setAttribute("aria-current",String(S.view===b.dataset.view));
+    b.onclick=()=>{
+      if(S.view===b.dataset.view) return;
+      S.view=b.dataset.view;
+      S.cat=isQueue()?"ours":"all"; S.bin=null; S.sev.clear();
+      S.sort="dwell"; S.dir=-1;
+      render();
+    };
+  });
+}
+
+/* ── 오늘의 부하 ────────────────────────────────────────────────────────
+   당번이 가장 먼저 알아야 할 건 건수가 아니라 "얼마나 걸리나"다.
+   19건은 위압적으로 들리지만 그중 4건은 5분짜리다. 총 소요와 규모 분포를
+   같이 보여줘야 "오늘 다 못 한다"가 아니라 "빠른 것부터"로 판단이 바뀐다. */
+function renderLoad(){
+  const el=$("#load");
+  if(!isQueue()){ el.hidden=true; return; }
+  el.hidden=false;
+
+  const ours=ROWS_QUEUE.filter(r=>r.ours);
+  const mins=ours.reduce((a,r)=>a+(r.cost?.minutes??0),0);
+  const mix=["quick","normal","long"].map(b=>({b,n:ours.filter(r=>r.cost?.bucket===b).length}));
+  const waiting=ROWS_QUEUE.filter(r=>r.cat==="author").length;
+  const pingable=ROWS_QUEUE.filter(r=>r.cat==="author"&&r.action).length;
+  const worst=ours.length?Math.max(...ours.map(r=>r.dwell)):0;
+
+  el.innerHTML=`
+    <div class="seg">
+      <span class="k">우리 차례</span>
+      <span class="v mono" style="color:var(--link)">${ours.length}<small> / 열린 PR ${ROWS_QUEUE.length}</small></span>
+    </div>
+    <div class="seg grow">
+      <span class="k">예상 소요</span>
+      <span class="v mono">${mins?fmtMin(mins):"—"}</span>
+      <span class="mix">${mix.filter(m=>m.n).map(m=>
+        `<button class="chip" data-cost="${m.b}" aria-pressed="${S.cost===m.b}">${COSTLABEL[m.b]}<span class="c">${m.n}</span></button>`
+      ).join("")||`<span style="font-size:11px;color:var(--fg-3)">처리할 항목이 없습니다</span>`}</span>
+    </div>
+    <div class="seg">
+      <span class="k">가장 오래 방치</span>
+      <span class="v mono" style="color:${worst?SEV[sevOf(worst)].color:"var(--fg-3)"}">${worst}<small>일</small></span>
+    </div>
+    <div class="seg">
+      <span class="k">작성자 대기</span>
+      <span class="v mono" style="color:var(--fg-3)">${waiting}<small> / 핑 대상 ${pingable}</small></span>
+    </div>`;
+
+  el.querySelectorAll("[data-cost]").forEach(b=>b.onclick=()=>{
+    S.cost = S.cost===b.dataset.cost ? null : b.dataset.cost;
+    S.cat="ours"; render();
+  });
 }
 
 function renderTiles(){
   const base=filtered({ignore:"cat"});
-  $("#tiles").innerHTML=DATA.sections.map(sec=>{
+  const el=$("#tiles");
+  el.classList.toggle("lanes",isQueue());
+  el.innerHTML=groups().map(sec=>{
     const rows=base.filter(r=>r.cat===sec.id);
+    const lane=LANES.find(l=>l.id===sec.id);
+    const idle=isQueue()&&lane&&!lane.ours;
     const counts=SEV.map((_,i)=>rows.filter(r=>r.sev===i).length);
     const total=rows.length||1;
     const strip=counts.map((c,i)=>c?`<i style="width:${c/total*100}%;background:${SEV[i].color}"></i>`:"").join("")
       || `<i style="width:100%;background:var(--hair)"></i>`;
     const worst=rows.length?Math.max(...rows.map(r=>r.dwell)):0;
-    return `<button class="tile" data-cat="${sec.id}" aria-current="${S.cat===sec.id}">
+    const mins=isQueue()?rows.reduce((a,r)=>a+(r.cost?.minutes??0),0):0;
+    const foot=!rows.length?"해당 없음"
+      : isQueue()&&lane?.ours?`약 ${fmtMin(mins)}`
+      : `최장 ${worst}일`;
+    return `<button class="tile${idle?" idle":""}" data-cat="${sec.id}" aria-current="${S.cat===sec.id}"
+             title="${esc(sec.hint??"")}">
       <span class="cap">${esc(sec.title)}</span>
       <span class="big mono" style="color:${rows.length?SEV[Math.max(0,...rows.map(r=>r.sev))].color:"var(--fg-3)"}">${String(rows.length).padStart(2,"0")}</span>
       <span class="strip">${strip}</span>
-      <span class="foot mono">${rows.length?`최장 ${worst}일`:"해당 없음"}</span>
+      <span class="foot mono">${foot}</span>
     </button>`;
   }).join("");
-  $("#tiles").querySelectorAll(".tile").forEach(b=>b.onclick=()=>{
-    S.cat = S.cat===b.dataset.cat ? "all" : b.dataset.cat; S.bin=null; render();
+  el.querySelectorAll(".tile").forEach(b=>b.onclick=()=>{
+    S.cat = S.cat===b.dataset.cat ? (isQueue()?"ours":"all") : b.dataset.cat; S.bin=null; render();
   });
 }
 
@@ -492,63 +647,162 @@ function flagPills(f,isDraft){
   return o.join(" ");
 }
 
+/* 규모 배지: Prow size 라벨 + 추정 분. 리뷰를 시작할지 말지는
+   "몇 분이면 끝나나"로 갈린다 — 큐 정렬의 1차 기준이 되어야 한다. */
+function costCell(c){
+  if(!c) return `<span class="pill mute">–</span>`;
+  const tone=c.bucket==="quick"?"s1":c.bucket==="long"?"s3":"mute";
+  return `<span class="pill ${tone}">${esc(c.size)}</span> <span class="m mono">${c.minutes}m</span>`;
+}
+
+function queueSub(r){
+  const o=[];
+  if(r.lifecycle) o.push(`<span class="pill s4">${r.lifecycle}</span>`);
+  if(r.ci==="failed") o.push(`<span class="pill s4">ci 실패</span>`);
+  if(r.firstReview) o.push(`<span class="pill s2">첫 리뷰</span>`);
+  if(r.koOnly===false) o.push(`<span class="pill mute">다국어</span>`);
+  if(r.flags?.lgtm) o.push(`<span class="pill s1">lgtm</span>`);
+  if(r.flags?.needsRebase) o.push(`<span class="pill s3">rebase</span>`);
+  if(r.closingIssues?.length) o.push(`<a class="pill mute" href="${esc(r.closingIssues[0].url)}" target="_blank" rel="noopener">closes #${r.closingIssues[0].number}</a>`);
+  return o.join(" ");
+}
+
+const THEAD={
+  queue:`<tr>
+    <th class="sev" aria-label="심각도"></th>
+    <th class="sortable" data-sort="number">PR<span class="arrow">↓</span></th>
+    <th>제목</th>
+    <th>다음 행동</th>
+    <th class="sortable" data-sort="cost">규모<span class="arrow">↓</span></th>
+    <th>작성자</th>
+    <th class="sortable" data-sort="dwell">미갱신<span class="arrow">↓</span></th>
+    <th></th>
+  </tr>`,
+  backlog:`<tr>
+    <th class="sev" aria-label="심각도"></th>
+    <th class="sortable" data-sort="number">항목<span class="arrow">↓</span></th>
+    <th>제목</th>
+    <th class="cat-col">분류</th>
+    <th>작성자</th>
+    <th class="sortable" data-sort="dwell">체류<span class="arrow">↓</span></th>
+    <th>연결</th>
+  </tr>`
+};
+
+function queueRow(r){
+  const c=SEV[r.sev].color;
+  const a=r.action;
+  const next=a
+    ? `<div class="do">${esc(a.text)}${a.command?` <span class="cmd">${esc(a.command)}</span>`:""}</div>
+       <div class="why">${esc(r.reason)}</div>`
+    : `<div class="none">조치 불필요</div><div class="why">${esc(r.reason)}</div>`;
+
+  const btns=[];
+  if(a?.command) btns.push(`<button class="act-btn" data-copy="cmd" data-n="${r.number}">커맨드</button>`);
+  if(a?.comment) btns.push(`<button class="act-btn" data-copy="comment" data-n="${r.number}">코멘트</button>`);
+  btns.push(`<a class="act-btn" href="${esc(r.url)}" target="_blank" rel="noopener">열기</a>`);
+
+  return `<tr>
+    <td class="sev"><i style="background:${c}"></i></td>
+    <td class="id"><a class="mono" href="${esc(r.url)}" target="_blank" rel="noopener">PR&nbsp;${r.number}</a></td>
+    <td class="ttl">
+      <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
+      <div class="sub">${queueSub(r)}</div>
+    </td>
+    <td class="next">${next}</td>
+    <td class="cost">${costCell(r.cost)}</td>
+    <td class="who">@${esc(r.author||"unknown")}</td>
+    <td class="dwell">
+      <span class="dwell-row">
+        <span class="dwell-bar"><i style="width:${barPct(r.dwell).toFixed(1)}%;background:${c}"></i></span>
+        <span class="dwell-n mono" style="color:${c}">${r.dwell}d</span>
+      </span>
+    </td>
+    <td class="act"><span class="acts">${btns.join("")}</span></td>
+  </tr>`;
+}
+
+function backlogRow(r,showCat){
+  const c=SEV[r.sev].color;
+  let linkCell="—";
+  if(r.kind==="issue" && r.linkedPrs?.length){
+    linkCell=r.linkedPrs.slice(0,2).map(prPill).join(" ")
+      + (r.linkedPrs.length>2?` <span class="pill mute">+${r.linkedPrs.length-2}</span>`:"");
+  } else if(r.kind==="pr"){
+    linkCell=flagPills(r.flags,r.isDraft)||`<span class="pill mute">–</span>`;
+  }
+  const sub=[];
+  if(r.kind==="issue"){
+    sub.push(`<span class="pill mute">댓글 ${r.comments??0}</span>`);
+    if(r.assignees?.length) sub.push(`<span class="pill mute">담당 ${esc(r.assignees[0])}</span>`);
+  } else if(r.reviewDecision){
+    sub.push(`<span class="pill mute">${esc(r.reviewDecision.toLowerCase().replace(/_/g,' '))}</span>`);
+  }
+  return `<tr>
+    <td class="sev"><i style="background:${c}"></i></td>
+    <td class="id"><a class="mono" href="${esc(r.url)}" target="_blank" rel="noopener">${r.kind==="pr"?"PR":"IS"}&nbsp;${r.number}</a></td>
+    <td class="ttl">
+      <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
+      <div class="sub">${sub.join(" ")}</div>
+    </td>
+    ${showCat?`<td class="cat">${esc(r.catTitle)}</td>`:`<td class="cat"></td>`}
+    <td class="who">@${esc(r.author||"unknown")}</td>
+    <td class="dwell">
+      <span class="dwell-row">
+        <span class="dwell-bar"><i style="width:${barPct(r.dwell).toFixed(1)}%;background:${c}"></i></span>
+        <span class="dwell-n mono" style="color:${c}">${r.dwell}d</span>
+      </span>
+    </td>
+    <td class="link">${linkCell}</td>
+  </tr>`;
+}
+
 function renderTable(){
   const rows=sorted(filtered());
   const showCat=S.cat==="all";
-  $("#th-cat").hidden=!showCat;
-
-  $("#tbody").innerHTML=rows.map(r=>{
-    const c=SEV[r.sev].color;
-    let linkCell="—";
-    if(r.kind==="issue" && r.linkedPrs?.length){
-      linkCell=r.linkedPrs.slice(0,2).map(prPill).join(" ")
-        + (r.linkedPrs.length>2?` <span class="pill mute">+${r.linkedPrs.length-2}</span>`:"");
-    } else if(r.kind==="pr"){
-      linkCell=flagPills(r.flags,r.isDraft)||`<span class="pill mute">–</span>`;
-    }
-    const sub=[];
-    if(r.kind==="issue"){
-      sub.push(`<span class="pill mute">댓글 ${r.comments??0}</span>`);
-      if(r.assignees?.length) sub.push(`<span class="pill mute">담당 ${esc(r.assignees[0])}</span>`);
-    } else if(r.reviewDecision){
-      sub.push(`<span class="pill mute">${esc(r.reviewDecision.toLowerCase().replace(/_/g,' '))}</span>`);
-    }
-    return `<tr>
-      <td class="sev"><i style="background:${c}"></i></td>
-      <td class="id"><a class="mono" href="${esc(r.url)}" target="_blank" rel="noopener">${r.kind==="pr"?"PR":"IS"}&nbsp;${r.number}</a></td>
-      <td class="ttl">
-        <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
-        <div class="sub">${sub.join(" ")}</div>
-      </td>
-      ${showCat?`<td class="cat">${esc(r.catTitle)}</td>`:""}
-      <td class="who">@${esc(r.author||"unknown")}</td>
-      <td class="dwell">
-        <span class="dwell-row">
-          <span class="dwell-bar"><i style="width:${barPct(r.dwell).toFixed(1)}%;background:${c}"></i></span>
-          <span class="dwell-n mono" style="color:${c}">${r.dwell}d</span>
-        </span>
-      </td>
-      <td class="link">${linkCell}</td>
-    </tr>`;
-  }).join("");
+  $("#thead").innerHTML=THEAD[isQueue()?"queue":"backlog"];
+  $("#tbody").innerHTML=rows.map(r=>isQueue()?queueRow(r):backlogRow(r,showCat)).join("");
 
   const empty=$("#empty");
   empty.hidden=rows.length>0;
   if(!rows.length){
-    const anyFilter=S.q||S.sev.size||S.bin!==null||S.cat!=="all";
+    const anyFilter=S.q||S.sev.size||S.bin!==null||S.cost||(S.cat!=="all"&&S.cat!=="ours");
     empty.innerHTML=anyFilter
       ? `<b>조건에 맞는 항목이 없습니다</b>필터를 넓히거나 초기화하세요.`
-      : `<b>확인할 항목이 없습니다</b>모든 분류가 임계값 안에 있습니다.`;
+      : isQueue()
+        ? `<b>지금 처리할 항목이 없습니다</b>열린 PR 이 모두 작성자 응답이나 tide 머지를 기다리는 중입니다.`
+        : `<b>확인할 항목이 없습니다</b>모든 분류가 임계값 안에 있습니다.`;
   }
 
-  document.querySelectorAll("th.sortable").forEach(th=>{
-    if(th.dataset.sort===S.sort){ th.setAttribute("aria-sort",S.dir<0?"descending":"ascending");
-      th.querySelector(".arrow").textContent=S.dir<0?"↓":"↑"; }
-    else th.removeAttribute("aria-sort");
+  // thead 를 매번 다시 그리므로 정렬 핸들러도 여기서 다시 붙인다.
+  $("#thead").querySelectorAll("th.sortable").forEach(th=>{
+    const k=th.dataset.sort;
+    if(k===S.sort){
+      th.setAttribute("aria-sort",S.dir<0?"descending":"ascending");
+      th.querySelector(".arrow").textContent=S.dir<0?"↓":"↑";
+    }
+    th.onclick=()=>{ if(S.sort===k) S.dir*=-1; else { S.sort=k; S.dir=-1; } render(); };
   });
 }
 
-function render(){ renderRail(); renderTiles(); renderHist(); renderChips(); renderTable(); syncUrl(); }
+/* 복사 버튼은 tbody 를 통째로 다시 그리므로 위임으로 한 번만 묶는다. */
+$("#tbody").addEventListener("click",async e=>{
+  const b=e.target.closest("[data-copy]");
+  if(!b) return;
+  const row=ROWS_QUEUE.find(r=>r.number===Number(b.dataset.n));
+  const text=b.dataset.copy==="cmd"?row?.action?.command:row?.action?.comment;
+  if(!text) return;
+  const label=b.textContent;
+  try{ await navigator.clipboard.writeText(text); b.textContent="복사됨"; b.classList.add("done"); }
+  catch{ b.textContent="실패"; }
+  setTimeout(()=>{ b.textContent=label; b.classList.remove("done"); },1400);
+});
+
+function render(){
+  renderRail(); renderLoad(); renderTiles(); renderHist(); renderChips(); renderTable();
+  $("#copy").textContent=isQueue()?"인계 체크리스트 복사":"마크다운 복사";
+  syncUrl();
+}
 
 /* ─────────────────────────── URL 상태 동기화 ───────────────────────────
    필터를 쿼리스트링에 실어 "공유 가능한 뷰"를 만든다. 서버 세션 없이
@@ -556,7 +810,9 @@ function render(){ renderRail(); renderTiles(); renderHist(); renderChips(); ren
    pushState 가 아니라 replaceState — 필터 변경마다 히스토리를 쌓지 않는다. */
 function syncUrl(){
   const p=new URLSearchParams();
-  if(S.cat!=="all")      p.set("cat",S.cat);
+  if(S.view!=="queue")   p.set("view",S.view);
+  if(S.cost)             p.set("cost",S.cost);
+  if(S.cat!==(isQueue()?"ours":"all")) p.set("cat",S.cat);
   if(S.q.trim())         p.set("q",S.q.trim());
   if(S.sev.size)         p.set("sev",[...S.sev].sort().join(""));
   if(S.bin!==null)       p.set("bin",S.bin);
@@ -567,16 +823,44 @@ function syncUrl(){
 
 function readUrl(){
   const p=new URLSearchParams(location.search);
+  if(p.has("view") && ["queue","backlog"].includes(p.get("view"))) S.view=p.get("view");
+  if(!DATA.queue?.length) S.view="backlog";
+  S.cat=isQueue()?"ours":"all";
+  if(p.has("cost") && ["quick","normal","long"].includes(p.get("cost"))) S.cost=p.get("cost");
   if(p.has("cat"))  S.cat=p.get("cat");
   if(p.has("q")){ S.q=p.get("q"); const el=$("#q"); if(el) el.value=S.q; }
   if(p.has("sev"))  S.sev=new Set(p.get("sev").split("").map(Number).filter(n=>n>=0&&n<=3));
   if(p.has("bin")){ const b=+p.get("bin"); if(b>=0&&b<BINS.length) S.bin=b; }
   if(p.has("sort")){ let v=p.get("sort"); S.dir=v.startsWith("-")?-1:1; S.sort=v.replace(/^-/,"");
-    if(!["dwell","number"].includes(S.sort)){ S.sort="dwell"; S.dir=-1; } }
+    if(!["dwell","number","cost"].includes(S.sort)){ S.sort="dwell"; S.dir=-1; } }
 }
 
 /* ─────────────────────────── 마크다운 내보내기 ─────────────────────────── */
-function markdown(){
+/* 워크리스트 내보내기는 회의록이 아니라 "당번 인계 체크리스트"다.
+   GitHub 이슈 본문에 붙이면 그대로 체크 가능한 작업 목록이 된다. */
+function markdownQueue(){
+  const rows=sorted(filtered());
+  if(!rows.length) return "처리할 항목이 없습니다";
+  const title=Object.fromEntries(LANES.map(l=>[l.id,l.title]));
+  const byLane=new Map();
+  for(const r of rows){ if(!byLane.has(r.cat)) byLane.set(r.cat,[]); byLane.get(r.cat).push(r); }
+  const out=[];
+  for(const lane of LANES){
+    const items=byLane.get(lane.id);
+    if(!items?.length) continue;
+    const mins=items.reduce((a,r)=>a+(r.cost?.minutes??0),0);
+    out.push(`### ${title[lane.id]} (${items.length}건 · 약 ${fmtMin(mins)})`);
+    for(const r of items){
+      const act=r.action?`${r.action.text}${r.action.command?` \`${r.action.command}\``:""}`:"조치 불필요";
+      out.push(`- [ ] [#${r.number}](${r.url}) ${r.title} — **${act}** · ${r.cost?.size??"?"} ${r.cost?.minutes??0}분 · ${r.dwell}일 미갱신`);
+      out.push(`  - ${r.reason}`);
+    }
+    out.push("");
+  }
+  return out.join("\n").trim();
+}
+
+function markdownBacklog(){
   const rows=sorted(filtered());
   const groups=new Map();
   for(const r of rows){ if(!groups.has(r.catTitle)) groups.set(r.catTitle,[]); groups.get(r.catTitle).push(r); }
@@ -593,10 +877,15 @@ function markdown(){
   return out.join("\n")||"항목 없음";
 }
 
+const markdown=()=>isQueue()?markdownQueue():markdownBacklog();
+
 /* ─────────────────────────── 추이 카드 ───────────────────────────
    trend.json(주당 집계 한 줄)만 읽어 스파크라인 + 지난주 대비 델타를 그린다.
    원본 스냅샷이 아니라 집계만 읽으므로 payload 가 수 KB 수준으로 상수에 가깝다. */
 const TREND_SERIES=[
+  // 당번 부담의 직접 지표. 워크리스트 도입 이후 주부터만 값이 있으므로
+  // 결측 주는 0 으로 채우지 않고 계열에서 제외한다(가짜 하강선 방지).
+  {key:"needsAction",label:"우리 차례",sev:0,queue:true},
   {key:"issuePrClosed",label:"PR closed",sev:3},
   {key:"issuePrStale", label:"PR stale", sev:2},
   {key:"prLongOpen",   label:"장기 PR",  sev:1},
@@ -634,8 +923,9 @@ function renderTrend(trend){
   card.hidden=false;
 
   const cur=trend[trend.length-1], prev=trend[trend.length-2];
-  const totalCur=TREND_SERIES.reduce((s,x)=>s+(cur[x.key]??0),0);
-  const totalPrev=prev?TREND_SERIES.reduce((s,x)=>s+(prev[x.key]??0),0):undefined;
+  const BACKLOG_SERIES=TREND_SERIES.filter(x=>!x.queue);
+  const totalCur=BACKLOG_SERIES.reduce((s,x)=>s+(cur[x.key]??0),0);
+  const totalPrev=prev?BACKLOG_SERIES.reduce((s,x)=>s+(prev[x.key]??0),0):undefined;
 
   $("#trend-note").innerHTML = trend.length<2
     ? `${trend.length}주치 기록 · 다음 주부터 증감 표시`
@@ -643,9 +933,12 @@ function renderTrend(trend){
 
   const recent=trend.slice(-12);
   $("#trend-body").innerHTML = `<div class="trend-grid">` + TREND_SERIES.map(s=>{
-    const vals=recent.map(w=>w[s.key]??0);
-    const c=`var(--s${s.sev+1})`;
-    const cv=cur[s.key]??0, pv=prev?prev[s.key]:undefined;
+    const have=recent.filter(w=>w[s.key]!==undefined);
+    if(!have.length) return "";                       // 아직 수집되지 않은 계열
+    const vals=have.map(w=>w[s.key]);
+    const c=s.queue?"var(--link)":`var(--s${s.sev+1})`;
+    const cv=cur[s.key], pv=prev?prev[s.key]:undefined;
+    if(cv===undefined) return "";
     return `<div class="trend-row">
       <span class="trend-dot" style="background:${c}"></span>
       <span class="trend-label">${s.label}</span>
@@ -658,7 +951,17 @@ function renderTrend(trend){
 
 /* ─────────────────────────── 부트 ─────────────────────────── */
 function boot(data){
-  DATA=data; ROWS=flatten(data);
+  DATA=data;
+  LANES=data.lanes?.length?data.lanes:LANE_FALLBACK;
+  ROWS_BACKLOG=flatten(data);
+  ROWS_QUEUE=flattenQueue(data);
+
+  // 구버전 report.json(queue 없음)으로도 백로그 뷰는 그대로 동작해야 한다.
+  const hasQueue=ROWS_QUEUE.length>0;
+  const sw=$("#viewsw").querySelector('[data-view="queue"]');
+  sw.disabled=!hasQueue;
+  if(!hasQueue){ sw.title="report.json 에 queue 가 없습니다 — collect.mjs 를 다시 실행하세요"; }
+
   $("#c-repo").textContent=data.repo;
   $("#c-label").textContent=data.label;
   $("#s-issue").textContent=data.totals?.openIssues??"–";
@@ -689,17 +992,14 @@ function boot(data){
 
 $("#q").addEventListener("input",e=>{S.q=e.target.value; render();});
 $("#reset").addEventListener("click",()=>{
-  S.cat="all"; S.q=""; S.sev.clear(); S.bin=null; $("#q").value=""; render();
+  S.cat=isQueue()?"ours":"all"; S.q=""; S.sev.clear(); S.bin=null; S.cost=null;
+  $("#q").value=""; render();
 });
 $("#copy").addEventListener("click",async e=>{
   const b=e.currentTarget;
   try{ await navigator.clipboard.writeText(markdown()); b.textContent="복사됨"; }
   catch{ b.textContent="복사 실패"; }
-  setTimeout(()=>b.textContent="마크다운 복사",1500);
-});
-document.querySelectorAll("th.sortable").forEach(th=>{
-  th.onclick=()=>{ const k=th.dataset.sort;
-    if(S.sort===k) S.dir*=-1; else { S.sort=k; S.dir=-1; } render(); };
+  setTimeout(()=>{ b.textContent=isQueue()?"인계 체크리스트 복사":"마크다운 복사"; },1500);
 });
 $("#theme").addEventListener("click",()=>{
   const next=document.documentElement.dataset.theme==="dark"?"light":"dark";

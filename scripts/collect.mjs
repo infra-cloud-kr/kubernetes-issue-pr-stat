@@ -136,6 +136,39 @@ query($q: String!, $after: String) {
   }
 }`;
 
+/**
+ * PR 트리아지 전용 추가 필드.
+ * PR_FIELDS 와 분리한 이유: 이슈에 연결된 PR(이슈당 최대 20건)까지 이 필드를 끌면
+ * GraphQL 노드 비용이 이슈 수 × 20 배로 불어난다. 최상위 PR 검색에만 붙인다.
+ */
+const PR_TRIAGE_FIELDS = `
+  additions deletions changedFiles
+  reviewDecision
+  # last:1 이면 k8s-ci-robot 코멘트 하나에 사람의 마지막 발언이 가려진다.
+  comments(last: 10) { totalCount nodes { author { login } createdAt } }
+  reviews(last: 5) { totalCount nodes { author { login } state submittedAt } }
+  # 롤업 state 는 쓰지 않는다 — Prow 의 tide 컨텍스트가 머지 전까지 PENDING 이라
+  # 열린 PR 의 롤업은 사실상 항상 PENDING/FAILURE 로 뭉개진다. 개별 컨텍스트를 본다.
+  commits(last: 1) {
+    nodes {
+      commit {
+        statusCheckRollup {
+          state
+          contexts(last: 100) {
+            nodes {
+              ... on CheckRun { name conclusion detailsUrl }
+              ... on StatusContext { context state targetUrl }
+            }
+          }
+        }
+      }
+    }
+  }
+  closingIssuesReferences(first: 10) {
+    nodes { number url title state }
+  }
+`;
+
 const PULL_QUERY = `
 query($q: String!, $after: String) {
   search(query: $q, type: ISSUE, first: 25, after: $after) {
@@ -143,11 +176,7 @@ query($q: String!, $after: String) {
     nodes {
       ... on PullRequest {
         ${PR_FIELDS}
-        reviewDecision
-        comments { totalCount }
-        closingIssuesReferences(first: 10) {
-          nodes { number url title state }
-        }
+        ${PR_TRIAGE_FIELDS}
       }
     }
   }
@@ -170,6 +199,96 @@ function prowFlags(labels) {
   };
 }
 
+/**
+ * 개별 CI 컨텍스트에서 "실제로 실패한 검사"만 추린다.
+ *
+ * statusCheckRollup.state 를 그대로 쓰면 안 된다. Prow 는 머지 큐 상태를 `tide`
+ * 컨텍스트로 노출하는데 이게 머지 직전까지 PENDING 이라, 열린 PR 의 롤업은
+ * SUCCESS 가 될 수 없다. 실측에서도 53건 중 SUCCESS 는 0건이었다.
+ * 그래서 컨텍스트를 개별로 보고, 정보성 컨텍스트는 제외한 뒤 실패만 센다.
+ */
+/**
+ * 머지를 실제로 막는 검사만 센다.
+ *
+ * kubernetes/website 의 열린 PR 이 실제로 노출하는 컨텍스트는 6종뿐이다.
+ *   tide            머지 큐 상태 — 머지 직전까지 PENDING 이라 신호가 아니다
+ *   deploy/netlify  사이트 빌드 — 깨지면 문서가 렌더링되지 않으므로 차단
+ *   EasyCLA         CLA 서명 — 미서명이면 머지 불가 (라벨로도 잡히지만 이중 확인)
+ *   Pages changed / Header rules / Redirect rules
+ *                   Netlify 빌드 플러그인 부산물 — 실패해도 머지를 막지 않는다
+ *
+ * 초기 구현은 rollup.state 를 그대로 썼는데, tide 때문에 SUCCESS 가 한 번도
+ * 나오지 않았다(실측 53건 중 0건). 그다음엔 Prow 관례인 `pull-` 접두사로
+ * 좁혔는데 이 저장소엔 presubmit 이 없어 0건이 매치됐다. 그래서 차단 검사를
+ * 명시 목록으로 못박되, presubmit 이 생기거나 다른 k8s 저장소에 재사용할 때를
+ * 위해 `pull-` 접두사도 함께 인정한다.
+ */
+const BLOCKING_CHECKS = new Set(["deploy/netlify", "EasyCLA"]);
+const isBlockingCheck = (name) => BLOCKING_CHECKS.has(name) || name.startsWith("pull-");
+
+function ciStatus(pr) {
+  const rollup = pr.commits?.nodes?.[0]?.commit?.statusCheckRollup;
+  if (!rollup) return { state: "none", failed: [] };
+
+  const failed = [];
+  let pending = 0;
+  let passed = 0;
+  for (const c of rollup.contexts?.nodes ?? []) {
+    if (!c) continue;
+    // CheckRun 은 conclusion, StatusContext 는 state 로 결과를 노출한다.
+    const name = c.name ?? c.context;
+    const result = c.conclusion ?? c.state;
+    if (!name || !isBlockingCheck(name)) continue;
+    if (result === "FAILURE" || result === "ERROR" || result === "TIMED_OUT") {
+      failed.push({ name, url: c.detailsUrl ?? c.targetUrl ?? null });
+    } else if (result === "SUCCESS" || result === "NEUTRAL" || result === "SKIPPED") {
+      passed++;
+    } else {
+      pending++;
+    }
+  }
+  // rollup.state 를 그대로 쓰지 않는 이유: tide 컨텍스트가 머지 직전까지
+  // PENDING 이라 열린 PR 의 롤업은 SUCCESS 가 될 수 없다(실측 53건 중 0건).
+  const state = failed.length ? "failed" : pending ? "pending" : passed ? "passed" : "none";
+  return { state, failed };
+}
+
+/** 사람의 액션만 "공을 던진 것"으로 센다. 봇 코멘트는 대기 상태를 바꾸지 않는다. */
+const BOT_LOGINS = new Set([
+  "k8s-ci-robot",
+  "k8s-triage-robot",
+  "github-actions",
+  "netlify",
+  "dependabot",
+  "linux-foundation-easycla",
+  "ghost",
+]);
+const isBot = (login) => !login || BOT_LOGINS.has(login) || login.endsWith("[bot]");
+
+/**
+ * 마지막으로 "공을 던진" 사람이 누구인지 판정한다.
+ * 작성자가 마지막이면 공은 우리(리뷰어) 코트에, 리뷰어가 마지막이면 작성자 코트에 있다.
+ * touched 는 "작성자 아닌 사람이 한 번이라도 붙었는가" — 첫 리뷰 대기와
+ * 재확인 대기를 가르는 신호라 별도로 돌려준다.
+ */
+function lastMoveBy(pr, author) {
+  const events = [];
+  for (const c of pr.comments?.nodes ?? []) {
+    if (c?.author?.login && !isBot(c.author.login)) {
+      events.push({ at: c.createdAt, login: c.author.login });
+    }
+  }
+  for (const r of pr.reviews?.nodes ?? []) {
+    if (r?.author?.login && !isBot(r.author.login)) {
+      events.push({ at: r.submittedAt, login: r.author.login });
+    }
+  }
+  const touched = events.some((e) => e.login !== author);
+  if (!events.length) return { by: null, touched: false };
+  events.sort((a, b) => new Date(b.at) - new Date(a.at));
+  return { by: events[0].login === author ? "author" : "reviewer", touched };
+}
+
 function normalizePr(pr) {
   const labels = labelNames(pr);
   const closingIssues = (pr.closingIssuesReferences?.nodes ?? []).map((i) => ({
@@ -178,6 +297,9 @@ function normalizePr(pr) {
     title: i.title,
     state: i.state,
   }));
+  const author = pr.author?.login ?? "ghost";
+  const ci = ciStatus(pr);
+  const langLabels = labels.filter((l) => l.startsWith("language/"));
   return {
     ...(closingIssues.length ? { closingIssues } : {}),
     number: pr.number,
@@ -186,7 +308,7 @@ function normalizePr(pr) {
     // GraphQL PullRequestState: OPEN | CLOSED | MERGED
     state: pr.mergedAt ? "MERGED" : pr.state,
     isDraft: pr.isDraft ?? false,
-    author: pr.author?.login ?? "ghost",
+    author,
     createdAt: pr.createdAt,
     updatedAt: pr.updatedAt,
     mergedAt: pr.mergedAt ?? null,
@@ -195,6 +317,20 @@ function normalizePr(pr) {
     reviewDecision: pr.reviewDecision ?? null,
     labels,
     flags: prowFlags(labels),
+    ...(pr.changedFiles == null
+      ? {}
+      : {
+          ci,
+          changedFiles: pr.changedFiles,
+          additions: pr.additions ?? 0,
+          deletions: pr.deletions ?? 0,
+          comments: pr.comments?.totalCount ?? 0,
+          reviews: pr.reviews?.totalCount ?? 0,
+          ...lastMoveBy(pr, author),
+          // language/ko 하나만 붙은 PR = 순수 한국어 번역.
+          // 여러 언어가 붙었으면 원문 변경이 전 로케일에 파급된 PR이라 성격이 다르다.
+          koOnly: langLabels.length === 1 && langLabels[0] === "language/ko",
+        }),
   };
 }
 
@@ -229,8 +365,222 @@ function normalizeIssue(issue) {
   };
 }
 
+
 // ---------------------------------------------------------------------------
-// 분류 규칙
+// 워크리스트: "누가 막고 있나" 판정 (blocked-on 룰 엔진)
+//
+// 기존 분류는 "얼마나 오래됐나"를 물었다. 당번이 실제로 필요한 답은
+// "지금 내가 손댈 게 무엇인가"이므로, 열린 PR 전체를 대기 주체별로 가른다.
+// ours=true 인 두 레인(리뷰 차례 / 승인 대기)만 보면 당번 업무가 끝난다.
+// ---------------------------------------------------------------------------
+const LANES = [
+  {
+    id: "review",
+    title: "리뷰 차례",
+    ours: true,
+    hint: "차단 요소가 없고 lgtm 도 없습니다. 우리가 볼 차례입니다.",
+  },
+  {
+    id: "approve",
+    title: "승인 대기",
+    ours: true,
+    hint: "lgtm 은 붙었지만 approved 가 없습니다. 어프루버에게 넘기세요.",
+  },
+  {
+    id: "author",
+    title: "작성자 대기",
+    ours: false,
+    hint: "공이 작성자 코트에 있습니다. 오래됐다면 핑만 보내면 됩니다.",
+  },
+  {
+    id: "merge",
+    title: "머지 대기",
+    ours: false,
+    hint: "lgtm + approved. tide 가 머지합니다. 할 일이 없습니다.",
+  },
+  {
+    id: "blocked",
+    title: "보류 · 초안",
+    ours: false,
+    hint: "hold 또는 draft 로 의도적으로 멈춰 있습니다. 건드리지 마세요.",
+  },
+];
+
+/** Prow size 라벨 → 리뷰 소요 시간 추정(분). 라벨이 없으면 변경 라인으로 근사한다. */
+const SIZE_MINUTES = {
+  "size/XS": 3,
+  "size/S": 5,
+  "size/M": 15,
+  "size/L": 30,
+  "size/XL": 60,
+  "size/XXL": 90,
+};
+
+function reviewCost(pr) {
+  const label = pr.labels.find((l) => l in SIZE_MINUTES);
+  let minutes = label ? SIZE_MINUTES[label] : null;
+  if (minutes == null) {
+    const lines = (pr.additions ?? 0) + (pr.deletions ?? 0);
+    minutes = lines <= 10 ? 3 : lines <= 30 ? 5 : lines <= 100 ? 15 : lines <= 500 ? 30 : 60;
+  }
+  return {
+    size: label ? label.slice("size/".length) : "?",
+    minutes,
+    // 짧은 것부터 처리하면 큐가 눈에 띄게 줄어든다. 정렬 힌트로 쓴다.
+    bucket: minutes <= 5 ? "quick" : minutes <= 30 ? "normal" : "long",
+  };
+}
+
+/** 작성자에게 보낼 한국어 코멘트 템플릿. 그대로 붙여넣을 수 있게 완성형으로 만든다. */
+const TEMPLATE = {
+  cla: (a) =>
+    `@${a} 안녕하세요! 이 PR을 머지하려면 CNCF CLA 서명이 필요합니다. ` +
+    `아래 봇 코멘트의 링크에서 서명해 주시면 \`cncf-cla: yes\` 로 바뀝니다. 감사합니다!`,
+  rebase: (a) =>
+    `@${a} 안녕하세요! master 와 충돌이 생겨 \`needs-rebase\` 라벨이 붙었습니다. ` +
+    `rebase 후 force push 해주시면 리뷰를 이어가겠습니다. 도움이 필요하시면 편하게 말씀해 주세요.`,
+  ci: (a) =>
+    `@${a} 안녕하세요! CI 검사가 실패하고 있습니다. ` +
+    `실패한 잡의 로그를 확인해 수정 후 push 부탁드립니다. 원인 파악이 어려우시면 알려주세요.`,
+  idle: (a, d) =>
+    `@${a} 안녕하세요! 이 PR이 ${d}일째 업데이트가 없습니다. ` +
+    `계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다.`,
+  rotten: (a) =>
+    `@${a} 안녕하세요! 이 PR에 \`lifecycle/rotten\` 이 붙어 30일 뒤 자동으로 닫힙니다. ` +
+    `계속 진행하시려면 \`/remove-lifecycle rotten\` 을 남겨 주세요.`,
+};
+
+/**
+ * 열린 PR 하나를 하나의 레인 + 하나의 다음 행동으로 환원한다.
+ * 위에서부터 첫 매치가 이긴다 — 순서 자체가 우선순위 정의다.
+ */
+function triage(pr) {
+  const f = pr.flags;
+  const a = pr.author;
+  const ciFailed = (pr.ci?.failed?.length ?? 0) > 0;
+
+  // 의도적으로 멈춘 것부터 걷어낸다. 당번이 볼 필요가 없다.
+  if (pr.isDraft) {
+    return { lane: "blocked", reason: "작성자가 draft 로 두었습니다", action: null };
+  }
+  if (f.hold) {
+    const held = pr.labels.filter((l) => l.startsWith("do-not-merge")).join(", ");
+    return { lane: "blocked", reason: `${held} 로 보류 중입니다`, action: null };
+  }
+
+  // 작성자만 풀 수 있는 차단 요소
+  if (f.cncfUnsigned) {
+    return {
+      lane: "author",
+      reason: "CLA 미서명 — 서명 전에는 머지 불가",
+      action: { text: "CLA 서명 안내", command: null, comment: TEMPLATE.cla(a) },
+    };
+  }
+  if (f.needsRebase) {
+    return {
+      lane: "author",
+      reason: "master 와 충돌 — rebase 필요",
+      action: { text: "rebase 요청", command: null, comment: TEMPLATE.rebase(a) },
+    };
+  }
+  if (ciFailed) {
+    return {
+      lane: "author",
+      reason: `CI 실패 (${pr.ci.failed.map((c) => c.name).join(", ")}) — 수정 전에는 머지 불가`,
+      action: { text: "CI 수정 요청", command: null, comment: TEMPLATE.ci(a) },
+    };
+  }
+
+  // 당번이 커맨드 하나로 푸는 것
+  if (pr.labels.includes("needs-ok-to-test")) {
+    return {
+      lane: "review",
+      reason: "외부 기여자 PR — CI 실행 승인 필요",
+      action: { text: "CI 실행 승인", command: "/ok-to-test", comment: null },
+    };
+  }
+
+  if (f.lgtm && f.approved) {
+    return { lane: "merge", reason: "lgtm + approved — tide 머지 대기", action: null };
+  }
+  if (f.lgtm) {
+    return {
+      lane: "approve",
+      reason: "lgtm 완료 — 어프루버 승인만 남음",
+      action: { text: "어프루버 승인", command: "/approve", comment: null },
+    };
+  }
+
+  // 여기까지 왔으면 차단 요소가 없다. 남은 질문은 "공이 누구 코트에 있나".
+  if (pr.by === "reviewer") {
+    return {
+      lane: "author",
+      reason: "리뷰 코멘트 이후 작성자 응답 대기",
+      action:
+        pr.idleDays >= 14
+          ? { text: "작성자 핑", command: null, comment: TEMPLATE.idle(a, pr.idleDays) }
+          : null,
+    };
+  }
+
+  return {
+    lane: "review",
+    reason: !pr.touched
+      ? "아직 리뷰어가 붙지 않음"
+      : "작성자가 응답함 — 재확인 필요",
+    action: { text: "리뷰 후 lgtm", command: "/lgtm", comment: null },
+  };
+}
+
+const LANE_OURS = new Set(LANES.filter((l) => l.ours).map((l) => l.id));
+
+/** 열린 PR 전체를 워크리스트 항목으로 변환한다. 나이 임계값으로 거르지 않는다. */
+function buildQueue(prs) {
+  return prs
+    .filter((p) => p.state === "OPEN")
+    .map((p) => {
+      const t = triage(p);
+      const cost = reviewCost(p);
+      const rotten = p.labels.includes("lifecycle/rotten");
+      const stale = p.labels.includes("lifecycle/stale");
+      return {
+        number: p.number,
+        title: p.title,
+        url: p.url,
+        author: p.author,
+        createdAt: p.createdAt,
+        updatedAt: p.updatedAt,
+        ageDays: p.ageDays,
+        idleDays: p.idleDays,
+        labels: p.labels,
+        flags: p.flags,
+        ci: p.ci?.state ?? "none",
+        ciFailed: p.ci?.failed ?? [],
+        changedFiles: p.changedFiles ?? 0,
+        additions: p.additions ?? 0,
+        deletions: p.deletions ?? 0,
+        koOnly: p.koOnly ?? false,
+        firstReview: !(p.touched ?? false),
+        closingIssues: p.closingIssues ?? [],
+        lane: t.lane,
+        reason: t.reason,
+        action: t.action,
+        cost,
+        // 봇이 붙인 lifecycle 라벨은 자동 종료 시계다. 당번 입장에선 마감 기한.
+        lifecycle: rotten ? "rotten" : stale ? "stale" : null,
+      };
+    })
+    .sort(
+      (a, b) =>
+        // 우리 차례를 먼저, 그 안에서는 오래 방치된 것부터
+        Number(LANE_OURS.has(b.lane)) - Number(LANE_OURS.has(a.lane)) ||
+        b.idleDays - a.idleDays ||
+        a.number - b.number
+    );
+}
+
+// ---------------------------------------------------------------------------
+// 분류 규칙 (주간 백로그 뷰 — 기존 추이와의 연속성을 위해 유지)
 // ---------------------------------------------------------------------------
 function classify(issues, prs) {
   const { staleDays, longOpenDays, noPrDays } = CONFIG;
@@ -322,11 +672,18 @@ function isoWeek(date) {
 /** report 에서 추이용 집계만 추출 (수십 바이트) */
 function summarize(report, week) {
   const bySec = Object.fromEntries(report.sections.map((s) => [s.id, s.items.length]));
+  const byLane = Object.fromEntries(LANES.map((l) => [l.id, 0]));
+  for (const item of report.queue) byLane[item.lane]++;
   return {
     week,
     generatedAt: report.generatedAt,
     openIssues: report.totals.openIssues,
     openPrs: report.totals.openPrs,
+    // 당번 부담의 실제 척도: 열린 PR 총량이 아니라 "우리 차례"인 건수
+    needsAction: byLane.review + byLane.approve,
+    laneReview: byLane.review,
+    laneApprove: byLane.approve,
+    laneAuthor: byLane.author,
     issuePrClosed: bySec["issue-pr-closed"] ?? 0,
     issuePrStale: bySec["issue-pr-stale"] ?? 0,
     prLongOpen: bySec["pr-long-open"] ?? 0,
@@ -388,6 +745,7 @@ async function main() {
   console.log(`  ${prs.length}건`);
 
   const sections = classify(issues, prs);
+  const queue = buildQueue(prs);
 
   const report = {
     generatedAt: new Date().toISOString(),
@@ -399,6 +757,8 @@ async function main() {
       noPrDays: CONFIG.noPrDays,
     },
     totals: { openIssues: issues.length, openPrs: prs.length },
+    lanes: LANES,
+    queue,
     sections,
   };
 
@@ -406,7 +766,13 @@ async function main() {
   await writeFile(CONFIG.out, JSON.stringify(report, null, 2) + "\n", "utf8");
 
   console.log(`\n▸ ${CONFIG.out} 생성 완료`);
-  for (const s of sections) console.log(`  ${String(s.items.length).padStart(3)}  ${s.title}`);
+  console.log("  워크리스트 (열린 PR 전체)");
+  for (const lane of LANES) {
+    const n = queue.filter((q) => q.lane === lane.id).length;
+    console.log(`  ${String(n).padStart(3)}  ${lane.ours ? "★" : " "} ${lane.title}`);
+  }
+  console.log("  주간 백로그");
+  for (const s of sections) console.log(`  ${String(s.items.length).padStart(3)}    ${s.title}`);
 
   // ── 스냅샷 + 추이 ──────────────────────────────────────────────────────
   const week = isoWeek(new Date());
