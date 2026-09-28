@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T04:48:35.617Z",
+  "generatedAt": "2026-09-28T05:16:12.004Z",
   "repo": "kubernetes/website",
   "label": "language/ko",
   "thresholds": {
@@ -8,8 +8,8 @@
     "noPrDays": 30
   },
   "totals": {
-    "openIssues": 63,
-    "openPrs": 57
+    "openIssues": 60,
+    "openPrs": 63
   },
   "lanes": [
     {
@@ -51,8 +51,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:32:06Z",
       "updatedAt": "2026-08-13T12:51:03Z",
-      "ageDays": 76,
-      "idleDays": 38,
+      "ageDays": 83,
+      "idleDays": 45,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -97,8 +97,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-03T22:49:21Z",
       "updatedAt": "2026-08-18T17:33:57Z",
-      "ageDays": 79,
-      "idleDays": 33,
+      "ageDays": 86,
+      "idleDays": 40,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -137,66 +137,14 @@
       "lifecycle": null
     },
     {
-      "number": 56820,
-      "title": "[ko] Sync Deployment concept with English source",
-      "url": "https://github.com/kubernetes/website/pull/56820",
-      "author": "SuperSon7",
-      "createdAt": "2026-08-05T11:46:08Z",
-      "updatedAt": "2026-09-05T05:20:16Z",
-      "ageDays": 46,
-      "idleDays": 15,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 61,
-      "deletions": 52,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56769,
-          "url": "https://github.com/kubernetes/website/issues/56769",
-          "title": "[ko] Update content/ko/docs/concepts/workloads/controllers/deployment.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 56694,
       "title": "Fix broken redis-master/slave tutorial links",
       "url": "https://github.com/kubernetes/website/pull/56694",
       "author": "pranavchoudhary-tech",
       "createdAt": "2026-07-31T08:20:20Z",
       "updatedAt": "2026-09-07T05:12:06Z",
-      "ageDays": 51,
-      "idleDays": 13,
+      "ageDays": 58,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -254,173 +202,14 @@
       "lifecycle": null
     },
     {
-      "number": 57450,
-      "title": "[ko] Translate content/en/blog/_posts/2026/kubernetes-v1-37-release/index.md into Korean",
-      "url": "https://github.com/kubernetes/website/pull/57450",
-      "author": "suhyenim",
-      "createdAt": "2026-09-07T15:31:38Z",
-      "updatedAt": "2026-09-10T15:00:53Z",
-      "ageDays": 13,
-      "idleDays": 10,
-      "labels": [
-        "cncf-cla: yes",
-        "size/XL",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 838,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57438,
-          "url": "https://github.com/kubernetes/website/issues/57438",
-          "title": "[ko] Translate content/en/blog/_posts/2026/kubernetes-v1-37-release/index.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "XL",
-        "minutes": 60,
-        "bucket": "long"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57191,
-      "title": "[ko] Update content\\ko\\docs\\tutorials\\kubernetes-basics\\create-cluster\\cluster-intro.md",
-      "url": "https://github.com/kubernetes/website/pull/57191",
-      "author": "BcKmini",
-      "createdAt": "2026-08-26T12:49:25Z",
-      "updatedAt": "2026-09-17T10:20:30Z",
-      "ageDays": 25,
-      "idleDays": 3,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "lgtm",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 30,
-      "deletions": 7,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57181,
-          "url": "https://github.com/kubernetes/website/issues/57181",
-          "title": "[ko] Update content/ko/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57474,
-      "title": "[ko] Update content/ko/docs/setup/best-practices/multiple-zones.md",
-      "url": "https://github.com/kubernetes/website/pull/57474",
-      "author": "starbea",
-      "createdAt": "2026-09-09T08:34:30Z",
-      "updatedAt": "2026-09-17T15:33:34Z",
-      "ageDays": 11,
-      "idleDays": 3,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "lgtm",
-        "sig/docs",
-        "tide/merge-method-squash",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 55,
-      "deletions": 52,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57466,
-          "url": "https://github.com/kubernetes/website/issues/57466",
-          "title": "[ko] Update content/ko/docs/setup/best-practices/multiple-zones.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 56782,
       "title": "[ko] Update leases.md with latest English content",
       "url": "https://github.com/kubernetes/website/pull/56782",
       "author": "jiyubaek",
       "createdAt": "2026-08-03T10:04:30Z",
       "updatedAt": "2026-09-18T16:24:33Z",
-      "ageDays": 48,
-      "idleDays": 2,
+      "ageDays": 55,
+      "idleDays": 9,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -465,8 +254,8 @@
       "author": "SuperSon7",
       "createdAt": "2026-07-27T14:46:11Z",
       "updatedAt": "2026-09-19T16:23:01Z",
-      "ageDays": 55,
-      "idleDays": 1,
+      "ageDays": 62,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -517,8 +306,8 @@
       "author": "Dianaland1112",
       "createdAt": "2026-08-04T13:24:41Z",
       "updatedAt": "2026-09-19T18:23:51Z",
-      "ageDays": 47,
-      "idleDays": 1,
+      "ageDays": 54,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -564,383 +353,14 @@
       "lifecycle": null
     },
     {
-      "number": 56886,
-      "title": "[ko] Translate Kubernetes component SLI metrics",
-      "url": "https://github.com/kubernetes/website/pull/56886",
-      "author": "ye11oc4t",
-      "createdAt": "2026-08-09T11:13:23Z",
-      "updatedAt": "2026-09-19T10:56:44Z",
-      "ageDays": 42,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "lgtm",
-        "sig/docs",
-        "tide/merge-method-squash",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 78,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56885,
-          "url": "https://github.com/kubernetes/website/issues/56885",
-          "title": "[ko] Translate content/en/docs/reference/instrumentation/slis.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 56887,
-      "title": "[ko] Translate docs/contribute/generate-ref-docs/metrics-reference.md into Korean",
-      "url": "https://github.com/kubernetes/website/pull/56887",
-      "author": "suhyenim",
-      "createdAt": "2026-08-09T13:53:48Z",
-      "updatedAt": "2026-09-19T14:38:37Z",
-      "ageDays": 42,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "lgtm",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 90,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56783,
-          "url": "https://github.com/kubernetes/website/issues/56783",
-          "title": "[ko] Translate content/en/docs/contribute/generate-ref-docs/metrics-reference.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57010,
-      "title": "[ko] Update content/ko/docs/concepts/storage/storage-classes.md",
-      "url": "https://github.com/kubernetes/website/pull/57010",
-      "author": "SuperSon7",
-      "createdAt": "2026-08-16T08:25:10Z",
-      "updatedAt": "2026-09-19T16:06:47Z",
-      "ageDays": 35,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/XL",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 386,
-      "deletions": 564,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56909,
-          "url": "https://github.com/kubernetes/website/issues/56909",
-          "title": "[ko] Update content/ko/docs/concepts/storage/storage-classes.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "XL",
-        "minutes": 60,
-        "bucket": "long"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57015,
-      "title": "[ko] Update controller documentation",
-      "url": "https://github.com/kubernetes/website/pull/57015",
-      "author": "gpffh20",
-      "createdAt": "2026-08-16T15:11:28Z",
-      "updatedAt": "2026-09-19T14:14:24Z",
-      "ageDays": 35,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/S",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 8,
-      "deletions": 8,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56983,
-          "url": "https://github.com/kubernetes/website/issues/56983",
-          "title": "[ko] Update content/ko/docs/concepts/architecture/controller.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "S",
-        "minutes": 5,
-        "bucket": "quick"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57021,
-      "title": "[ko] Translate docs/tasks/debug/monitoring/_index.md into Korean",
-      "url": "https://github.com/kubernetes/website/pull/57021",
-      "author": "suhyenim",
-      "createdAt": "2026-08-16T15:21:36Z",
-      "updatedAt": "2026-09-19T14:34:18Z",
-      "ageDays": 35,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/S",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 10,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57004,
-          "url": "https://github.com/kubernetes/website/issues/57004",
-          "title": "[ko] Translate content/en/docs/tasks/debug/monitoring/_index.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "S",
-        "minutes": 5,
-        "bucket": "quick"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57180,
-      "title": "[ko] Update content/ko/docs/reference/_index.md",
-      "url": "https://github.com/kubernetes/website/pull/57180",
-      "author": "BcKmini",
-      "createdAt": "2026-08-25T14:18:28Z",
-      "updatedAt": "2026-09-19T08:51:04Z",
-      "ageDays": 26,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "lgtm",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 60,
-      "deletions": 31,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57162,
-          "url": "https://github.com/kubernetes/website/issues/57162",
-          "title": "[ko] Update content/ko/docs/reference/_index.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57399,
-      "title": "[ko] Update content/ko/docs/concepts/services-networking/cluster-ip-allocation.md",
-      "url": "https://github.com/kubernetes/website/pull/57399",
-      "author": "woonkim0413",
-      "createdAt": "2026-09-02T15:00:37Z",
-      "updatedAt": "2026-09-19T18:47:34Z",
-      "ageDays": 18,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/S",
-        "lgtm",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 13,
-      "deletions": 12,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57232,
-          "url": "https://github.com/kubernetes/website/issues/57232",
-          "title": "[ko] Update content/ko/docs/concepts/services-networking/cluster-ip-allocation.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "S",
-        "minutes": 5,
-        "bucket": "quick"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57499,
       "title": "[ko] Update content/ko/docs/concepts/overview/working-with-objects/names.md",
       "url": "https://github.com/kubernetes/website/pull/57499",
       "author": "starbea",
       "createdAt": "2026-09-12T03:39:17Z",
       "updatedAt": "2026-09-19T12:29:40Z",
-      "ageDays": 9,
-      "idleDays": 1,
+      "ageDays": 16,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -987,17 +407,17 @@
       "lifecycle": null
     },
     {
-      "number": 57525,
-      "title": "[ko] Update bootstrap-tokens.md",
-      "url": "https://github.com/kubernetes/website/pull/57525",
-      "author": "BcKmini",
-      "createdAt": "2026-09-14T13:18:37Z",
-      "updatedAt": "2026-09-20T04:48:21Z",
-      "ageDays": 6,
-      "idleDays": 1,
+      "number": 57131,
+      "title": "[ko] Translate content/ko/docs/tasks/administer-cluster/cpu-managemen…",
+      "url": "https://github.com/kubernetes/website/pull/57131",
+      "author": "yucori",
+      "createdAt": "2026-08-23T07:53:32Z",
+      "updatedAt": "2026-09-20T10:02:47Z",
+      "ageDays": 35,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
-        "size/M",
+        "size/L",
         "lgtm",
         "sig/docs",
         "language/ko",
@@ -1013,15 +433,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 28,
-      "deletions": 28,
+      "additions": 190,
+      "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57523,
-          "url": "https://github.com/kubernetes/website/issues/57523",
-          "title": "[ko] Update content/ko/docs/reference/access-authn-authz/bootstrap-tokens.md",
+          "number": 57039,
+          "url": "https://github.com/kubernetes/website/issues/57039",
+          "title": "[ko] Translate content/en/docs/tasks/administer-cluster/cpu-management-policies.md",
           "state": "OPEN"
         }
       ],
@@ -1033,8 +453,60 @@
         "comment": null
       },
       "cost": {
-        "size": "M",
-        "minutes": 15,
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57626,
+      "title": "[ko] Translate content/en/docs/reference/access-authn-authz/abac.md i…",
+      "url": "https://github.com/kubernetes/website/pull/57626",
+      "author": "BcKmini",
+      "createdAt": "2026-09-19T20:50:52Z",
+      "updatedAt": "2026-09-20T09:29:50Z",
+      "ageDays": 8,
+      "idleDays": 7,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 166,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57625,
+          "url": "https://github.com/kubernetes/website/issues/57625",
+          "title": "[ko] Translate content/en/docs/reference/access-authn-authz/abac.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
         "bucket": "normal"
       },
       "lifecycle": null
@@ -1045,9 +517,9 @@
       "url": "https://github.com/kubernetes/website/pull/56759",
       "author": "LyleKim",
       "createdAt": "2026-08-02T17:48:10Z",
-      "updatedAt": "2026-09-21T04:43:40Z",
-      "ageDays": 49,
-      "idleDays": 0,
+      "updatedAt": "2026-09-21T14:39:49Z",
+      "ageDays": 56,
+      "idleDays": 6,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1062,7 +534,7 @@
         "needsRebase": false,
         "cncfUnsigned": false
       },
-      "ci": "pending",
+      "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
       "additions": 53,
@@ -1092,66 +564,14 @@
       "lifecycle": null
     },
     {
-      "number": 56825,
-      "title": "[ko] Update content/ko/docs/concepts/services-networking/dual-stack.md",
-      "url": "https://github.com/kubernetes/website/pull/56825",
-      "author": "neronsoda",
-      "createdAt": "2026-08-05T17:11:18Z",
-      "updatedAt": "2026-09-20T06:58:43Z",
-      "ageDays": 46,
-      "idleDays": 0,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 104,
-      "deletions": 105,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56786,
-          "url": "https://github.com/kubernetes/website/issues/56786",
-          "title": "[ko] Update content/ko/docs/concepts/services-networking/dual-stack.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "review",
-      "reason": "작성자가 응답함 — 재확인 필요",
-      "action": {
-        "text": "리뷰 후 lgtm",
-        "command": "/lgtm",
-        "comment": null
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 56845,
       "title": "[ko] Add Korean translation for Node authorization",
       "url": "https://github.com/kubernetes/website/pull/56845",
       "author": "dongjune8931",
       "createdAt": "2026-08-08T07:02:08Z",
-      "updatedAt": "2026-09-20T08:14:22Z",
-      "ageDays": 43,
-      "idleDays": 0,
+      "updatedAt": "2026-09-21T13:43:19Z",
+      "ageDays": 50,
+      "idleDays": 6,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1198,20 +618,71 @@
       "lifecycle": null
     },
     {
-      "number": 56880,
-      "title": "[ko] Update content/ko/docs/reference/access-authn-authz/kubelet-authn-authz.md",
-      "url": "https://github.com/kubernetes/website/pull/56880",
+      "number": 57191,
+      "title": "[ko] Update content\\ko\\docs\\tutorials\\kubernetes-basics\\create-cluster\\cluster-intro.md",
+      "url": "https://github.com/kubernetes/website/pull/57191",
+      "author": "BcKmini",
+      "createdAt": "2026-08-26T12:49:25Z",
+      "updatedAt": "2026-09-21T18:11:08Z",
+      "ageDays": 32,
+      "idleDays": 6,
+      "labels": [
+        "cncf-cla: yes",
+        "size/M",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 32,
+      "deletions": 9,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57181,
+          "url": "https://github.com/kubernetes/website/issues/57181",
+          "title": "[ko] Update content/ko/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57632,
+      "title": "[ko] Add content/ko/docs/setup/production-environment/tools/kubeadm/dual-stack-support.md",
+      "url": "https://github.com/kubernetes/website/pull/57632",
       "author": "neronsoda",
-      "createdAt": "2026-08-09T10:05:11Z",
-      "updatedAt": "2026-09-20T07:58:45Z",
-      "ageDays": 42,
-      "idleDays": 0,
+      "createdAt": "2026-09-20T05:57:38Z",
+      "updatedAt": "2026-09-23T16:15:55Z",
+      "ageDays": 7,
+      "idleDays": 4,
       "labels": [
         "cncf-cla: yes",
         "size/L",
         "lgtm",
         "sig/docs",
-        "tide/merge-method-squash",
         "language/ko",
         "area/localization"
       ],
@@ -1225,15 +696,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 81,
-      "deletions": 32,
+      "additions": 191,
+      "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 56830,
-          "url": "https://github.com/kubernetes/website/issues/56830",
-          "title": "[ko] Update content/ko/docs/reference/access-authn-authz/kubelet-authn-authz.md",
+          "number": 57607,
+          "url": "https://github.com/kubernetes/website/issues/57607",
+          "title": "[ko] Translate content/en/docs/setup/production-environment/tools/kubeadm/dual-stack-support.md into Korean",
           "state": "OPEN"
         }
       ],
@@ -1252,14 +723,67 @@
       "lifecycle": null
     },
     {
-      "number": 57097,
-      "title": "[ko] Translate local ephemeral storage documentation",
-      "url": "https://github.com/kubernetes/website/pull/57097",
-      "author": "Sharon0320",
-      "createdAt": "2026-08-22T05:36:34Z",
-      "updatedAt": "2026-09-20T06:10:26Z",
-      "ageDays": 29,
-      "idleDays": 0,
+      "number": 57637,
+      "title": "[ko] Update content/ko/docs/concepts/cluster-administration/system-logs.md",
+      "url": "https://github.com/kubernetes/website/pull/57637",
+      "author": "dongjune8931",
+      "createdAt": "2026-09-20T10:00:07Z",
+      "updatedAt": "2026-09-24T01:59:54Z",
+      "ageDays": 7,
+      "idleDays": 4,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 142,
+      "deletions": 66,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57437,
+          "url": "https://github.com/kubernetes/website/issues/57437",
+          "title": "[ko] Update content/ko/docs/concepts/cluster-administration/system-logs.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 56884,
+      "title": "[ko] Translate observability concept page",
+      "url": "https://github.com/kubernetes/website/pull/56884",
+      "author": "ye11oc4t",
+      "createdAt": "2026-08-09T10:58:21Z",
+      "updatedAt": "2026-09-26T03:48:17Z",
+      "ageDays": 49,
+      "idleDays": 2,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1269,6 +793,366 @@
       ],
       "flags": {
         "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 227,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 56883,
+          "url": "https://github.com/kubernetes/website/issues/56883",
+          "title": "[ko] Translate content/en/docs/concepts/cluster-administration/observability.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 56960,
+      "title": "[ko] Update kubectl Linux package repository instructions",
+      "url": "https://github.com/kubernetes/website/pull/56960",
+      "author": "nAhYUN22",
+      "createdAt": "2026-08-13T00:33:53Z",
+      "updatedAt": "2026-09-25T06:53:33Z",
+      "ageDays": 46,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 198,
+      "deletions": 70,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 56888,
+          "url": "https://github.com/kubernetes/website/issues/56888",
+          "title": "[ko] Update content/ko/docs/tasks/tools/install-kubectl-linux.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57665,
+      "title": "[ko] Update content/ko/docs/setup/best-practices/cluster-large.md",
+      "url": "https://github.com/kubernetes/website/pull/57665",
+      "author": "starbea",
+      "createdAt": "2026-09-22T02:47:14Z",
+      "updatedAt": "2026-09-26T01:06:28Z",
+      "ageDays": 6,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 78,
+      "deletions": 76,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57587,
+          "url": "https://github.com/kubernetes/website/issues/57587",
+          "title": "[ko] Update content/ko/docs/setup/best-practices/cluster-large.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57668,
+      "title": "[ko] Fix typos in localization guide",
+      "url": "https://github.com/kubernetes/website/pull/57668",
+      "author": "BusanGukbap",
+      "createdAt": "2026-09-22T09:09:32Z",
+      "updatedAt": "2026-09-25T06:12:52Z",
+      "ageDays": 5,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/S",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 6,
+      "deletions": 6,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "S",
+        "minutes": 5,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57705,
+      "title": "[ko] Update psp-to-pod-security-standards.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57705",
+      "author": "BcKmini",
+      "createdAt": "2026-09-23T21:37:33Z",
+      "updatedAt": "2026-09-26T03:04:26Z",
+      "ageDays": 4,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 275,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57704,
+          "url": "https://github.com/kubernetes/website/issues/57704",
+          "title": "[ko] Translate content/en/docs/reference/access-authn-authz/psp-to-pod-security-standards.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57676,
+      "title": "[ko] Fix broken Kubelet glossary link",
+      "url": "https://github.com/kubernetes/website/pull/57676",
+      "author": "woonkim0413",
+      "createdAt": "2026-09-22T15:41:43Z",
+      "updatedAt": "2026-09-26T08:13:58Z",
+      "ageDays": 5,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57675,
+          "url": "https://github.com/kubernetes/website/issues/57675",
+          "title": "[ko] Fix broken Kubelet glossary link",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57709,
+      "title": "[ko] Translate content/ko/docs/tasks/job/pod-failure-policy.md",
+      "url": "https://github.com/kubernetes/website/pull/57709",
+      "author": "yucori",
+      "createdAt": "2026-09-24T01:42:53Z",
+      "updatedAt": "2026-09-26T06:17:49Z",
+      "ageDays": 4,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 323,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57690,
+          "url": "https://github.com/kubernetes/website/issues/57690",
+          "title": "[ko] Translate content/en/docs/tasks/job/pod-failure-policy.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57097,
+      "title": "[ko] Translate local ephemeral storage documentation",
+      "url": "https://github.com/kubernetes/website/pull/57097",
+      "author": "Sharon0320",
+      "createdAt": "2026-08-22T05:36:34Z",
+      "updatedAt": "2026-09-27T12:57:19Z",
+      "ageDays": 36,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
         "approved": false,
         "hold": false,
         "needsRebase": false,
@@ -1289,6 +1173,58 @@
           "state": "OPEN"
         }
       ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57450,
+      "title": "[ko] Translate content/en/blog/_posts/2026/kubernetes-v1-37-release/index.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57450",
+      "author": "suhyenim",
+      "createdAt": "2026-09-07T15:31:38Z",
+      "updatedAt": "2026-09-27T07:48:40Z",
+      "ageDays": 20,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XL",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 840,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57438,
+          "url": "https://github.com/kubernetes/website/issues/57438",
+          "title": "[ko] Translate content/en/blog/_posts/2026/kubernetes-v1-37-release/index.md into Korean",
+          "state": "OPEN"
+        }
+      ],
       "lane": "review",
       "reason": "작성자가 응답함 — 재확인 필요",
       "action": {
@@ -1297,26 +1233,27 @@
         "comment": null
       },
       "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
+        "size": "XL",
+        "minutes": 60,
+        "bucket": "long"
       },
       "lifecycle": null
     },
     {
-      "number": 57131,
-      "title": "[ko] Translate content/ko/docs/tasks/administer-cluster/cpu-managemen…",
-      "url": "https://github.com/kubernetes/website/pull/57131",
-      "author": "yucori",
-      "createdAt": "2026-08-23T07:53:32Z",
-      "updatedAt": "2026-09-20T10:02:47Z",
-      "ageDays": 28,
+      "number": 57514,
+      "title": "[ko] Translate content/en/docs/concepts/workloads/workload-api/policies into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57514",
+      "author": "kamothi",
+      "createdAt": "2026-09-13T15:46:05Z",
+      "updatedAt": "2026-09-27T07:07:23Z",
+      "ageDays": 14,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
-        "size/L",
+        "size/M",
         "lgtm",
         "sig/docs",
+        "tide/merge-method-squash",
         "language/ko",
         "area/localization"
       ],
@@ -1330,15 +1267,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 190,
+      "additions": 74,
       "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57039,
-          "url": "https://github.com/kubernetes/website/issues/57039",
-          "title": "[ko] Translate content/en/docs/tasks/administer-cluster/cpu-management-policies.md",
+          "number": 55166,
+          "url": "https://github.com/kubernetes/website/issues/55166",
+          "title": "[ko] Translate content/en/docs/concepts/workloads/workload-api/policies into Korean",
           "state": "OPEN"
         }
       ],
@@ -1350,128 +1287,20 @@
         "comment": null
       },
       "cost": {
-        "size": "L",
-        "minutes": 30,
+        "size": "M",
+        "minutes": 15,
         "bucket": "normal"
       },
       "lifecycle": null
     },
     {
-      "number": 57174,
-      "title": "[ko] Update content/ko/docs/concepts/services-networking/dns-pod-serv…",
-      "url": "https://github.com/kubernetes/website/pull/57174",
-      "author": "SuperSon7",
-      "createdAt": "2026-08-25T13:08:40Z",
-      "updatedAt": "2026-09-20T05:21:04Z",
-      "ageDays": 26,
-      "idleDays": 0,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "lgtm",
-        "sig/docs",
-        "tide/merge-method-squash",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 191,
-      "deletions": 160,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57130,
-          "url": "https://github.com/kubernetes/website/issues/57130",
-          "title": "[ko] Update content/ko/docs/concepts/services-networking/dns-pod-service.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57295,
-      "title": "[ko] Update content/ko/docs/concepts/cluster-administration/addons.md",
-      "url": "https://github.com/kubernetes/website/pull/57295",
-      "author": "jiyubaek",
-      "createdAt": "2026-08-30T05:18:37Z",
-      "updatedAt": "2026-09-20T08:17:31Z",
-      "ageDays": 21,
-      "idleDays": 0,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "lgtm",
-        "sig/docs",
-        "tide/merge-method-squash",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": true,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 108,
-      "deletions": 36,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57294,
-          "url": "https://github.com/kubernetes/website/issues/57294",
-          "title": "[ko] Update content/ko/docs/concepts/cluster-administration/addons.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "approve",
-      "reason": "lgtm 완료 — 어프루버 승인만 남음",
-      "action": {
-        "text": "어프루버 승인",
-        "command": "/approve",
-        "comment": null
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57367,
-      "title": "[ko] Update content/ko/docs/concepts/policy/_index.md",
-      "url": "https://github.com/kubernetes/website/pull/57367",
-      "author": "dongjune8931",
-      "createdAt": "2026-08-31T22:55:59Z",
-      "updatedAt": "2026-09-20T07:56:13Z",
-      "ageDays": 20,
+      "number": 57606,
+      "title": "[ko] Fix broken link to the kube-scheduler config reference",
+      "url": "https://github.com/kubernetes/website/pull/57606",
+      "author": "marsboy02",
+      "createdAt": "2026-09-19T05:36:18Z",
+      "updatedAt": "2026-09-27T06:52:26Z",
+      "ageDays": 8,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
@@ -1492,15 +1321,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 62,
-      "deletions": 5,
+      "additions": 22,
+      "deletions": 21,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57247,
-          "url": "https://github.com/kubernetes/website/issues/57247",
-          "title": "[ko] Update content/ko/docs/concepts/policy/_index.md",
+          "number": 57605,
+          "url": "https://github.com/kubernetes/website/issues/57605",
+          "title": "[ko] Broken link to kube-scheduler config reference in concepts/scheduling-eviction/kube-scheduler.md",
           "state": "OPEN"
         }
       ],
@@ -1519,13 +1348,13 @@
       "lifecycle": null
     },
     {
-      "number": 57444,
-      "title": "[ko] Update create-cluster-kubeadm.md",
-      "url": "https://github.com/kubernetes/website/pull/57444",
-      "author": "BcKmini",
-      "createdAt": "2026-09-07T07:17:25Z",
-      "updatedAt": "2026-09-20T09:59:34Z",
-      "ageDays": 13,
+      "number": 57645,
+      "title": "[ko] Update container-runtimes.md",
+      "url": "https://github.com/kubernetes/website/pull/57645",
+      "author": "wlgusqkr",
+      "createdAt": "2026-09-21T01:53:28Z",
+      "updatedAt": "2026-09-27T10:32:46Z",
+      "ageDays": 7,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
@@ -1545,15 +1374,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 27,
-      "deletions": 18,
+      "additions": 20,
+      "deletions": 34,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57443,
-          "url": "https://github.com/kubernetes/website/issues/57443",
-          "title": "[ko] Update content/ko/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm.md",
+          "number": 57592,
+          "url": "https://github.com/kubernetes/website/issues/57592",
+          "title": "[ko] Update content/ko/docs/setup/production-environment/container-runtimes.md",
           "state": "OPEN"
         }
       ],
@@ -1572,13 +1401,224 @@
       "lifecycle": null
     },
     {
-      "number": 57626,
-      "title": "[ko] Translate content/en/docs/reference/access-authn-authz/abac.md i…",
-      "url": "https://github.com/kubernetes/website/pull/57626",
-      "author": "BcKmini",
-      "createdAt": "2026-09-19T20:50:52Z",
-      "updatedAt": "2026-09-20T09:29:50Z",
-      "ageDays": 1,
+      "number": 57649,
+      "title": "[ko] Update content/ko/docs/concepts/policy/pid-limiting.md",
+      "url": "https://github.com/kubernetes/website/pull/57649",
+      "author": "8rulerstar",
+      "createdAt": "2026-09-21T05:02:44Z",
+      "updatedAt": "2026-09-28T01:07:36Z",
+      "ageDays": 7,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/M",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 26,
+      "deletions": 39,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57648,
+          "url": "https://github.com/kubernetes/website/issues/57648",
+          "title": "[ko] Update content/ko/docs/concepts/policy/pid-limiting.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57662,
+      "title": "[ko] Translate Resource Management section index",
+      "url": "https://github.com/kubernetes/website/pull/57662",
+      "author": "WAFriend3416",
+      "createdAt": "2026-09-21T15:27:19Z",
+      "updatedAt": "2026-09-27T06:36:43Z",
+      "ageDays": 6,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/S",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 16,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57660,
+          "url": "https://github.com/kubernetes/website/issues/57660",
+          "title": "[ko] Translate content/en/docs/concepts/resource-management/_index.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "S",
+        "minutes": 5,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57688,
+      "title": "[ko] Add content/ko/docs/setup/production-environment/tools/kubeadm/kubelet-integration.md",
+      "url": "https://github.com/kubernetes/website/pull/57688",
+      "author": "m3k0813",
+      "createdAt": "2026-09-23T14:11:46Z",
+      "updatedAt": "2026-09-27T10:53:46Z",
+      "ageDays": 4,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 223,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57618,
+          "url": "https://github.com/kubernetes/website/issues/57618",
+          "title": "[ko] Translate content/en/docs/setup/production-environment/tools/kubeadm/kubelet-integration.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57698,
+      "title": "[ko] Update storage limits documentation",
+      "url": "https://github.com/kubernetes/website/pull/57698",
+      "author": "wlgusqkr",
+      "createdAt": "2026-09-23T18:09:52Z",
+      "updatedAt": "2026-09-27T11:46:43Z",
+      "ageDays": 4,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/M",
+        "sig/docs",
+        "kind/documentation",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 76,
+      "deletions": 21,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57694,
+          "url": "https://github.com/kubernetes/website/issues/57694",
+          "title": "[ko] Update content/ko/docs/concepts/storage/storage-limits.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57713,
+      "title": "[ko] Translate content/en/docs/setup/production-environment/tools/kubeadm/high-availability.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57713",
+      "author": "suhyenim",
+      "createdAt": "2026-09-24T16:48:26Z",
+      "updatedAt": "2026-09-27T14:24:51Z",
+      "ageDays": 3,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
@@ -1597,15 +1637,67 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 166,
+      "additions": 448,
       "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57625,
-          "url": "https://github.com/kubernetes/website/issues/57625",
-          "title": "[ko] Translate content/en/docs/reference/access-authn-authz/abac.md into Korean",
+          "number": 57622,
+          "url": "https://github.com/kubernetes/website/issues/57622",
+          "title": "[ko] Translate content/en/docs/setup/production-environment/tools/kubeadm/high-availability.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57717,
+      "title": "[ko] Update content/ko/docs/tasks/administer-cluster/dns-horizontal-autoscaling.md",
+      "url": "https://github.com/kubernetes/website/pull/57717",
+      "author": "dongjune8931",
+      "createdAt": "2026-09-25T04:20:24Z",
+      "updatedAt": "2026-09-27T08:54:48Z",
+      "ageDays": 3,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 62,
+      "deletions": 60,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57682,
+          "url": "https://github.com/kubernetes/website/issues/57682",
+          "title": "[ko] Update content/ko/docs/tasks/administer-cluster/dns-horizontal-autoscaling.md",
           "state": "OPEN"
         }
       ],
@@ -1630,8 +1722,8 @@
       "author": "SayakMukhopadhyay",
       "createdAt": "2026-03-05T09:25:53Z",
       "updatedAt": "2026-05-19T12:22:53Z",
-      "ageDays": 199,
-      "idleDays": 124,
+      "ageDays": 206,
+      "idleDays": 131,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -1675,62 +1767,14 @@
       "lifecycle": null
     },
     {
-      "number": 55761,
-      "title": "Update feature gates (English) via automation tool",
-      "url": "https://github.com/kubernetes/website/pull/55761",
-      "author": "singh1203",
-      "createdAt": "2026-05-13T17:50:05Z",
-      "updatedAt": "2026-06-20T06:32:47Z",
-      "ageDays": 130,
-      "idleDays": 92,
-      "labels": [
-        "cncf-cla: yes",
-        "size/XXL",
-        "needs-rebase",
-        "sig/docs",
-        "language/en",
-        "language/ko",
-        "language/fa",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": true,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 407,
-      "additions": 9332,
-      "deletions": 253,
-      "koOnly": false,
-      "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "master 와 충돌 — rebase 필요",
-      "action": {
-        "text": "rebase 요청",
-        "command": null,
-        "comment": "@singh1203 안녕하세요! master 와 충돌이 생겨 `needs-rebase` 라벨이 붙었습니다. rebase 후 force push 해주시면 리뷰를 이어가겠습니다. 도움이 필요하시면 편하게 말씀해 주세요."
-      },
-      "cost": {
-        "size": "XXL",
-        "minutes": 90,
-        "bucket": "long"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 56016,
       "title": "Fix Gateway API documentation links",
       "url": "https://github.com/kubernetes/website/pull/56016",
       "author": "KirtiRamchandani",
       "createdAt": "2026-06-04T17:55:22Z",
       "updatedAt": "2026-07-16T22:24:14Z",
-      "ageDays": 108,
-      "idleDays": 66,
+      "ageDays": 115,
+      "idleDays": 73,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1781,8 +1825,8 @@
       "author": "starbea",
       "createdAt": "2026-08-02T06:53:37Z",
       "updatedAt": "2026-08-15T10:55:31Z",
-      "ageDays": 49,
-      "idleDays": 36,
+      "ageDays": 56,
+      "idleDays": 43,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1817,7 +1861,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@starbea 안녕하세요! 이 PR이 36일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@starbea 안녕하세요! 이 PR이 43일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1833,8 +1877,8 @@
       "author": "esunn0412",
       "createdAt": "2026-08-02T21:50:08Z",
       "updatedAt": "2026-09-08T12:55:12Z",
-      "ageDays": 49,
-      "idleDays": 12,
+      "ageDays": 56,
+      "idleDays": 19,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -1866,7 +1910,11 @@
       ],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@esunn0412 안녕하세요! 이 PR이 19일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "XXL",
         "minutes": 90,
@@ -1881,8 +1929,8 @@
       "author": "Gourav2580",
       "createdAt": "2026-08-27T14:26:48Z",
       "updatedAt": "2026-09-08T23:01:45Z",
-      "ageDays": 24,
-      "idleDays": 12,
+      "ageDays": 31,
+      "idleDays": 19,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -1930,62 +1978,14 @@
       "lifecycle": null
     },
     {
-      "number": 57464,
-      "title": "[ko] Update content/ko/docs/setup/production-environment/tools/kubeadm/control-plane-flags.md",
-      "url": "https://github.com/kubernetes/website/pull/57464",
-      "author": "neronsoda",
-      "createdAt": "2026-09-08T11:40:26Z",
-      "updatedAt": "2026-09-08T11:43:05Z",
-      "ageDays": 12,
-      "idleDays": 12,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 71,
-      "deletions": 35,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57449,
-          "url": "https://github.com/kubernetes/website/issues/57449",
-          "title": "[ko] Update content/ko/docs/setup/production-environment/tools/kubeadm/control-plane-flags.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57475,
       "title": "[ko] Translate and update Kubernetes security documentation",
       "url": "https://github.com/kubernetes/website/pull/57475",
       "author": "ye11oc4t",
       "createdAt": "2026-09-09T08:43:15Z",
       "updatedAt": "2026-09-09T08:46:04Z",
-      "ageDays": 11,
-      "idleDays": 11,
+      "ageDays": 18,
+      "idleDays": 18,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -2010,7 +2010,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@ye11oc4t 안녕하세요! 이 PR이 18일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "XXL",
         "minutes": 90,
@@ -2025,8 +2029,8 @@
       "author": "yashisrani",
       "createdAt": "2026-05-29T17:08:42Z",
       "updatedAt": "2026-09-14T03:24:56Z",
-      "ageDays": 114,
-      "idleDays": 7,
+      "ageDays": 121,
+      "idleDays": 14,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2099,8 +2103,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:53:16Z",
       "updatedAt": "2026-09-15T09:42:55Z",
-      "ageDays": 76,
-      "idleDays": 5,
+      "ageDays": 83,
+      "idleDays": 12,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2140,8 +2144,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:28:44Z",
       "updatedAt": "2026-09-15T09:42:21Z",
-      "ageDays": 75,
-      "idleDays": 5,
+      "ageDays": 82,
+      "idleDays": 12,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2181,8 +2185,8 @@
       "author": "callme-waffle",
       "createdAt": "2026-08-13T01:47:48Z",
       "updatedAt": "2026-09-17T12:32:56Z",
-      "ageDays": 39,
-      "idleDays": 3,
+      "ageDays": 46,
+      "idleDays": 10,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -2222,8 +2226,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:57:19Z",
       "updatedAt": "2026-09-18T15:56:18Z",
-      "ageDays": 75,
-      "idleDays": 2,
+      "ageDays": 82,
+      "idleDays": 9,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2263,8 +2267,8 @@
       "author": "hong-p",
       "createdAt": "2026-08-02T09:53:09Z",
       "updatedAt": "2026-09-19T15:25:34Z",
-      "ageDays": 49,
-      "idleDays": 1,
+      "ageDays": 56,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -2316,8 +2320,8 @@
       "author": "hkkim2021",
       "createdAt": "2026-08-09T06:53:38Z",
       "updatedAt": "2026-09-19T09:26:59Z",
-      "ageDays": 42,
-      "idleDays": 1,
+      "ageDays": 49,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2358,62 +2362,14 @@
       "lifecycle": null
     },
     {
-      "number": 56960,
-      "title": "[ko] Update kubectl Linux package repository instructions",
-      "url": "https://github.com/kubernetes/website/pull/56960",
-      "author": "nAhYUN22",
-      "createdAt": "2026-08-13T00:33:53Z",
-      "updatedAt": "2026-09-19T13:07:33Z",
-      "ageDays": 39,
-      "idleDays": 1,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 184,
-      "deletions": 56,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56888,
-          "url": "https://github.com/kubernetes/website/issues/56888",
-          "title": "[ko] Update content/ko/docs/tasks/tools/install-kubectl-linux.md",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57177,
       "title": "[ko] Remove unmaintained Weave Net and Romana network policy provider pages",
       "url": "https://github.com/kubernetes/website/pull/57177",
       "author": "marsboy02",
       "createdAt": "2026-08-25T13:44:52Z",
       "updatedAt": "2026-09-19T17:25:27Z",
-      "ageDays": 26,
-      "idleDays": 1,
+      "ageDays": 33,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2454,14 +2410,111 @@
       "lifecycle": null
     },
     {
-      "number": 57514,
-      "title": "[ko] Translate content/en/docs/concepts/workloads/workload-api/policies into Korean",
-      "url": "https://github.com/kubernetes/website/pull/57514",
-      "author": "kamothi",
-      "createdAt": "2026-09-13T15:46:05Z",
-      "updatedAt": "2026-09-19T09:57:27Z",
-      "ageDays": 7,
-      "idleDays": 1,
+      "number": 57689,
+      "title": "[ko] Update content/ko/docs/concepts/overview/kubernetes-api.md",
+      "url": "https://github.com/kubernetes/website/pull/57689",
+      "author": "yucori",
+      "createdAt": "2026-09-23T14:16:54Z",
+      "updatedAt": "2026-09-24T05:56:18Z",
+      "ageDays": 4,
+      "idleDays": 3,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 178,
+      "deletions": 49,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57638,
+          "url": "https://github.com/kubernetes/website/issues/57638",
+          "title": "[ko] Update content/ko/docs/concepts/overview/kubernetes-api.md",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57691,
+      "title": "[WIP] Docs: Server Token Acquisition for Authentication to Admission Webhooks",
+      "url": "https://github.com/kubernetes/website/pull/57691",
+      "author": "pmengelbert",
+      "createdAt": "2026-09-23T14:32:49Z",
+      "updatedAt": "2026-09-25T11:06:58Z",
+      "ageDays": 4,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "do-not-merge/work-in-progress",
+        "sig/docs",
+        "language/en",
+        "language/ko",
+        "language/ja",
+        "language/zh",
+        "area/blog",
+        "language/pt",
+        "language/ru",
+        "language/fa",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": true,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 0,
+      "additions": 0,
+      "deletions": 0,
+      "koOnly": false,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "blocked",
+      "reason": "작성자가 draft 로 두었습니다",
+      "action": null,
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57708,
+      "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
+      "url": "https://github.com/kubernetes/website/pull/57708",
+      "author": "starbea",
+      "createdAt": "2026-09-24T01:24:45Z",
+      "updatedAt": "2026-09-26T00:16:42Z",
+      "ageDays": 4,
+      "idleDays": 2,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2479,15 +2532,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 74,
-      "deletions": 0,
+      "additions": 58,
+      "deletions": 41,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 55166,
-          "url": "https://github.com/kubernetes/website/issues/55166",
-          "title": "[ko] Translate content/en/docs/concepts/workloads/workload-api/policies into Korean",
+          "number": 57685,
+          "url": "https://github.com/kubernetes/website/issues/57685",
+          "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
           "state": "OPEN"
         }
       ],
@@ -2502,17 +2555,17 @@
       "lifecycle": null
     },
     {
-      "number": 57606,
-      "title": "[ko] Fix broken link to the kube-scheduler config reference",
-      "url": "https://github.com/kubernetes/website/pull/57606",
-      "author": "marsboy02",
-      "createdAt": "2026-09-19T05:36:18Z",
-      "updatedAt": "2026-09-19T09:34:30Z",
-      "ageDays": 1,
-      "idleDays": 1,
+      "number": 57724,
+      "title": "[ko] Update kubectl configuration verification guidance",
+      "url": "https://github.com/kubernetes/website/pull/57724",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T07:26:21Z",
+      "updatedAt": "2026-09-25T07:29:40Z",
+      "ageDays": 2,
+      "idleDays": 2,
       "labels": [
         "cncf-cla: yes",
-        "size/XS",
+        "size/M",
         "sig/docs",
         "language/ko",
         "area/localization"
@@ -2527,15 +2580,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 1,
-      "deletions": 1,
+      "additions": 32,
+      "deletions": 12,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57605,
-          "url": "https://github.com/kubernetes/website/issues/57605",
-          "title": "[ko] Broken link to kube-scheduler config reference in concepts/scheduling-eviction/kube-scheduler.md",
+          "number": 57719,
+          "url": "https://github.com/kubernetes/website/issues/57719",
+          "title": "[ko] Update kubectl configuration verification guidance",
           "state": "OPEN"
         }
       ],
@@ -2543,20 +2596,164 @@
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
       "action": null,
       "cost": {
-        "size": "XS",
-        "minutes": 3,
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57725,
+      "title": "[ko] Update macOS kubectl installation guide",
+      "url": "https://github.com/kubernetes/website/pull/57725",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T07:59:13Z",
+      "updatedAt": "2026-09-25T08:02:01Z",
+      "ageDays": 2,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 100,
+      "deletions": 46,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57720,
+          "url": "https://github.com/kubernetes/website/issues/57720",
+          "title": "[ko] Update kubectl installation instructions for macOS",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57726,
+      "title": "[ko] Update Windows kubectl installation guide",
+      "url": "https://github.com/kubernetes/website/pull/57726",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T08:07:47Z",
+      "updatedAt": "2026-09-25T08:10:33Z",
+      "ageDays": 2,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 74,
+      "deletions": 48,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57721,
+          "url": "https://github.com/kubernetes/website/issues/57721",
+          "title": "[ko] Update kubectl installation instructions for Windows",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57727,
+      "title": "[ko] Update kubectl installation next steps",
+      "url": "https://github.com/kubernetes/website/pull/57727",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T08:11:31Z",
+      "updatedAt": "2026-09-25T08:14:12Z",
+      "ageDays": 2,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/S",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 11,
+      "deletions": 6,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57722,
+          "url": "https://github.com/kubernetes/website/issues/57722",
+          "title": "[ko] Update kubectl installation next steps",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "S",
+        "minutes": 5,
         "bucket": "quick"
       },
       "lifecycle": null
     },
     {
-      "number": 57616,
-      "title": "[ko] Translate Dynamic Resource Allocation overview",
-      "url": "https://github.com/kubernetes/website/pull/57616",
-      "author": "WAFriend3416",
-      "createdAt": "2026-09-19T13:20:24Z",
-      "updatedAt": "2026-09-19T13:25:09Z",
-      "ageDays": 1,
+      "number": 57180,
+      "title": "[ko] Update content/ko/docs/reference/_index.md",
+      "url": "https://github.com/kubernetes/website/pull/57180",
+      "author": "BcKmini",
+      "createdAt": "2026-08-25T14:18:28Z",
+      "updatedAt": "2026-09-26T08:07:18Z",
+      "ageDays": 33,
       "idleDays": 1,
       "labels": [
         "cncf-cla: yes",
@@ -2576,19 +2773,19 @@
       "ciFailed": [
         {
           "name": "deploy/netlify",
-          "url": "https://app.netlify.com/projects/kubernetes-io-main-staging/deploys/6aae8c1cf9409f000880c205"
+          "url": "https://app.netlify.com/projects/kubernetes-io-main-staging/deploys/6ab77cc906a8a700085d91a7"
         }
       ],
-      "changedFiles": 2,
-      "additions": 116,
-      "deletions": 0,
+      "changedFiles": 1,
+      "additions": 133,
+      "deletions": 38,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57484,
-          "url": "https://github.com/kubernetes/website/issues/57484",
-          "title": "[ko] Translate content/en/docs/concepts/resource-management/dynamic-resource-allocation/_index.md into Korean",
+          "number": 57162,
+          "url": "https://github.com/kubernetes/website/issues/57162",
+          "title": "[ko] Update content/ko/docs/reference/_index.md",
           "state": "OPEN"
         }
       ],
@@ -2597,7 +2794,7 @@
       "action": {
         "text": "CI 수정 요청",
         "command": null,
-        "comment": "@WAFriend3416 안녕하세요! CI 검사가 실패하고 있습니다. 실패한 잡의 로그를 확인해 수정 후 push 부탁드립니다. 원인 파악이 어려우시면 알려주세요."
+        "comment": "@BcKmini 안녕하세요! CI 검사가 실패하고 있습니다. 실패한 잡의 로그를 확인해 수정 후 push 부탁드립니다. 원인 파악이 어려우시면 알려주세요."
       },
       "cost": {
         "size": "L",
@@ -2607,14 +2804,62 @@
       "lifecycle": null
     },
     {
-      "number": 56884,
-      "title": "[ko] Translate observability concept page",
-      "url": "https://github.com/kubernetes/website/pull/56884",
-      "author": "ye11oc4t",
-      "createdAt": "2026-08-09T10:58:21Z",
-      "updatedAt": "2026-09-20T08:12:19Z",
-      "ageDays": 42,
-      "idleDays": 0,
+      "number": 57723,
+      "title": "[ko] Update Linux kubectl Bash autocompletion instructions",
+      "url": "https://github.com/kubernetes/website/pull/57723",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T07:18:22Z",
+      "updatedAt": "2026-09-26T10:28:55Z",
+      "ageDays": 2,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/M",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 28,
+      "deletions": 12,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57718,
+          "url": "https://github.com/kubernetes/website/issues/57718",
+          "title": "[ko] Update kubectl Bash autocompletion instructions on Linux",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57737,
+      "title": "[ko] Translate content/en/docs/concepts/cluster-administration/swap-memory-management.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57737",
+      "author": "Sharon0320",
+      "createdAt": "2026-09-26T08:54:31Z",
+      "updatedAt": "2026-09-26T09:00:02Z",
+      "ageDays": 1,
+      "idleDays": 1,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2632,15 +2877,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 197,
+      "additions": 394,
       "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 56883,
-          "url": "https://github.com/kubernetes/website/issues/56883",
-          "title": "[ko] Translate content/en/docs/concepts/cluster-administration/observability.md into Korean",
+          "number": 56982,
+          "url": "https://github.com/kubernetes/website/issues/56982",
+          "title": "[ko] Translate content/en/docs/concepts/storage/ephemeral-storage.md into Korean",
           "state": "OPEN"
         }
       ],
@@ -2655,50 +2900,71 @@
       "lifecycle": null
     },
     {
-      "number": 57513,
-      "title": "[ko] Add DRA-related glossary entries",
-      "url": "https://github.com/kubernetes/website/pull/57513",
-      "author": "WAFriend3416",
-      "createdAt": "2026-09-13T12:22:35Z",
-      "updatedAt": "2026-09-21T03:34:59Z",
-      "ageDays": 7,
+      "number": 56827,
+      "title": "Fix unreadable deprecation banner on archived site home pages",
+      "url": "https://github.com/kubernetes/website/pull/56827",
+      "author": "harshasiddartha",
+      "createdAt": "2026-08-05T21:43:54Z",
+      "updatedAt": "2026-09-27T21:20:01Z",
+      "ageDays": 53,
       "idleDays": 0,
       "labels": [
-        "cncf-cla: yes",
-        "size/M",
+        "cncf-cla: no",
+        "size/XXL",
+        "kind/bug",
+        "needs-rebase",
         "sig/docs",
+        "sig/release",
+        "language/en",
         "language/ko",
+        "language/ja",
+        "language/zh",
+        "language/fr",
+        "language/de",
+        "language/es",
+        "area/blog",
+        "language/pt",
+        "language/id",
+        "language/hi",
+        "language/ru",
+        "language/vi",
+        "language/pl",
+        "language/uk",
+        "area/web-development",
+        "area/release-eng",
         "area/localization"
       ],
       "flags": {
         "lgtm": false,
         "approved": false,
         "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
+        "needsRebase": true,
+        "cncfUnsigned": true
       },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 4,
-      "additions": 86,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
+      "ci": "failed",
+      "ciFailed": [
         {
-          "number": 57512,
-          "url": "https://github.com/kubernetes/website/issues/57512",
-          "title": "[ko] Add DRA-related Korean glossary entries",
-          "state": "OPEN"
+          "name": "EasyCLA",
+          "url": "https://api.easycla.lfx.linuxfoundation.org/v2/repository-provider/github/sign/18706487/51478266/56827/#/?version=2"
         }
       ],
+      "changedFiles": 1837,
+      "additions": 292827,
+      "deletions": 80899,
+      "koOnly": false,
+      "firstReview": false,
+      "closingIssues": [],
       "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "reason": "CLA 미서명 — 서명 전에는 머지 불가",
+      "action": {
+        "text": "CLA 서명 안내",
+        "command": null,
+        "comment": "@harshasiddartha 안녕하세요! 이 PR을 머지하려면 CNCF CLA 서명이 필요합니다. 아래 봇 코멘트의 링크에서 서명해 주시면 `cncf-cla: yes` 로 바뀝니다. 감사합니다!"
+      },
       "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
+        "size": "XXL",
+        "minutes": 90,
+        "bucket": "long"
       },
       "lifecycle": null
     },
@@ -2708,8 +2974,8 @@
       "url": "https://github.com/kubernetes/website/pull/57621",
       "author": "suhyenim",
       "createdAt": "2026-09-19T17:17:23Z",
-      "updatedAt": "2026-09-20T04:57:41Z",
-      "ageDays": 1,
+      "updatedAt": "2026-09-27T09:13:42Z",
+      "ageDays": 8,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
@@ -2725,10 +2991,15 @@
         "needsRebase": false,
         "cncfUnsigned": false
       },
-      "ci": "passed",
-      "ciFailed": [],
+      "ci": "failed",
+      "ciFailed": [
+        {
+          "name": "deploy/netlify",
+          "url": "https://app.netlify.com/projects/kubernetes-io-main-staging/deploys/6ab8d4ca250e9f0008c69580"
+        }
+      ],
       "changedFiles": 1,
-      "additions": 79,
+      "additions": 81,
       "deletions": 0,
       "koOnly": true,
       "firstReview": false,
@@ -2741,59 +3012,15 @@
         }
       ],
       "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "reason": "CI 실패 (deploy/netlify) — 수정 전에는 머지 불가",
+      "action": {
+        "text": "CI 수정 요청",
+        "command": null,
+        "comment": "@suhyenim 안녕하세요! CI 검사가 실패하고 있습니다. 실패한 잡의 로그를 확인해 수정 후 push 부탁드립니다. 원인 파악이 어려우시면 알려주세요."
+      },
       "cost": {
         "size": "M",
         "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57632,
-      "title": "[ko] Update content/ko/docs/setup/production-environment/tools/kubeadm/dual-stack-support.md",
-      "url": "https://github.com/kubernetes/website/pull/57632",
-      "author": "neronsoda",
-      "createdAt": "2026-09-20T05:57:38Z",
-      "updatedAt": "2026-09-20T06:00:13Z",
-      "ageDays": 0,
-      "idleDays": 0,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 191,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57607,
-          "url": "https://github.com/kubernetes/website/issues/57607",
-          "title": "[ko] Translate content/en/docs/setup/production-environment/tools/kubeadm/dual-stack-support.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
         "bucket": "normal"
       },
       "lifecycle": null
@@ -2804,8 +3031,8 @@
       "url": "https://github.com/kubernetes/website/pull/57636",
       "author": "yucori",
       "createdAt": "2026-09-20T08:36:00Z",
-      "updatedAt": "2026-09-20T08:38:33Z",
-      "ageDays": 0,
+      "updatedAt": "2026-09-27T06:27:27Z",
+      "ageDays": 7,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
@@ -2824,8 +3051,8 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 99,
-      "deletions": 101,
+      "additions": 108,
+      "deletions": 110,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
@@ -2847,12 +3074,60 @@
       "lifecycle": null
     },
     {
-      "number": 57637,
-      "title": "[ko] Update content/ko/docs/concepts/cluster-administration/system-logs.md",
-      "url": "https://github.com/kubernetes/website/pull/57637",
-      "author": "dongjune8931",
-      "createdAt": "2026-09-20T10:00:07Z",
-      "updatedAt": "2026-09-20T10:02:55Z",
+      "number": 57679,
+      "title": "[ko] Translate DRA API Objects",
+      "url": "https://github.com/kubernetes/website/pull/57679",
+      "author": "WAFriend3416",
+      "createdAt": "2026-09-23T08:23:22Z",
+      "updatedAt": "2026-09-27T06:38:04Z",
+      "ageDays": 4,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XL",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 638,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57617,
+          "url": "https://github.com/kubernetes/website/issues/57617",
+          "title": "[ko] Translate content/en/docs/concepts/resource-management/dynamic-resource-allocation/dra-api.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "XL",
+        "minutes": 60,
+        "bucket": "long"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57756,
+      "title": "[ko] Translate content/en/docs/reference/instrumentation/native-histograms.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57756",
+      "author": "suhyenim",
+      "createdAt": "2026-09-27T13:43:58Z",
+      "updatedAt": "2026-09-27T13:46:37Z",
       "ageDays": 0,
       "idleDays": 0,
       "labels": [
@@ -2872,15 +3147,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 96,
-      "deletions": 20,
+      "additions": 226,
+      "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57437,
-          "url": "https://github.com/kubernetes/website/issues/57437",
-          "title": "[ko] Update content/ko/docs/concepts/cluster-administration/system-logs.md",
+          "number": 57745,
+          "url": "https://github.com/kubernetes/website/issues/57745",
+          "title": "[ko] Translate content/en/docs/reference/instrumentation/native-histograms.md into Korean",
           "state": "OPEN"
         }
       ],
@@ -2895,17 +3170,17 @@
       "lifecycle": null
     },
     {
-      "number": 57645,
-      "title": "[ko] Update container-runtimes.md",
-      "url": "https://github.com/kubernetes/website/pull/57645",
-      "author": "wlgusqkr",
-      "createdAt": "2026-09-21T01:53:28Z",
-      "updatedAt": "2026-09-21T01:55:59Z",
+      "number": 57757,
+      "title": "[ko] Translate content/en/docs/concepts/workloads/autoscaling/vertical-pod-autoscale.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57757",
+      "author": "kamothi",
+      "createdAt": "2026-09-27T14:05:31Z",
+      "updatedAt": "2026-09-27T14:08:10Z",
       "ageDays": 0,
       "idleDays": 0,
       "labels": [
         "cncf-cla: yes",
-        "size/S",
+        "size/L",
         "sig/docs",
         "language/ko",
         "area/localization"
@@ -2920,15 +3195,15 @@
       "ci": "passed",
       "ciFailed": [],
       "changedFiles": 1,
-      "additions": 4,
-      "deletions": 18,
+      "additions": 262,
+      "deletions": 0,
       "koOnly": true,
       "firstReview": false,
       "closingIssues": [
         {
-          "number": 57592,
-          "url": "https://github.com/kubernetes/website/issues/57592",
-          "title": "[ko] Update content/ko/docs/setup/production-environment/container-runtimes.md",
+          "number": 57522,
+          "url": "https://github.com/kubernetes/website/issues/57522",
+          "title": "[ko] Translate content/en/docs/concepts/workloads/autoscaling/vertical-pod-autoscale.md into Korean",
           "state": "OPEN"
         }
       ],
@@ -2936,9 +3211,57 @@
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
       "action": null,
       "cost": {
-        "size": "S",
-        "minutes": 5,
-        "bucket": "quick"
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57761,
+      "title": "[ko] Translate content/en/blog/_posts/2026/gateway-api-v1-6-release/index.md into Korean",
+      "url": "https://github.com/kubernetes/website/pull/57761",
+      "author": "suhyenim",
+      "createdAt": "2026-09-27T16:08:43Z",
+      "updatedAt": "2026-09-27T16:11:19Z",
+      "ageDays": 0,
+      "idleDays": 0,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 229,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57758,
+          "url": "https://github.com/kubernetes/website/issues/57758",
+          "title": "[ko] Translate content/en/blog/_posts/2026/gateway-api-v1-6-release/index.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
       },
       "lifecycle": null
     }
@@ -2962,8 +3285,8 @@
           ],
           "createdAt": "2023-10-21T18:00:41Z",
           "updatedAt": "2025-08-07T10:46:34Z",
-          "ageDays": 1065,
-          "idleDays": 409,
+          "ageDays": 1072,
+          "idleDays": 416,
           "comments": 11,
           "labels": [
             "kind/bug",
@@ -2983,8 +3306,8 @@
               "createdAt": "2025-08-10T07:43:24Z",
               "updatedAt": "2026-03-26T11:32:20Z",
               "mergedAt": null,
-              "ageDays": 406,
-              "idleDays": 178,
+              "ageDays": 413,
+              "idleDays": 185,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3015,8 +3338,8 @@
               "createdAt": "2024-01-28T10:31:03Z",
               "updatedAt": "2024-08-29T10:58:44Z",
               "mergedAt": null,
-              "ageDays": 966,
-              "idleDays": 752,
+              "ageDays": 973,
+              "idleDays": 759,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3044,8 +3367,8 @@
               "createdAt": "2024-01-28T09:24:50Z",
               "updatedAt": "2024-01-28T10:45:52Z",
               "mergedAt": null,
-              "ageDays": 966,
-              "idleDays": 966,
+              "ageDays": 973,
+              "idleDays": 973,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3062,7 +3385,7 @@
               }
             }
           ],
-          "sortKey": 409
+          "sortKey": 416
         },
         {
           "number": 53682,
@@ -3074,8 +3397,8 @@
           ],
           "createdAt": "2025-12-18T11:00:22Z",
           "updatedAt": "2025-12-28T04:17:30Z",
-          "ageDays": 276,
-          "idleDays": 267,
+          "ageDays": 283,
+          "idleDays": 274,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3094,8 +3417,8 @@
               "createdAt": "2025-12-18T16:54:47Z",
               "updatedAt": "2026-06-25T22:29:24Z",
               "mergedAt": null,
-              "ageDays": 276,
-              "idleDays": 87,
+              "ageDays": 283,
+              "idleDays": 94,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3114,7 +3437,7 @@
               }
             }
           ],
-          "sortKey": 267
+          "sortKey": 274
         },
         {
           "number": 53555,
@@ -3126,8 +3449,8 @@
           ],
           "createdAt": "2025-12-09T13:19:46Z",
           "updatedAt": "2026-03-22T02:33:34Z",
-          "ageDays": 285,
-          "idleDays": 183,
+          "ageDays": 292,
+          "idleDays": 190,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -3147,8 +3470,8 @@
               "createdAt": "2026-02-18T13:38:12Z",
               "updatedAt": "2026-08-05T12:35:47Z",
               "mergedAt": null,
-              "ageDays": 214,
-              "idleDays": 46,
+              "ageDays": 221,
+              "idleDays": 53,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3166,7 +3489,7 @@
               }
             }
           ],
-          "sortKey": 183
+          "sortKey": 190
         },
         {
           "number": 57296,
@@ -3178,8 +3501,8 @@
           ],
           "createdAt": "2026-08-30T05:52:52Z",
           "updatedAt": "2026-08-30T05:53:00Z",
-          "ageDays": 21,
-          "idleDays": 21,
+          "ageDays": 28,
+          "idleDays": 28,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3198,8 +3521,8 @@
               "createdAt": "2026-08-30T05:57:59Z",
               "updatedAt": "2026-09-06T22:49:00Z",
               "mergedAt": null,
-              "ageDays": 21,
-              "idleDays": 14,
+              "ageDays": 28,
+              "idleDays": 21,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3217,7 +3540,7 @@
               }
             }
           ],
-          "sortKey": 21
+          "sortKey": 28
         }
       ]
     },
@@ -3238,8 +3561,8 @@
           ],
           "createdAt": "2026-08-02T14:03:11Z",
           "updatedAt": "2026-08-04T13:35:58Z",
-          "ageDays": 49,
-          "idleDays": 47,
+          "ageDays": 56,
+          "idleDays": 54,
           "comments": 6,
           "labels": [
             "kind/feature",
@@ -3258,8 +3581,8 @@
               "createdAt": "2026-07-06T18:32:06Z",
               "updatedAt": "2026-08-13T12:51:03Z",
               "mergedAt": null,
-              "ageDays": 76,
-              "idleDays": 38,
+              "ageDays": 83,
+              "idleDays": 45,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3278,7 +3601,7 @@
               }
             }
           ],
-          "sortKey": 38
+          "sortKey": 45
         },
         {
           "number": 56718,
@@ -3290,8 +3613,8 @@
           ],
           "createdAt": "2026-08-01T07:06:35Z",
           "updatedAt": "2026-08-01T07:36:32Z",
-          "ageDays": 50,
-          "idleDays": 50,
+          "ageDays": 57,
+          "idleDays": 57,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3310,8 +3633,8 @@
               "createdAt": "2026-08-02T06:53:37Z",
               "updatedAt": "2026-08-15T10:55:31Z",
               "mergedAt": null,
-              "ageDays": 49,
-              "idleDays": 36,
+              "ageDays": 56,
+              "idleDays": 43,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3329,7 +3652,7 @@
               }
             }
           ],
-          "sortKey": 36
+          "sortKey": 43
         }
       ]
     },
@@ -3350,8 +3673,8 @@
           "createdAt": "2026-03-05T09:25:53Z",
           "updatedAt": "2026-05-19T12:22:53Z",
           "mergedAt": null,
-          "ageDays": 199,
-          "idleDays": 124,
+          "ageDays": 206,
+          "idleDays": 131,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3389,51 +3712,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 199
-        },
-        {
-          "number": 55761,
-          "title": "Update feature gates (English) via automation tool",
-          "url": "https://github.com/kubernetes/website/pull/55761",
-          "state": "OPEN",
-          "isDraft": false,
-          "author": "singh1203",
-          "createdAt": "2026-05-13T17:50:05Z",
-          "updatedAt": "2026-06-20T06:32:47Z",
-          "mergedAt": null,
-          "ageDays": 130,
-          "idleDays": 92,
-          "reviewDecision": null,
-          "labels": [
-            "cncf-cla: yes",
-            "size/XXL",
-            "needs-rebase",
-            "sig/docs",
-            "language/en",
-            "language/ko",
-            "language/fa",
-            "area/localization"
-          ],
-          "flags": {
-            "lgtm": false,
-            "approved": false,
-            "hold": false,
-            "needsRebase": true,
-            "cncfUnsigned": false
-          },
-          "ci": {
-            "state": "passed",
-            "failed": []
-          },
-          "changedFiles": 407,
-          "additions": 9332,
-          "deletions": 253,
-          "comments": 7,
-          "reviews": 0,
-          "by": "reviewer",
-          "touched": true,
-          "koOnly": false,
-          "sortKey": 130
+          "sortKey": 206
         },
         {
           "closingIssues": [
@@ -3453,8 +3732,8 @@
           "createdAt": "2026-05-29T17:08:42Z",
           "updatedAt": "2026-09-14T03:24:56Z",
           "mergedAt": null,
-          "ageDays": 114,
-          "idleDays": 7,
+          "ageDays": 121,
+          "idleDays": 14,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3504,7 +3783,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 114
+          "sortKey": 121
         },
         {
           "number": 56016,
@@ -3516,8 +3795,8 @@
           "createdAt": "2026-06-04T17:55:22Z",
           "updatedAt": "2026-07-16T22:24:14Z",
           "mergedAt": null,
-          "ageDays": 108,
-          "idleDays": 66,
+          "ageDays": 115,
+          "idleDays": 73,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3552,7 +3831,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 108
+          "sortKey": 115
         },
         {
           "number": 56376,
@@ -3564,8 +3843,8 @@
           "createdAt": "2026-07-03T22:49:21Z",
           "updatedAt": "2026-08-18T17:33:57Z",
           "mergedAt": null,
-          "ageDays": 79,
-          "idleDays": 33,
+          "ageDays": 86,
+          "idleDays": 40,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3594,7 +3873,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 79
+          "sortKey": 86
         },
         {
           "number": 56405,
@@ -3606,8 +3885,8 @@
           "createdAt": "2026-07-06T18:53:16Z",
           "updatedAt": "2026-09-15T09:42:55Z",
           "mergedAt": null,
-          "ageDays": 76,
-          "idleDays": 5,
+          "ageDays": 83,
+          "idleDays": 12,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3635,7 +3914,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 76
+          "sortKey": 83
         },
         {
           "number": 56404,
@@ -3647,8 +3926,8 @@
           "createdAt": "2026-07-06T18:32:06Z",
           "updatedAt": "2026-08-13T12:51:03Z",
           "mergedAt": null,
-          "ageDays": 76,
-          "idleDays": 38,
+          "ageDays": 83,
+          "idleDays": 45,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3677,7 +3956,7 @@
           "by": "author",
           "touched": true,
           "koOnly": true,
-          "sortKey": 76
+          "sortKey": 83
         },
         {
           "number": 56419,
@@ -3689,8 +3968,8 @@
           "createdAt": "2026-07-07T08:57:19Z",
           "updatedAt": "2026-09-18T15:56:18Z",
           "mergedAt": null,
-          "ageDays": 75,
-          "idleDays": 2,
+          "ageDays": 82,
+          "idleDays": 9,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3718,7 +3997,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 75
+          "sortKey": 82
         },
         {
           "number": 56417,
@@ -3730,8 +4009,8 @@
           "createdAt": "2026-07-07T08:28:44Z",
           "updatedAt": "2026-09-15T09:42:21Z",
           "mergedAt": null,
-          "ageDays": 75,
-          "idleDays": 5,
+          "ageDays": 82,
+          "idleDays": 12,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3759,7 +4038,56 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 75
+          "sortKey": 82
+        },
+        {
+          "closingIssues": [
+            {
+              "number": 56624,
+              "url": "https://github.com/kubernetes/website/issues/56624",
+              "title": "[ko] Add language guidance to localization guide",
+              "state": "OPEN"
+            }
+          ],
+          "number": 56634,
+          "title": "[ko] Add localization contribution guidance",
+          "url": "https://github.com/kubernetes/website/pull/56634",
+          "state": "OPEN",
+          "isDraft": false,
+          "author": "SuperSon7",
+          "createdAt": "2026-07-27T14:46:11Z",
+          "updatedAt": "2026-09-19T16:23:01Z",
+          "mergedAt": null,
+          "ageDays": 62,
+          "idleDays": 8,
+          "reviewDecision": null,
+          "labels": [
+            "cncf-cla: yes",
+            "size/S",
+            "sig/docs",
+            "language/ko",
+            "area/localization"
+          ],
+          "flags": {
+            "lgtm": false,
+            "approved": false,
+            "hold": false,
+            "needsRebase": false,
+            "cncfUnsigned": false
+          },
+          "ci": {
+            "state": "passed",
+            "failed": []
+          },
+          "changedFiles": 1,
+          "additions": 17,
+          "deletions": 0,
+          "comments": 13,
+          "reviews": 0,
+          "by": "author",
+          "touched": true,
+          "koOnly": true,
+          "sortKey": 62
         }
       ]
     },
@@ -3780,8 +4108,8 @@
           ],
           "createdAt": "2026-02-14T14:53:26Z",
           "updatedAt": "2026-03-16T05:40:05Z",
-          "ageDays": 218,
-          "idleDays": 188,
+          "ageDays": 225,
+          "idleDays": 195,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3789,29 +4117,7 @@
             "triage/accepted"
           ],
           "linkedPrs": [],
-          "sortKey": 218
-        },
-        {
-          "number": 55568,
-          "title": "[ko] Translate content/en/docs/concepts/scheduling-eviction/dynamic-resource-allocation.md into Korean",
-          "url": "https://github.com/kubernetes/website/issues/55568",
-          "author": "Eundms",
-          "assignees": [
-            "Eundms"
-          ],
-          "createdAt": "2026-04-27T11:47:49Z",
-          "updatedAt": "2026-04-27T11:47:56Z",
-          "ageDays": 146,
-          "idleDays": 146,
-          "comments": 1,
-          "labels": [
-            "kind/feature",
-            "language/ko",
-            "needs-triage",
-            "area/localization"
-          ],
-          "linkedPrs": [],
-          "sortKey": 146
+          "sortKey": 225
         },
         {
           "number": 56426,
@@ -3823,8 +4129,8 @@
           ],
           "createdAt": "2026-07-07T16:18:06Z",
           "updatedAt": "2026-07-07T16:19:47Z",
-          "ageDays": 75,
-          "idleDays": 75,
+          "ageDays": 82,
+          "idleDays": 82,
           "comments": 3,
           "labels": [
             "kind/feature",
@@ -3833,7 +4139,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 75
+          "sortKey": 82
         },
         {
           "number": 56561,
@@ -3845,8 +4151,8 @@
           ],
           "createdAt": "2026-07-21T15:21:22Z",
           "updatedAt": "2026-07-21T15:21:30Z",
-          "ageDays": 61,
-          "idleDays": 61,
+          "ageDays": 68,
+          "idleDays": 68,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3855,7 +4161,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 61
+          "sortKey": 68
         },
         {
           "number": 56677,
@@ -3867,8 +4173,8 @@
           ],
           "createdAt": "2026-07-30T14:07:11Z",
           "updatedAt": "2026-07-30T14:17:10Z",
-          "ageDays": 52,
-          "idleDays": 52,
+          "ageDays": 59,
+          "idleDays": 59,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3877,7 +4183,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 52
+          "sortKey": 59
         },
         {
           "number": 56829,
@@ -3889,8 +4195,8 @@
           ],
           "createdAt": "2026-08-06T06:31:39Z",
           "updatedAt": "2026-08-06T06:31:48Z",
-          "ageDays": 45,
-          "idleDays": 45,
+          "ageDays": 52,
+          "idleDays": 52,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3899,7 +4205,29 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 45
+          "sortKey": 52
+        },
+        {
+          "number": 57175,
+          "title": "[ko] Translate content/en/docs/concepts/workloads/pods/probes.md into Korean",
+          "url": "https://github.com/kubernetes/website/issues/57175",
+          "author": "SuperSon7",
+          "assignees": [
+            "SuperSon7"
+          ],
+          "createdAt": "2026-08-25T13:15:00Z",
+          "updatedAt": "2026-08-25T13:15:09Z",
+          "ageDays": 33,
+          "idleDays": 33,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [],
+          "sortKey": 33
         }
       ]
     }
