@@ -110,5 +110,19 @@
     "issuePrStale": 2,
     "prLongOpen": 9,
     "issueNoPr": 6
+  },
+  {
+    "week": "2026-W41",
+    "generatedAt": "2026-10-05T05:28:46.430Z",
+    "openIssues": 52,
+    "openPrs": 59,
+    "needsAction": 25,
+    "laneReview": 18,
+    "laneApprove": 7,
+    "laneAuthor": 31,
+    "issuePrClosed": 4,
+    "issuePrStale": 0,
+    "prLongOpen": 16,
+    "issueNoPr": 7
   }
 ]
