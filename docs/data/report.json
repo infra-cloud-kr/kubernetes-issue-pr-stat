@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T04:31:59.986Z",
+  "generatedAt": "2026-10-26T04:37:49.591Z",
   "repo": "kubernetes/website",
   "label": "language/ko",
   "thresholds": {
@@ -8,8 +8,8 @@
     "noPrDays": 30
   },
   "totals": {
-    "openIssues": 48,
-    "openPrs": 50
+    "openIssues": 49,
+    "openPrs": 51
   },
   "lanes": [
     {
@@ -51,8 +51,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-03T22:49:21Z",
       "updatedAt": "2026-08-18T17:33:57Z",
-      "ageDays": 107,
-      "idleDays": 61,
+      "ageDays": 114,
+      "idleDays": 68,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -97,8 +97,8 @@
       "author": "yucori",
       "createdAt": "2026-09-24T01:42:53Z",
       "updatedAt": "2026-09-26T06:17:49Z",
-      "ageDays": 25,
-      "idleDays": 22,
+      "ageDays": 32,
+      "idleDays": 29,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -149,8 +149,8 @@
       "author": "wlgusqkr",
       "createdAt": "2026-09-23T18:09:52Z",
       "updatedAt": "2026-09-27T11:46:43Z",
-      "ageDays": 25,
-      "idleDays": 21,
+      "ageDays": 32,
+      "idleDays": 28,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -202,8 +202,8 @@
       "author": "dongjune8931",
       "createdAt": "2026-09-25T04:20:24Z",
       "updatedAt": "2026-09-27T08:54:48Z",
-      "ageDays": 24,
-      "idleDays": 21,
+      "ageDays": 31,
+      "idleDays": 28,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -254,8 +254,8 @@
       "author": "Sharon0320",
       "createdAt": "2026-09-26T08:54:31Z",
       "updatedAt": "2026-10-01T01:10:39Z",
-      "ageDays": 22,
-      "idleDays": 18,
+      "ageDays": 29,
+      "idleDays": 25,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -306,8 +306,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:32:06Z",
       "updatedAt": "2026-10-03T13:08:42Z",
-      "ageDays": 104,
-      "idleDays": 15,
+      "ageDays": 111,
+      "idleDays": 22,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -352,8 +352,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-04T06:10:21Z",
       "updatedAt": "2026-10-04T06:12:51Z",
-      "ageDays": 14,
-      "idleDays": 14,
+      "ageDays": 21,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -404,8 +404,8 @@
       "author": "esunn0412",
       "createdAt": "2026-08-02T21:50:08Z",
       "updatedAt": "2026-10-08T01:00:38Z",
-      "ageDays": 77,
-      "idleDays": 11,
+      "ageDays": 84,
+      "idleDays": 18,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -456,8 +456,8 @@
       "author": "suhyenim",
       "createdAt": "2026-09-24T16:48:26Z",
       "updatedAt": "2026-10-08T20:36:55Z",
-      "ageDays": 24,
-      "idleDays": 10,
+      "ageDays": 31,
+      "idleDays": 17,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -509,8 +509,8 @@
       "author": "LyleKim",
       "createdAt": "2026-08-02T17:48:10Z",
       "updatedAt": "2026-10-13T15:52:05Z",
-      "ageDays": 77,
-      "idleDays": 5,
+      "ageDays": 84,
+      "idleDays": 12,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -561,8 +561,8 @@
       "author": "Arhell",
       "createdAt": "2026-09-29T17:28:00Z",
       "updatedAt": "2026-10-13T17:31:46Z",
-      "ageDays": 19,
-      "idleDays": 5,
+      "ageDays": 26,
+      "idleDays": 12,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -607,8 +607,8 @@
       "author": "Caesarsage",
       "createdAt": "2026-06-01T03:39:35Z",
       "updatedAt": "2026-10-14T08:30:37Z",
-      "ageDays": 140,
-      "idleDays": 4,
+      "ageDays": 147,
+      "idleDays": 11,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -655,8 +655,8 @@
       "author": "kamothi",
       "createdAt": "2026-09-27T14:05:31Z",
       "updatedAt": "2026-10-18T12:13:54Z",
-      "ageDays": 21,
-      "idleDays": 0,
+      "ageDays": 28,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -701,54 +701,101 @@
       "lifecycle": null
     },
     {
-      "number": 56016,
-      "title": "Fix Gateway API documentation links",
-      "url": "https://github.com/kubernetes/website/pull/56016",
-      "author": "KirtiRamchandani",
-      "createdAt": "2026-06-04T17:55:22Z",
-      "updatedAt": "2026-07-16T22:24:14Z",
-      "ageDays": 136,
-      "idleDays": 94,
+      "number": 57904,
+      "title": "[ko] Add content/ko/docs/tasks/configure-pod-container/enforce-standards-admission-controller.md",
+      "url": "https://github.com/kubernetes/website/pull/57904",
+      "author": "neronkang",
+      "createdAt": "2026-10-05T09:00:05Z",
+      "updatedAt": "2026-10-24T02:20:51Z",
+      "ageDays": 20,
+      "idleDays": 2,
       "labels": [
         "cncf-cla: yes",
         "size/M",
-        "needs-rebase",
+        "lgtm",
         "sig/docs",
-        "language/en",
         "language/ko",
-        "language/ja",
-        "language/zh",
-        "language/es",
-        "language/pt",
-        "language/id",
         "area/localization"
       ],
       "flags": {
-        "lgtm": false,
+        "lgtm": true,
         "approved": false,
         "hold": false,
-        "needsRebase": true,
+        "needsRebase": false,
         "cncfUnsigned": false
       },
       "ci": "passed",
       "ciFailed": [],
-      "changedFiles": 9,
-      "additions": 17,
-      "deletions": 17,
-      "koOnly": false,
+      "changedFiles": 1,
+      "additions": 72,
+      "deletions": 0,
+      "koOnly": true,
       "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "master 와 충돌 — rebase 필요",
+      "closingIssues": [
+        {
+          "number": 57728,
+          "url": "https://github.com/kubernetes/website/issues/57728",
+          "title": "[ko] Translate content/en/docs/tasks/configure-pod-container/enforce-standards-admission-controller.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
       "action": {
-        "text": "rebase 요청",
-        "command": null,
-        "comment": "@KirtiRamchandani 안녕하세요! master 와 충돌이 생겨 `needs-rebase` 라벨이 붙었습니다. rebase 후 force push 해주시면 리뷰를 이어가겠습니다. 도움이 필요하시면 편하게 말씀해 주세요."
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
       },
       "cost": {
         "size": "M",
         "minutes": 15,
         "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57906,
+      "title": "[ko] Update good practices for Kubernetes Secrets",
+      "url": "https://github.com/kubernetes/website/pull/57906",
+      "author": "Dianaland1112",
+      "createdAt": "2026-10-05T09:49:08Z",
+      "updatedAt": "2026-10-24T00:34:51Z",
+      "ageDays": 20,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 8,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
       },
       "lifecycle": null
     },
@@ -759,8 +806,8 @@
       "author": "Gourav2580",
       "createdAt": "2026-08-27T14:26:48Z",
       "updatedAt": "2026-09-08T23:01:45Z",
-      "ageDays": 52,
-      "idleDays": 40,
+      "ageDays": 59,
+      "idleDays": 47,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -814,8 +861,8 @@
       "author": "yashisrani",
       "createdAt": "2026-05-29T17:08:42Z",
       "updatedAt": "2026-09-14T03:24:56Z",
-      "ageDays": 142,
-      "idleDays": 35,
+      "ageDays": 149,
+      "idleDays": 42,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -888,8 +935,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:53:16Z",
       "updatedAt": "2026-09-15T09:42:55Z",
-      "ageDays": 104,
-      "idleDays": 33,
+      "ageDays": 111,
+      "idleDays": 40,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -917,7 +964,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 33일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 40일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -933,8 +980,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:28:44Z",
       "updatedAt": "2026-09-15T09:42:21Z",
-      "ageDays": 103,
-      "idleDays": 33,
+      "ageDays": 110,
+      "idleDays": 40,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -962,7 +1009,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 33일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 40일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -978,8 +1025,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:57:19Z",
       "updatedAt": "2026-09-18T15:56:18Z",
-      "ageDays": 103,
-      "idleDays": 30,
+      "ageDays": 110,
+      "idleDays": 37,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1007,7 +1054,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 30일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 37일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1023,8 +1070,8 @@
       "author": "marsboy02",
       "createdAt": "2026-08-25T13:44:52Z",
       "updatedAt": "2026-09-19T17:25:27Z",
-      "ageDays": 54,
-      "idleDays": 29,
+      "ageDays": 61,
+      "idleDays": 36,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1059,7 +1106,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@marsboy02 안녕하세요! 이 PR이 29일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@marsboy02 안녕하세요! 이 PR이 36일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1075,8 +1122,8 @@
       "author": "pmengelbert",
       "createdAt": "2026-09-23T14:32:49Z",
       "updatedAt": "2026-09-25T11:06:58Z",
-      "ageDays": 25,
-      "idleDays": 23,
+      "ageDays": 32,
+      "idleDays": 30,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -1124,8 +1171,8 @@
       "author": "starbea",
       "createdAt": "2026-09-24T01:24:45Z",
       "updatedAt": "2026-09-26T00:16:42Z",
-      "ageDays": 25,
-      "idleDays": 23,
+      "ageDays": 32,
+      "idleDays": 30,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1160,7 +1207,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@starbea 안녕하세요! 이 PR이 23일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@starbea 안녕하세요! 이 PR이 30일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1176,8 +1223,8 @@
       "author": "suhyenim",
       "createdAt": "2026-09-27T13:43:58Z",
       "updatedAt": "2026-09-27T13:46:37Z",
-      "ageDays": 21,
-      "idleDays": 21,
+      "ageDays": 28,
+      "idleDays": 28,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1212,7 +1259,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 28일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1228,8 +1275,8 @@
       "author": "suhyenim",
       "createdAt": "2026-09-27T16:08:43Z",
       "updatedAt": "2026-09-27T16:11:19Z",
-      "ageDays": 21,
-      "idleDays": 21,
+      "ageDays": 28,
+      "idleDays": 28,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1264,7 +1311,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 28일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1280,8 +1327,8 @@
       "author": "starbea",
       "createdAt": "2026-10-01T11:08:56Z",
       "updatedAt": "2026-10-01T11:12:10Z",
-      "ageDays": 17,
-      "idleDays": 17,
+      "ageDays": 24,
+      "idleDays": 24,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1316,7 +1363,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@starbea 안녕하세요! 이 PR이 17일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@starbea 안녕하세요! 이 PR이 24일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1332,8 +1379,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-03T17:42:44Z",
       "updatedAt": "2026-10-03T17:45:23Z",
-      "ageDays": 15,
-      "idleDays": 15,
+      "ageDays": 22,
+      "idleDays": 22,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1368,7 +1415,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 15일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 22일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1384,8 +1431,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-03T18:09:37Z",
       "updatedAt": "2026-10-03T18:11:56Z",
-      "ageDays": 15,
-      "idleDays": 15,
+      "ageDays": 22,
+      "idleDays": 22,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1420,7 +1467,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 15일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 22일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1436,8 +1483,8 @@
       "author": "narendra-sre",
       "createdAt": "2026-09-28T15:05:35Z",
       "updatedAt": "2026-10-04T05:43:47Z",
-      "ageDays": 20,
-      "idleDays": 14,
+      "ageDays": 27,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -1472,7 +1519,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@narendra-sre 안녕하세요! 이 PR이 14일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@narendra-sre 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "XS",
@@ -1488,8 +1535,8 @@
       "author": "jiyubaek",
       "createdAt": "2026-09-28T22:43:47Z",
       "updatedAt": "2026-10-04T11:07:16Z",
-      "ageDays": 20,
-      "idleDays": 14,
+      "ageDays": 27,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -1524,7 +1571,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@jiyubaek 안녕하세요! 이 PR이 14일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@jiyubaek 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "S",
@@ -1540,8 +1587,8 @@
       "author": "jiyubaek",
       "createdAt": "2026-09-28T23:21:23Z",
       "updatedAt": "2026-10-04T11:12:04Z",
-      "ageDays": 20,
-      "idleDays": 14,
+      "ageDays": 27,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -1576,7 +1623,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@jiyubaek 안녕하세요! 이 PR이 14일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@jiyubaek 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "S",
@@ -1592,8 +1639,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-04T06:48:28Z",
       "updatedAt": "2026-10-04T06:51:07Z",
-      "ageDays": 14,
-      "idleDays": 14,
+      "ageDays": 21,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1628,7 +1675,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 14일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1644,8 +1691,8 @@
       "author": "nAhYUN22",
       "createdAt": "2026-09-25T07:18:22Z",
       "updatedAt": "2026-10-05T06:37:56Z",
-      "ageDays": 23,
-      "idleDays": 13,
+      "ageDays": 30,
+      "idleDays": 20,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1677,51 +1724,14 @@
       ],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@nAhYUN22 안녕하세요! 이 PR이 20일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "M",
         "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57891,
-      "title": "[ko] Update auditing",
-      "url": "https://github.com/kubernetes/website/pull/57891",
-      "author": "ye11oc4t",
-      "createdAt": "2026-10-04T13:09:24Z",
-      "updatedAt": "2026-10-05T14:10:08Z",
-      "ageDays": 14,
-      "idleDays": 13,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 172,
-      "deletions": 146,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
         "bucket": "normal"
       },
       "lifecycle": null
@@ -1733,8 +1743,8 @@
       "author": "wlgusqkr",
       "createdAt": "2026-10-05T06:42:00Z",
       "updatedAt": "2026-10-05T06:51:44Z",
-      "ageDays": 13,
-      "idleDays": 13,
+      "ageDays": 20,
+      "idleDays": 20,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1759,7 +1769,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@wlgusqkr 안녕하세요! 이 PR이 20일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "M",
         "minutes": 15,
@@ -1774,8 +1788,8 @@
       "author": "Dianaland1112",
       "createdAt": "2026-10-05T08:44:13Z",
       "updatedAt": "2026-10-05T08:54:58Z",
-      "ageDays": 13,
-      "idleDays": 13,
+      "ageDays": 20,
+      "idleDays": 20,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1807,141 +1821,15 @@
       ],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@Dianaland1112 안녕하세요! 이 PR이 20일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "M",
         "minutes": 15,
         "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57904,
-      "title": "[ko] Add content/ko/docs/tasks/configure-pod-container/enforce-standards-admission-controller.md",
-      "url": "https://github.com/kubernetes/website/pull/57904",
-      "author": "neronkang",
-      "createdAt": "2026-10-05T09:00:05Z",
-      "updatedAt": "2026-10-05T09:02:52Z",
-      "ageDays": 13,
-      "idleDays": 13,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 72,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57728,
-          "url": "https://github.com/kubernetes/website/issues/57728",
-          "title": "[ko] Translate content/en/docs/tasks/configure-pod-container/enforce-standards-admission-controller.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57905,
-      "title": "[ko] Update workloads overview",
-      "url": "https://github.com/kubernetes/website/pull/57905",
-      "author": "Dianaland1112",
-      "createdAt": "2026-10-05T09:34:05Z",
-      "updatedAt": "2026-10-05T09:41:36Z",
-      "ageDays": 13,
-      "idleDays": 13,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 64,
-      "deletions": 62,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
-      "number": 57906,
-      "title": "[ko] Update good practices for Kubernetes Secrets",
-      "url": "https://github.com/kubernetes/website/pull/57906",
-      "author": "Dianaland1112",
-      "createdAt": "2026-10-05T09:49:08Z",
-      "updatedAt": "2026-10-05T09:51:49Z",
-      "ageDays": 13,
-      "idleDays": 13,
-      "labels": [
-        "cncf-cla: yes",
-        "size/XS",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 8,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "XS",
-        "minutes": 3,
-        "bucket": "quick"
       },
       "lifecycle": null
     },
@@ -1952,8 +1840,8 @@
       "author": "Dianaland1112",
       "createdAt": "2026-10-05T10:05:37Z",
       "updatedAt": "2026-10-05T10:08:14Z",
-      "ageDays": 13,
-      "idleDays": 13,
+      "ageDays": 20,
+      "idleDays": 20,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1978,7 +1866,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@Dianaland1112 안녕하세요! 이 PR이 20일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "L",
         "minutes": 30,
@@ -1993,8 +1885,8 @@
       "author": "zylxjtu",
       "createdAt": "2026-10-05T16:56:07Z",
       "updatedAt": "2026-10-07T16:17:57Z",
-      "ageDays": 13,
-      "idleDays": 11,
+      "ageDays": 20,
+      "idleDays": 18,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2047,8 +1939,8 @@
       "author": "pranavchoudhary-tech",
       "createdAt": "2026-07-31T08:20:20Z",
       "updatedAt": "2026-10-08T09:07:29Z",
-      "ageDays": 79,
-      "idleDays": 10,
+      "ageDays": 86,
+      "idleDays": 17,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2093,7 +1985,11 @@
       ],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@pranavchoudhary-tech 안녕하세요! 이 PR이 17일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "L",
         "minutes": 30,
@@ -2108,8 +2004,8 @@
       "author": "BusanGukbap",
       "createdAt": "2026-10-08T14:06:11Z",
       "updatedAt": "2026-10-08T14:09:01Z",
-      "ageDays": 10,
-      "idleDays": 10,
+      "ageDays": 17,
+      "idleDays": 17,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -2134,7 +2030,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@BusanGukbap 안녕하세요! 이 PR이 17일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "XS",
         "minutes": 3,
@@ -2149,8 +2049,8 @@
       "author": "Arhell",
       "createdAt": "2026-10-09T04:31:56Z",
       "updatedAt": "2026-10-09T04:35:14Z",
-      "ageDays": 9,
-      "idleDays": 9,
+      "ageDays": 17,
+      "idleDays": 17,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -2175,7 +2075,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@Arhell 안녕하세요! 이 PR이 17일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "XS",
         "minutes": 3,
@@ -2190,8 +2094,8 @@
       "author": "m3k0813",
       "createdAt": "2026-10-09T12:31:42Z",
       "updatedAt": "2026-10-09T12:34:48Z",
-      "ageDays": 9,
-      "idleDays": 9,
+      "ageDays": 16,
+      "idleDays": 16,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2223,7 +2127,11 @@
       ],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@m3k0813 안녕하세요! 이 PR이 16일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "M",
         "minutes": 15,
@@ -2238,8 +2146,8 @@
       "author": "WAFriend3416",
       "createdAt": "2026-10-12T13:48:17Z",
       "updatedAt": "2026-10-12T13:50:57Z",
-      "ageDays": 6,
-      "idleDays": 6,
+      "ageDays": 13,
+      "idleDays": 13,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2286,8 +2194,8 @@
       "author": "gauravkghildiyal",
       "createdAt": "2026-10-14T18:58:26Z",
       "updatedAt": "2026-10-14T19:01:09Z",
-      "ageDays": 4,
-      "idleDays": 4,
+      "ageDays": 11,
+      "idleDays": 11,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -2332,55 +2240,14 @@
       "lifecycle": null
     },
     {
-      "number": 58077,
-      "title": "[ko] Fix typos in node shutdown documentation",
-      "url": "https://github.com/kubernetes/website/pull/58077",
-      "author": "JayongLee",
-      "createdAt": "2026-10-15T13:09:24Z",
-      "updatedAt": "2026-10-15T13:13:15Z",
-      "ageDays": 3,
-      "idleDays": 3,
-      "labels": [
-        "cncf-cla: yes",
-        "size/XS",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 3,
-      "deletions": 3,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "XS",
-        "minutes": 3,
-        "bucket": "quick"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57886,
       "title": "[ko] Update security overview",
       "url": "https://github.com/kubernetes/website/pull/57886",
       "author": "ye11oc4t",
       "createdAt": "2026-10-04T12:36:17Z",
       "updatedAt": "2026-10-17T00:33:20Z",
-      "ageDays": 14,
-      "idleDays": 2,
+      "ageDays": 21,
+      "idleDays": 9,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2420,8 +2287,8 @@
       "author": "SayakMukhopadhyay",
       "createdAt": "2026-03-05T09:25:53Z",
       "updatedAt": "2026-10-17T10:36:12Z",
-      "ageDays": 227,
-      "idleDays": 1,
+      "ageDays": 234,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -2472,8 +2339,8 @@
       "author": "neronkang",
       "createdAt": "2026-10-18T18:29:39Z",
       "updatedAt": "2026-10-18T18:32:22Z",
-      "ageDays": 0,
-      "idleDays": 0,
+      "ageDays": 7,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2512,6 +2379,227 @@
         "bucket": "normal"
       },
       "lifecycle": null
+    },
+    {
+      "number": 57891,
+      "title": "[ko] Update auditing",
+      "url": "https://github.com/kubernetes/website/pull/57891",
+      "author": "ye11oc4t",
+      "createdAt": "2026-10-04T13:09:24Z",
+      "updatedAt": "2026-10-24T02:31:04Z",
+      "ageDays": 21,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 172,
+      "deletions": 146,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 57905,
+      "title": "[ko] Update workloads overview",
+      "url": "https://github.com/kubernetes/website/pull/57905",
+      "author": "Dianaland1112",
+      "createdAt": "2026-10-05T09:34:05Z",
+      "updatedAt": "2026-10-24T02:18:22Z",
+      "ageDays": 20,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 64,
+      "deletions": 62,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 58077,
+      "title": "[ko] Fix typos in node shutdown documentation",
+      "url": "https://github.com/kubernetes/website/pull/58077",
+      "author": "JayongLee",
+      "createdAt": "2026-10-15T13:09:24Z",
+      "updatedAt": "2026-10-25T01:35:48Z",
+      "ageDays": 10,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 3,
+      "deletions": 3,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 58249,
+      "title": "Split static/_redirects.base into content/<lang>/_redirects.base",
+      "url": "https://github.com/kubernetes/website/pull/58249",
+      "author": "hongshaoyang",
+      "createdAt": "2026-10-22T06:19:33Z",
+      "updatedAt": "2026-10-24T16:21:57Z",
+      "ageDays": 3,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/en",
+        "language/ko",
+        "language/ja",
+        "language/zh",
+        "language/fr",
+        "language/de",
+        "language/es",
+        "language/pt",
+        "language/id",
+        "language/hi",
+        "language/ru",
+        "language/vi",
+        "language/pl",
+        "language/uk",
+        "area/web-development",
+        "language/fa",
+        "area/localization",
+        "language/bn"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 17,
+      "additions": 72,
+      "deletions": 60,
+      "koOnly": false,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 58330,
+      "title": "[ko] Remove case studies",
+      "url": "https://github.com/kubernetes/website/pull/58330",
+      "author": "Arhell",
+      "createdAt": "2026-10-25T04:25:50Z",
+      "updatedAt": "2026-10-25T04:28:32Z",
+      "ageDays": 1,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 7,
+      "additions": 1,
+      "deletions": 113,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
     }
   ],
   "sections": [
@@ -2533,8 +2621,8 @@
           ],
           "createdAt": "2023-10-21T18:00:41Z",
           "updatedAt": "2025-08-07T10:46:34Z",
-          "ageDays": 1093,
-          "idleDays": 437,
+          "ageDays": 1100,
+          "idleDays": 444,
           "comments": 11,
           "labels": [
             "kind/bug",
@@ -2554,8 +2642,8 @@
               "createdAt": "2025-08-10T07:43:24Z",
               "updatedAt": "2026-03-26T11:32:20Z",
               "mergedAt": null,
-              "ageDays": 434,
-              "idleDays": 206,
+              "ageDays": 441,
+              "idleDays": 213,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2586,8 +2674,8 @@
               "createdAt": "2024-01-28T10:31:03Z",
               "updatedAt": "2024-08-29T10:58:44Z",
               "mergedAt": null,
-              "ageDays": 994,
-              "idleDays": 780,
+              "ageDays": 1001,
+              "idleDays": 787,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2615,8 +2703,8 @@
               "createdAt": "2024-01-28T09:24:50Z",
               "updatedAt": "2024-01-28T10:45:52Z",
               "mergedAt": null,
-              "ageDays": 994,
-              "idleDays": 994,
+              "ageDays": 1001,
+              "idleDays": 1001,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2633,7 +2721,7 @@
               }
             }
           ],
-          "sortKey": 437
+          "sortKey": 444
         },
         {
           "number": 53682,
@@ -2645,8 +2733,8 @@
           ],
           "createdAt": "2025-12-18T11:00:22Z",
           "updatedAt": "2025-12-28T04:17:30Z",
-          "ageDays": 304,
-          "idleDays": 295,
+          "ageDays": 311,
+          "idleDays": 302,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2665,8 +2753,8 @@
               "createdAt": "2025-12-18T16:54:47Z",
               "updatedAt": "2026-06-25T22:29:24Z",
               "mergedAt": null,
-              "ageDays": 304,
-              "idleDays": 115,
+              "ageDays": 311,
+              "idleDays": 122,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2685,7 +2773,7 @@
               }
             }
           ],
-          "sortKey": 295
+          "sortKey": 302
         },
         {
           "number": 53555,
@@ -2697,8 +2785,8 @@
           ],
           "createdAt": "2025-12-09T13:19:46Z",
           "updatedAt": "2026-03-22T02:33:34Z",
-          "ageDays": 313,
-          "idleDays": 211,
+          "ageDays": 320,
+          "idleDays": 218,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -2718,8 +2806,8 @@
               "createdAt": "2026-02-18T13:38:12Z",
               "updatedAt": "2026-08-05T12:35:47Z",
               "mergedAt": null,
-              "ageDays": 242,
-              "idleDays": 74,
+              "ageDays": 249,
+              "idleDays": 81,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2737,7 +2825,7 @@
               }
             }
           ],
-          "sortKey": 211
+          "sortKey": 218
         },
         {
           "number": 57296,
@@ -2749,8 +2837,8 @@
           ],
           "createdAt": "2026-08-30T05:52:52Z",
           "updatedAt": "2026-08-30T05:53:00Z",
-          "ageDays": 49,
-          "idleDays": 49,
+          "ageDays": 56,
+          "idleDays": 56,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2769,8 +2857,8 @@
               "createdAt": "2026-08-30T05:57:59Z",
               "updatedAt": "2026-09-06T22:49:00Z",
               "mergedAt": null,
-              "ageDays": 49,
-              "idleDays": 42,
+              "ageDays": 56,
+              "idleDays": 49,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2788,7 +2876,7 @@
               }
             }
           ],
-          "sortKey": 49
+          "sortKey": 56
         }
       ]
     },
@@ -2798,7 +2886,110 @@
       "hint": "연결된 PR이 30일 이상 움직이지 않았습니다. 리뷰어를 지정하거나 작성자에게 확인하세요.",
       "kind": "issue",
       "metric": "PR 미갱신",
-      "items": []
+      "items": [
+        {
+          "number": 57096,
+          "title": "[ko] Remove unmaintained Weave Net and Romana network policy provider pages",
+          "url": "https://github.com/kubernetes/website/issues/57096",
+          "author": "marsboy02",
+          "assignees": [
+            "marsboy02"
+          ],
+          "createdAt": "2026-08-22T05:03:04Z",
+          "updatedAt": "2026-08-22T05:03:12Z",
+          "ageDays": 64,
+          "idleDays": 64,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57177,
+              "title": "[ko] Remove unmaintained Weave Net and Romana network policy provider pages",
+              "url": "https://github.com/kubernetes/website/pull/57177",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "marsboy02",
+              "createdAt": "2026-08-25T13:44:52Z",
+              "updatedAt": "2026-09-19T17:25:27Z",
+              "mergedAt": null,
+              "ageDays": 61,
+              "idleDays": 36,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 36
+        },
+        {
+          "number": 57685,
+          "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
+          "url": "https://github.com/kubernetes/website/issues/57685",
+          "author": "starbea",
+          "assignees": [
+            "starbea"
+          ],
+          "createdAt": "2026-09-23T13:51:40Z",
+          "updatedAt": "2026-09-23T13:51:48Z",
+          "ageDays": 32,
+          "idleDays": 32,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57708,
+              "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
+              "url": "https://github.com/kubernetes/website/pull/57708",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "starbea",
+              "createdAt": "2026-09-24T01:24:45Z",
+              "updatedAt": "2026-09-26T00:16:42Z",
+              "mergedAt": null,
+              "ageDays": 32,
+              "idleDays": 30,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 30
+        }
+      ]
     },
     {
       "id": "pr-long-open",
@@ -2817,8 +3008,8 @@
           "createdAt": "2026-03-05T09:25:53Z",
           "updatedAt": "2026-10-17T10:36:12Z",
           "mergedAt": null,
-          "ageDays": 227,
-          "idleDays": 1,
+          "ageDays": 234,
+          "idleDays": 8,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -2857,7 +3048,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 227
+          "sortKey": 234
         },
         {
           "closingIssues": [
@@ -2877,8 +3068,8 @@
           "createdAt": "2026-05-29T17:08:42Z",
           "updatedAt": "2026-09-14T03:24:56Z",
           "mergedAt": null,
-          "ageDays": 142,
-          "idleDays": 35,
+          "ageDays": 149,
+          "idleDays": 42,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -2928,7 +3119,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 142
+          "sortKey": 149
         },
         {
           "number": 55972,
@@ -2940,8 +3131,8 @@
           "createdAt": "2026-06-01T03:39:35Z",
           "updatedAt": "2026-10-14T08:30:37Z",
           "mergedAt": null,
-          "ageDays": 140,
-          "idleDays": 4,
+          "ageDays": 147,
+          "idleDays": 11,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -2972,55 +3163,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 140
-        },
-        {
-          "number": 56016,
-          "title": "Fix Gateway API documentation links",
-          "url": "https://github.com/kubernetes/website/pull/56016",
-          "state": "OPEN",
-          "isDraft": false,
-          "author": "KirtiRamchandani",
-          "createdAt": "2026-06-04T17:55:22Z",
-          "updatedAt": "2026-07-16T22:24:14Z",
-          "mergedAt": null,
-          "ageDays": 136,
-          "idleDays": 94,
-          "reviewDecision": null,
-          "labels": [
-            "cncf-cla: yes",
-            "size/M",
-            "needs-rebase",
-            "sig/docs",
-            "language/en",
-            "language/ko",
-            "language/ja",
-            "language/zh",
-            "language/es",
-            "language/pt",
-            "language/id",
-            "area/localization"
-          ],
-          "flags": {
-            "lgtm": false,
-            "approved": false,
-            "hold": false,
-            "needsRebase": true,
-            "cncfUnsigned": false
-          },
-          "ci": {
-            "state": "passed",
-            "failed": []
-          },
-          "changedFiles": 9,
-          "additions": 17,
-          "deletions": 17,
-          "comments": 5,
-          "reviews": 0,
-          "by": "reviewer",
-          "touched": true,
-          "koOnly": false,
-          "sortKey": 136
+          "sortKey": 147
         },
         {
           "number": 56376,
@@ -3032,8 +3175,8 @@
           "createdAt": "2026-07-03T22:49:21Z",
           "updatedAt": "2026-08-18T17:33:57Z",
           "mergedAt": null,
-          "ageDays": 107,
-          "idleDays": 61,
+          "ageDays": 114,
+          "idleDays": 68,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3062,7 +3205,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 107
+          "sortKey": 114
         },
         {
           "number": 56405,
@@ -3074,8 +3217,8 @@
           "createdAt": "2026-07-06T18:53:16Z",
           "updatedAt": "2026-09-15T09:42:55Z",
           "mergedAt": null,
-          "ageDays": 104,
-          "idleDays": 33,
+          "ageDays": 111,
+          "idleDays": 40,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3103,7 +3246,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 104
+          "sortKey": 111
         },
         {
           "number": 56404,
@@ -3115,8 +3258,8 @@
           "createdAt": "2026-07-06T18:32:06Z",
           "updatedAt": "2026-10-03T13:08:42Z",
           "mergedAt": null,
-          "ageDays": 104,
-          "idleDays": 15,
+          "ageDays": 111,
+          "idleDays": 22,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3145,7 +3288,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 104
+          "sortKey": 111
         },
         {
           "number": 56419,
@@ -3157,8 +3300,8 @@
           "createdAt": "2026-07-07T08:57:19Z",
           "updatedAt": "2026-09-18T15:56:18Z",
           "mergedAt": null,
-          "ageDays": 103,
-          "idleDays": 30,
+          "ageDays": 110,
+          "idleDays": 37,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3186,7 +3329,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 103
+          "sortKey": 110
         },
         {
           "number": 56417,
@@ -3198,8 +3341,8 @@
           "createdAt": "2026-07-07T08:28:44Z",
           "updatedAt": "2026-09-15T09:42:21Z",
           "mergedAt": null,
-          "ageDays": 103,
-          "idleDays": 33,
+          "ageDays": 110,
+          "idleDays": 40,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3227,7 +3370,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 103
+          "sortKey": 110
         },
         {
           "closingIssues": [
@@ -3247,8 +3390,8 @@
           "createdAt": "2026-07-31T08:20:20Z",
           "updatedAt": "2026-10-08T09:07:29Z",
           "mergedAt": null,
-          "ageDays": 79,
-          "idleDays": 10,
+          "ageDays": 86,
+          "idleDays": 17,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3289,7 +3432,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 79
+          "sortKey": 86
         },
         {
           "closingIssues": [
@@ -3309,8 +3452,8 @@
           "createdAt": "2026-08-02T21:50:08Z",
           "updatedAt": "2026-10-08T01:00:38Z",
           "mergedAt": null,
-          "ageDays": 77,
-          "idleDays": 11,
+          "ageDays": 84,
+          "idleDays": 18,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3338,7 +3481,7 @@
           "by": "author",
           "touched": true,
           "koOnly": true,
-          "sortKey": 77
+          "sortKey": 84
         },
         {
           "closingIssues": [
@@ -3358,8 +3501,8 @@
           "createdAt": "2026-08-02T17:48:10Z",
           "updatedAt": "2026-10-13T15:52:05Z",
           "mergedAt": null,
-          "ageDays": 77,
-          "idleDays": 5,
+          "ageDays": 84,
+          "idleDays": 12,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3387,7 +3530,56 @@
           "by": "author",
           "touched": true,
           "koOnly": true,
-          "sortKey": 77
+          "sortKey": 84
+        },
+        {
+          "closingIssues": [
+            {
+              "number": 57096,
+              "url": "https://github.com/kubernetes/website/issues/57096",
+              "title": "[ko] Remove unmaintained Weave Net and Romana network policy provider pages",
+              "state": "OPEN"
+            }
+          ],
+          "number": 57177,
+          "title": "[ko] Remove unmaintained Weave Net and Romana network policy provider pages",
+          "url": "https://github.com/kubernetes/website/pull/57177",
+          "state": "OPEN",
+          "isDraft": false,
+          "author": "marsboy02",
+          "createdAt": "2026-08-25T13:44:52Z",
+          "updatedAt": "2026-09-19T17:25:27Z",
+          "mergedAt": null,
+          "ageDays": 61,
+          "idleDays": 36,
+          "reviewDecision": null,
+          "labels": [
+            "cncf-cla: yes",
+            "size/L",
+            "sig/docs",
+            "language/ko",
+            "area/localization"
+          ],
+          "flags": {
+            "lgtm": false,
+            "approved": false,
+            "hold": false,
+            "needsRebase": false,
+            "cncfUnsigned": false
+          },
+          "ci": {
+            "state": "passed",
+            "failed": []
+          },
+          "changedFiles": 3,
+          "additions": 10,
+          "deletions": 105,
+          "comments": 6,
+          "reviews": 5,
+          "by": "reviewer",
+          "touched": true,
+          "koOnly": true,
+          "sortKey": 61
         }
       ]
     },
@@ -3408,8 +3600,8 @@
           ],
           "createdAt": "2026-02-14T14:53:26Z",
           "updatedAt": "2026-03-16T05:40:05Z",
-          "ageDays": 246,
-          "idleDays": 216,
+          "ageDays": 253,
+          "idleDays": 223,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3417,7 +3609,7 @@
             "triage/accepted"
           ],
           "linkedPrs": [],
-          "sortKey": 246
+          "sortKey": 253
         },
         {
           "number": 56426,
@@ -3428,18 +3620,19 @@
             "seokho-son"
           ],
           "createdAt": "2026-07-07T16:18:06Z",
-          "updatedAt": "2026-07-07T16:19:47Z",
-          "ageDays": 103,
-          "idleDays": 103,
-          "comments": 3,
+          "updatedAt": "2026-10-22T03:09:33Z",
+          "ageDays": 110,
+          "idleDays": 4,
+          "comments": 4,
           "labels": [
             "kind/feature",
+            "lifecycle/stale",
             "language/ko",
             "needs-triage",
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 103
+          "sortKey": 110
         },
         {
           "number": 56561,
@@ -3450,18 +3643,19 @@
             "wonyongg"
           ],
           "createdAt": "2026-07-21T15:21:22Z",
-          "updatedAt": "2026-07-21T15:21:30Z",
-          "ageDays": 89,
-          "idleDays": 89,
-          "comments": 1,
+          "updatedAt": "2026-10-23T09:22:33Z",
+          "ageDays": 96,
+          "idleDays": 2,
+          "comments": 2,
           "labels": [
             "kind/feature",
+            "lifecycle/stale",
             "language/ko",
             "needs-triage",
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 89
+          "sortKey": 96
         },
         {
           "number": 56677,
@@ -3473,8 +3667,8 @@
           ],
           "createdAt": "2026-07-30T14:07:11Z",
           "updatedAt": "2026-07-30T14:17:10Z",
-          "ageDays": 80,
-          "idleDays": 80,
+          "ageDays": 87,
+          "idleDays": 87,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3483,7 +3677,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 80
+          "sortKey": 87
         },
         {
           "number": 56829,
@@ -3495,8 +3689,8 @@
           ],
           "createdAt": "2026-08-06T06:31:39Z",
           "updatedAt": "2026-08-06T06:31:48Z",
-          "ageDays": 73,
-          "idleDays": 73,
+          "ageDays": 80,
+          "idleDays": 80,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3505,7 +3699,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 73
+          "sortKey": 80
         },
         {
           "number": 57175,
@@ -3517,8 +3711,8 @@
           ],
           "createdAt": "2026-08-25T13:15:00Z",
           "updatedAt": "2026-08-25T13:15:09Z",
-          "ageDays": 54,
-          "idleDays": 54,
+          "ageDays": 61,
+          "idleDays": 61,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3527,7 +3721,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 54
+          "sortKey": 61
         }
       ]
     }
