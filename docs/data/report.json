@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T05:53:56.207Z",
+  "generatedAt": "2026-11-09T06:12:05.733Z",
   "repo": "kubernetes/website",
   "label": "language/ko",
   "thresholds": {
@@ -9,7 +9,7 @@
   },
   "totals": {
     "openIssues": 48,
-    "openPrs": 46
+    "openPrs": 48
   },
   "lanes": [
     {
@@ -51,8 +51,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-03T22:49:21Z",
       "updatedAt": "2026-08-18T17:33:57Z",
-      "ageDays": 121,
-      "idleDays": 75,
+      "ageDays": 128,
+      "idleDays": 82,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -97,8 +97,8 @@
       "author": "yucori",
       "createdAt": "2026-09-24T01:42:53Z",
       "updatedAt": "2026-09-26T06:17:49Z",
-      "ageDays": 39,
-      "idleDays": 36,
+      "ageDays": 46,
+      "idleDays": 43,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -149,8 +149,8 @@
       "author": "wlgusqkr",
       "createdAt": "2026-09-23T18:09:52Z",
       "updatedAt": "2026-09-27T11:46:43Z",
-      "ageDays": 39,
-      "idleDays": 35,
+      "ageDays": 46,
+      "idleDays": 42,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -202,8 +202,8 @@
       "author": "dongjune8931",
       "createdAt": "2026-09-25T04:20:24Z",
       "updatedAt": "2026-09-27T08:54:48Z",
-      "ageDays": 38,
-      "idleDays": 35,
+      "ageDays": 45,
+      "idleDays": 42,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -254,8 +254,8 @@
       "author": "Sharon0320",
       "createdAt": "2026-09-26T08:54:31Z",
       "updatedAt": "2026-10-01T01:10:39Z",
-      "ageDays": 36,
-      "idleDays": 32,
+      "ageDays": 43,
+      "idleDays": 39,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -306,8 +306,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:32:06Z",
       "updatedAt": "2026-10-03T13:08:42Z",
-      "ageDays": 118,
-      "idleDays": 29,
+      "ageDays": 125,
+      "idleDays": 36,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -352,8 +352,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-04T06:10:21Z",
       "updatedAt": "2026-10-04T06:12:51Z",
-      "ageDays": 28,
-      "idleDays": 28,
+      "ageDays": 36,
+      "idleDays": 35,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -404,8 +404,8 @@
       "author": "Caesarsage",
       "createdAt": "2026-06-01T03:39:35Z",
       "updatedAt": "2026-10-14T08:30:37Z",
-      "ageDays": 154,
-      "idleDays": 18,
+      "ageDays": 161,
+      "idleDays": 25,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -452,8 +452,8 @@
       "author": "kamothi",
       "createdAt": "2026-09-27T14:05:31Z",
       "updatedAt": "2026-10-18T12:13:54Z",
-      "ageDays": 35,
-      "idleDays": 14,
+      "ageDays": 42,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -504,8 +504,8 @@
       "author": "esunn0412",
       "createdAt": "2026-08-02T21:50:08Z",
       "updatedAt": "2026-11-02T04:48:59Z",
-      "ageDays": 91,
-      "idleDays": 0,
+      "ageDays": 98,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -556,8 +556,8 @@
       "author": "Dianaland1112",
       "createdAt": "2026-10-05T09:34:05Z",
       "updatedAt": "2026-11-01T23:54:18Z",
-      "ageDays": 27,
-      "idleDays": 0,
+      "ageDays": 34,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -596,14 +596,164 @@
       "lifecycle": null
     },
     {
+      "number": 57723,
+      "title": "[ko] Update Linux kubectl Bash autocompletion instructions",
+      "url": "https://github.com/kubernetes/website/pull/57723",
+      "author": "nAhYUN22",
+      "createdAt": "2026-09-25T07:18:22Z",
+      "updatedAt": "2026-11-03T15:08:01Z",
+      "ageDays": 44,
+      "idleDays": 5,
+      "labels": [
+        "cncf-cla: yes",
+        "size/M",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 28,
+      "deletions": 12,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57718,
+          "url": "https://github.com/kubernetes/website/issues/57718",
+          "title": "[ko] Update kubectl Bash autocompletion instructions on Linux",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "M",
+        "minutes": 15,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 58892,
+      "title": "[ko] Fix contribution guide section links",
+      "url": "https://github.com/kubernetes/website/pull/58892",
+      "author": "BusanGukbap",
+      "createdAt": "2026-11-03T17:54:22Z",
+      "updatedAt": "2026-11-07T02:38:38Z",
+      "ageDays": 5,
+      "idleDays": 2,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "lgtm",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": true,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 2,
+      "additions": 2,
+      "deletions": 2,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "approve",
+      "reason": "lgtm 완료 — 어프루버 승인만 남음",
+      "action": {
+        "text": "어프루버 승인",
+        "command": "/approve",
+        "comment": null
+      },
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 58027,
+      "title": "[ko] Translate Device Taints and Tolerations",
+      "url": "https://github.com/kubernetes/website/pull/58027",
+      "author": "WAFriend3416",
+      "createdAt": "2026-10-12T13:48:17Z",
+      "updatedAt": "2026-11-07T15:39:22Z",
+      "ageDays": 27,
+      "idleDays": 1,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 186,
+      "deletions": 0,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 57946,
+          "url": "https://github.com/kubernetes/website/issues/57946",
+          "title": "[ko] Translate content/en/docs/concepts/resource-management/dynamic-resource-allocation/device-taints.md into Korean",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "review",
+      "reason": "작성자가 응답함 — 재확인 필요",
+      "action": {
+        "text": "리뷰 후 lgtm",
+        "command": "/lgtm",
+        "comment": null
+      },
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
+    },
+    {
       "number": 57231,
       "title": "fix_stable-metrics-list.yaml",
       "url": "https://github.com/kubernetes/website/pull/57231",
       "author": "Gourav2580",
       "createdAt": "2026-08-27T14:26:48Z",
       "updatedAt": "2026-09-08T23:01:45Z",
-      "ageDays": 66,
-      "idleDays": 54,
+      "ageDays": 73,
+      "idleDays": 61,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -657,8 +807,8 @@
       "author": "yashisrani",
       "createdAt": "2026-05-29T17:08:42Z",
       "updatedAt": "2026-09-14T03:24:56Z",
-      "ageDays": 156,
-      "idleDays": 49,
+      "ageDays": 163,
+      "idleDays": 56,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -731,8 +881,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-06T18:53:16Z",
       "updatedAt": "2026-09-15T09:42:55Z",
-      "ageDays": 118,
-      "idleDays": 47,
+      "ageDays": 125,
+      "idleDays": 54,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -760,7 +910,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 47일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 54일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -776,8 +926,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:28:44Z",
       "updatedAt": "2026-09-15T09:42:21Z",
-      "ageDays": 117,
-      "idleDays": 47,
+      "ageDays": 124,
+      "idleDays": 54,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -805,7 +955,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 47일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 54일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -821,8 +971,8 @@
       "author": "seokho-son",
       "createdAt": "2026-07-07T08:57:19Z",
       "updatedAt": "2026-09-18T15:56:18Z",
-      "ageDays": 117,
-      "idleDays": 44,
+      "ageDays": 124,
+      "idleDays": 51,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -850,7 +1000,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@seokho-son 안녕하세요! 이 PR이 44일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@seokho-son 안녕하세요! 이 PR이 51일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -866,8 +1016,8 @@
       "author": "marsboy02",
       "createdAt": "2026-08-25T13:44:52Z",
       "updatedAt": "2026-09-19T17:25:27Z",
-      "ageDays": 68,
-      "idleDays": 43,
+      "ageDays": 75,
+      "idleDays": 50,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -902,7 +1052,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@marsboy02 안녕하세요! 이 PR이 43일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@marsboy02 안녕하세요! 이 PR이 50일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -918,8 +1068,8 @@
       "author": "pmengelbert",
       "createdAt": "2026-09-23T14:32:49Z",
       "updatedAt": "2026-09-25T11:06:58Z",
-      "ageDays": 39,
-      "idleDays": 37,
+      "ageDays": 46,
+      "idleDays": 44,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -967,8 +1117,8 @@
       "author": "starbea",
       "createdAt": "2026-09-24T01:24:45Z",
       "updatedAt": "2026-09-26T00:16:42Z",
-      "ageDays": 39,
-      "idleDays": 37,
+      "ageDays": 46,
+      "idleDays": 44,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1003,7 +1153,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@starbea 안녕하세요! 이 PR이 37일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@starbea 안녕하세요! 이 PR이 44일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1019,8 +1169,8 @@
       "author": "suhyenim",
       "createdAt": "2026-09-27T13:43:58Z",
       "updatedAt": "2026-09-27T13:46:37Z",
-      "ageDays": 35,
-      "idleDays": 35,
+      "ageDays": 42,
+      "idleDays": 42,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1055,7 +1205,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 35일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 42일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1071,8 +1221,8 @@
       "author": "suhyenim",
       "createdAt": "2026-09-27T16:08:43Z",
       "updatedAt": "2026-09-27T16:11:19Z",
-      "ageDays": 35,
-      "idleDays": 35,
+      "ageDays": 42,
+      "idleDays": 42,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1107,7 +1257,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 35일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 42일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1123,8 +1273,8 @@
       "author": "starbea",
       "createdAt": "2026-10-01T11:08:56Z",
       "updatedAt": "2026-10-01T11:12:10Z",
-      "ageDays": 31,
-      "idleDays": 31,
+      "ageDays": 38,
+      "idleDays": 38,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1159,7 +1309,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@starbea 안녕하세요! 이 PR이 31일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@starbea 안녕하세요! 이 PR이 38일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1175,8 +1325,8 @@
       "author": "narendra-sre",
       "createdAt": "2026-09-28T15:05:35Z",
       "updatedAt": "2026-10-04T05:43:47Z",
-      "ageDays": 34,
-      "idleDays": 29,
+      "ageDays": 41,
+      "idleDays": 36,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -1211,7 +1361,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@narendra-sre 안녕하세요! 이 PR이 29일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@narendra-sre 안녕하세요! 이 PR이 36일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "XS",
@@ -1227,8 +1377,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-03T17:42:44Z",
       "updatedAt": "2026-10-03T17:45:23Z",
-      "ageDays": 29,
-      "idleDays": 29,
+      "ageDays": 36,
+      "idleDays": 36,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1263,7 +1413,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 29일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 36일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1279,8 +1429,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-03T18:09:37Z",
       "updatedAt": "2026-10-03T18:11:56Z",
-      "ageDays": 29,
-      "idleDays": 29,
+      "ageDays": 36,
+      "idleDays": 36,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1315,7 +1465,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 29일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 36일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1331,8 +1481,8 @@
       "author": "jiyubaek",
       "createdAt": "2026-09-28T22:43:47Z",
       "updatedAt": "2026-10-04T11:07:16Z",
-      "ageDays": 34,
-      "idleDays": 28,
+      "ageDays": 41,
+      "idleDays": 35,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -1367,7 +1517,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@jiyubaek 안녕하세요! 이 PR이 28일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@jiyubaek 안녕하세요! 이 PR이 35일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "S",
@@ -1383,8 +1533,8 @@
       "author": "jiyubaek",
       "createdAt": "2026-09-28T23:21:23Z",
       "updatedAt": "2026-10-04T11:12:04Z",
-      "ageDays": 34,
-      "idleDays": 28,
+      "ageDays": 41,
+      "idleDays": 35,
       "labels": [
         "cncf-cla: yes",
         "size/S",
@@ -1419,7 +1569,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@jiyubaek 안녕하세요! 이 PR이 28일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@jiyubaek 안녕하세요! 이 PR이 35일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "S",
@@ -1435,8 +1585,8 @@
       "author": "suhyenim",
       "createdAt": "2026-10-04T06:48:28Z",
       "updatedAt": "2026-10-04T06:51:07Z",
-      "ageDays": 28,
-      "idleDays": 28,
+      "ageDays": 35,
+      "idleDays": 35,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1471,7 +1621,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@suhyenim 안녕하세요! 이 PR이 28일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@suhyenim 안녕하세요! 이 PR이 35일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1487,8 +1637,8 @@
       "author": "wlgusqkr",
       "createdAt": "2026-10-05T06:42:00Z",
       "updatedAt": "2026-10-05T06:51:44Z",
-      "ageDays": 27,
-      "idleDays": 27,
+      "ageDays": 34,
+      "idleDays": 34,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1516,7 +1666,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@wlgusqkr 안녕하세요! 이 PR이 27일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@wlgusqkr 안녕하세요! 이 PR이 34일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1532,8 +1682,8 @@
       "author": "Dianaland1112",
       "createdAt": "2026-10-05T10:05:37Z",
       "updatedAt": "2026-10-05T10:08:14Z",
-      "ageDays": 27,
-      "idleDays": 27,
+      "ageDays": 34,
+      "idleDays": 34,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1561,7 +1711,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@Dianaland1112 안녕하세요! 이 PR이 27일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@Dianaland1112 안녕하세요! 이 PR이 34일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1577,8 +1727,8 @@
       "author": "zylxjtu",
       "createdAt": "2026-10-05T16:56:07Z",
       "updatedAt": "2026-10-07T16:17:57Z",
-      "ageDays": 27,
-      "idleDays": 25,
+      "ageDays": 34,
+      "idleDays": 32,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1625,79 +1775,14 @@
       "lifecycle": null
     },
     {
-      "number": 56694,
-      "title": "Fix broken redis-master/slave tutorial links",
-      "url": "https://github.com/kubernetes/website/pull/56694",
-      "author": "pranavchoudhary-tech",
-      "createdAt": "2026-07-31T08:20:20Z",
-      "updatedAt": "2026-10-08T09:07:29Z",
-      "ageDays": 93,
-      "idleDays": 24,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/en",
-        "language/ko",
-        "language/ja",
-        "language/zh",
-        "language/fr",
-        "language/it",
-        "language/es",
-        "area/blog",
-        "language/pt",
-        "language/id",
-        "language/hi",
-        "language/ru",
-        "language/pl",
-        "area/localization",
-        "language/bn"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 53,
-      "additions": 233,
-      "deletions": 233,
-      "koOnly": false,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 56693,
-          "url": "https://github.com/kubernetes/website/issues/56693",
-          "title": "Broken tutorial links: old redis-master and redis-slave examples return 404",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": {
-        "text": "작성자 핑",
-        "command": null,
-        "comment": "@pranavchoudhary-tech 안녕하세요! 이 PR이 24일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
-      },
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57971,
       "title": "[ko] Update content/ko/community/_index.html",
       "url": "https://github.com/kubernetes/website/pull/57971",
       "author": "m3k0813",
       "createdAt": "2026-10-09T12:31:42Z",
       "updatedAt": "2026-10-09T12:34:48Z",
-      "ageDays": 23,
-      "idleDays": 23,
+      "ageDays": 30,
+      "idleDays": 30,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1732,7 +1817,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@m3k0813 안녕하세요! 이 PR이 23일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@m3k0813 안녕하세요! 이 PR이 30일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1748,8 +1833,8 @@
       "author": "gauravkghildiyal",
       "createdAt": "2026-10-14T18:58:26Z",
       "updatedAt": "2026-10-14T19:01:09Z",
-      "ageDays": 18,
-      "idleDays": 18,
+      "ageDays": 25,
+      "idleDays": 25,
       "labels": [
         "cncf-cla: yes",
         "size/XXL",
@@ -1800,8 +1885,8 @@
       "author": "ye11oc4t",
       "createdAt": "2026-10-04T12:36:17Z",
       "updatedAt": "2026-10-17T00:33:20Z",
-      "ageDays": 28,
-      "idleDays": 16,
+      "ageDays": 35,
+      "idleDays": 23,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1829,7 +1914,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@ye11oc4t 안녕하세요! 이 PR이 16일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@ye11oc4t 안녕하세요! 이 PR이 23일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "L",
@@ -1845,8 +1930,8 @@
       "author": "SayakMukhopadhyay",
       "createdAt": "2026-03-05T09:25:53Z",
       "updatedAt": "2026-10-17T10:36:12Z",
-      "ageDays": 241,
-      "idleDays": 15,
+      "ageDays": 248,
+      "idleDays": 22,
       "labels": [
         "cncf-cla: yes",
         "size/XL",
@@ -1897,8 +1982,8 @@
       "author": "neronkang",
       "createdAt": "2026-10-18T18:29:39Z",
       "updatedAt": "2026-10-18T18:32:22Z",
-      "ageDays": 14,
-      "idleDays": 14,
+      "ageDays": 21,
+      "idleDays": 21,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -1933,7 +2018,7 @@
       "action": {
         "text": "작성자 핑",
         "command": null,
-        "comment": "@neronkang 안녕하세요! 이 PR이 14일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+        "comment": "@neronkang 안녕하세요! 이 PR이 21일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
       },
       "cost": {
         "size": "M",
@@ -1949,8 +2034,8 @@
       "author": "ye11oc4t",
       "createdAt": "2026-10-04T13:09:24Z",
       "updatedAt": "2026-10-24T02:31:04Z",
-      "ageDays": 28,
-      "idleDays": 9,
+      "ageDays": 35,
+      "idleDays": 16,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -1975,7 +2060,11 @@
       "closingIssues": [],
       "lane": "author",
       "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
+      "action": {
+        "text": "작성자 핑",
+        "command": null,
+        "comment": "@ye11oc4t 안녕하세요! 이 PR이 16일째 업데이트가 없습니다. 계속 진행하실 계획이신지 알려주시면 좋겠습니다. 이어가기 어려우시면 다른 분께 넘겨도 괜찮습니다."
+      },
       "cost": {
         "size": "L",
         "minutes": 30,
@@ -1990,8 +2079,8 @@
       "author": "hongshaoyang",
       "createdAt": "2026-10-22T06:19:33Z",
       "updatedAt": "2026-10-27T09:35:40Z",
-      "ageDays": 10,
-      "idleDays": 5,
+      "ageDays": 17,
+      "idleDays": 12,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2047,8 +2136,8 @@
       "author": "LyleKim",
       "createdAt": "2026-08-02T17:48:10Z",
       "updatedAt": "2026-10-30T12:50:40Z",
-      "ageDays": 91,
-      "idleDays": 2,
+      "ageDays": 98,
+      "idleDays": 9,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2089,62 +2178,14 @@
       "lifecycle": null
     },
     {
-      "number": 58027,
-      "title": "[ko] Translate Device Taints and Tolerations",
-      "url": "https://github.com/kubernetes/website/pull/58027",
-      "author": "WAFriend3416",
-      "createdAt": "2026-10-12T13:48:17Z",
-      "updatedAt": "2026-10-30T15:34:06Z",
-      "ageDays": 20,
-      "idleDays": 2,
-      "labels": [
-        "cncf-cla: yes",
-        "size/L",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 185,
-      "deletions": 0,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57946,
-          "url": "https://github.com/kubernetes/website/issues/57946",
-          "title": "[ko] Translate content/en/docs/concepts/resource-management/dynamic-resource-allocation/device-taints.md into Korean",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "L",
-        "minutes": 30,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 58479,
       "title": "[ko] Translate content/en/docs/concepts/workloads/pods/pod-condition.md into Korean",
       "url": "https://github.com/kubernetes/website/pull/58479",
       "author": "ldhbenecia",
       "createdAt": "2026-10-31T08:36:40Z",
       "updatedAt": "2026-10-31T08:42:12Z",
-      "ageDays": 1,
-      "idleDays": 1,
+      "ageDays": 8,
+      "idleDays": 8,
       "labels": [
         "cncf-cla: yes",
         "size/L",
@@ -2185,62 +2226,14 @@
       "lifecycle": null
     },
     {
-      "number": 57723,
-      "title": "[ko] Update Linux kubectl Bash autocompletion instructions",
-      "url": "https://github.com/kubernetes/website/pull/57723",
-      "author": "nAhYUN22",
-      "createdAt": "2026-09-25T07:18:22Z",
-      "updatedAt": "2026-11-01T23:52:29Z",
-      "ageDays": 37,
-      "idleDays": 0,
-      "labels": [
-        "cncf-cla: yes",
-        "size/M",
-        "sig/docs",
-        "language/ko",
-        "area/localization"
-      ],
-      "flags": {
-        "lgtm": false,
-        "approved": false,
-        "hold": false,
-        "needsRebase": false,
-        "cncfUnsigned": false
-      },
-      "ci": "passed",
-      "ciFailed": [],
-      "changedFiles": 1,
-      "additions": 28,
-      "deletions": 12,
-      "koOnly": true,
-      "firstReview": false,
-      "closingIssues": [
-        {
-          "number": 57718,
-          "url": "https://github.com/kubernetes/website/issues/57718",
-          "title": "[ko] Update kubectl Bash autocompletion instructions on Linux",
-          "state": "OPEN"
-        }
-      ],
-      "lane": "author",
-      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
-      "action": null,
-      "cost": {
-        "size": "M",
-        "minutes": 15,
-        "bucket": "normal"
-      },
-      "lifecycle": null
-    },
-    {
       "number": 57903,
       "title": "[ko] Update Windows user guide",
       "url": "https://github.com/kubernetes/website/pull/57903",
       "author": "Dianaland1112",
       "createdAt": "2026-10-05T08:44:13Z",
       "updatedAt": "2026-11-01T06:34:42Z",
-      "ageDays": 27,
-      "idleDays": 0,
+      "ageDays": 34,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2287,8 +2280,8 @@
       "author": "Im-joongyeon",
       "createdAt": "2026-10-30T14:32:34Z",
       "updatedAt": "2026-11-01T06:30:40Z",
-      "ageDays": 2,
-      "idleDays": 0,
+      "ageDays": 9,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/XS",
@@ -2328,8 +2321,8 @@
       "author": "neronkang",
       "createdAt": "2026-11-01T16:00:26Z",
       "updatedAt": "2026-11-01T16:03:20Z",
-      "ageDays": 0,
-      "idleDays": 0,
+      "ageDays": 7,
+      "idleDays": 7,
       "labels": [
         "cncf-cla: yes",
         "size/M",
@@ -2368,6 +2361,108 @@
         "bucket": "normal"
       },
       "lifecycle": null
+    },
+    {
+      "number": 58884,
+      "title": "[ko] Update SIG Docs community links to main",
+      "url": "https://github.com/kubernetes/website/pull/58884",
+      "author": "BusanGukbap",
+      "createdAt": "2026-11-03T17:37:35Z",
+      "updatedAt": "2026-11-03T17:41:01Z",
+      "ageDays": 5,
+      "idleDays": 5,
+      "labels": [
+        "cncf-cla: yes",
+        "size/XS",
+        "sig/docs",
+        "language/ko",
+        "area/localization"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 1,
+      "additions": 2,
+      "deletions": 2,
+      "koOnly": true,
+      "firstReview": false,
+      "closingIssues": [],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "XS",
+        "minutes": 3,
+        "bucket": "quick"
+      },
+      "lifecycle": null
+    },
+    {
+      "number": 56694,
+      "title": "Fix broken redis-master/slave tutorial links",
+      "url": "https://github.com/kubernetes/website/pull/56694",
+      "author": "pranavchoudhary-tech",
+      "createdAt": "2026-07-31T08:20:20Z",
+      "updatedAt": "2026-11-05T10:11:31Z",
+      "ageDays": 100,
+      "idleDays": 3,
+      "labels": [
+        "cncf-cla: yes",
+        "size/L",
+        "sig/docs",
+        "language/en",
+        "language/ko",
+        "language/ja",
+        "language/zh",
+        "language/fr",
+        "language/it",
+        "language/es",
+        "area/blog",
+        "language/pt",
+        "language/id",
+        "language/hi",
+        "language/ru",
+        "language/pl",
+        "area/localization",
+        "language/bn"
+      ],
+      "flags": {
+        "lgtm": false,
+        "approved": false,
+        "hold": false,
+        "needsRebase": false,
+        "cncfUnsigned": false
+      },
+      "ci": "passed",
+      "ciFailed": [],
+      "changedFiles": 53,
+      "additions": 233,
+      "deletions": 233,
+      "koOnly": false,
+      "firstReview": false,
+      "closingIssues": [
+        {
+          "number": 56693,
+          "url": "https://github.com/kubernetes/website/issues/56693",
+          "title": "Broken tutorial links: old redis-master and redis-slave examples return 404",
+          "state": "OPEN"
+        }
+      ],
+      "lane": "author",
+      "reason": "리뷰 코멘트 이후 작성자 응답 대기",
+      "action": null,
+      "cost": {
+        "size": "L",
+        "minutes": 30,
+        "bucket": "normal"
+      },
+      "lifecycle": null
     }
   ],
   "sections": [
@@ -2389,8 +2484,8 @@
           ],
           "createdAt": "2023-10-21T18:00:41Z",
           "updatedAt": "2025-08-07T10:46:34Z",
-          "ageDays": 1107,
-          "idleDays": 451,
+          "ageDays": 1114,
+          "idleDays": 458,
           "comments": 11,
           "labels": [
             "kind/bug",
@@ -2410,8 +2505,8 @@
               "createdAt": "2025-08-10T07:43:24Z",
               "updatedAt": "2026-03-26T11:32:20Z",
               "mergedAt": null,
-              "ageDays": 448,
-              "idleDays": 220,
+              "ageDays": 455,
+              "idleDays": 227,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2442,8 +2537,8 @@
               "createdAt": "2024-01-28T10:31:03Z",
               "updatedAt": "2024-08-29T10:58:44Z",
               "mergedAt": null,
-              "ageDays": 1008,
-              "idleDays": 794,
+              "ageDays": 1015,
+              "idleDays": 801,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2471,8 +2566,8 @@
               "createdAt": "2024-01-28T09:24:50Z",
               "updatedAt": "2024-01-28T10:45:52Z",
               "mergedAt": null,
-              "ageDays": 1008,
-              "idleDays": 1008,
+              "ageDays": 1015,
+              "idleDays": 1015,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2489,7 +2584,7 @@
               }
             }
           ],
-          "sortKey": 451
+          "sortKey": 458
         },
         {
           "number": 53682,
@@ -2501,8 +2596,8 @@
           ],
           "createdAt": "2025-12-18T11:00:22Z",
           "updatedAt": "2025-12-28T04:17:30Z",
-          "ageDays": 318,
-          "idleDays": 309,
+          "ageDays": 325,
+          "idleDays": 316,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2521,8 +2616,8 @@
               "createdAt": "2025-12-18T16:54:47Z",
               "updatedAt": "2026-06-25T22:29:24Z",
               "mergedAt": null,
-              "ageDays": 318,
-              "idleDays": 129,
+              "ageDays": 325,
+              "idleDays": 136,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2541,7 +2636,7 @@
               }
             }
           ],
-          "sortKey": 309
+          "sortKey": 316
         },
         {
           "number": 53555,
@@ -2553,8 +2648,8 @@
           ],
           "createdAt": "2025-12-09T13:19:46Z",
           "updatedAt": "2026-03-22T02:33:34Z",
-          "ageDays": 327,
-          "idleDays": 225,
+          "ageDays": 334,
+          "idleDays": 232,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -2574,8 +2669,8 @@
               "createdAt": "2026-02-18T13:38:12Z",
               "updatedAt": "2026-08-05T12:35:47Z",
               "mergedAt": null,
-              "ageDays": 256,
-              "idleDays": 88,
+              "ageDays": 263,
+              "idleDays": 95,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2593,7 +2688,7 @@
               }
             }
           ],
-          "sortKey": 225
+          "sortKey": 232
         },
         {
           "number": 57296,
@@ -2605,8 +2700,8 @@
           ],
           "createdAt": "2026-08-30T05:52:52Z",
           "updatedAt": "2026-08-30T05:53:00Z",
-          "ageDays": 64,
-          "idleDays": 64,
+          "ageDays": 71,
+          "idleDays": 71,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2625,8 +2720,8 @@
               "createdAt": "2026-08-30T05:57:59Z",
               "updatedAt": "2026-09-06T22:49:00Z",
               "mergedAt": null,
-              "ageDays": 63,
-              "idleDays": 56,
+              "ageDays": 71,
+              "idleDays": 63,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2644,7 +2739,7 @@
               }
             }
           ],
-          "sortKey": 64
+          "sortKey": 71
         }
       ]
     },
@@ -2665,8 +2760,8 @@
           ],
           "createdAt": "2026-08-22T05:03:04Z",
           "updatedAt": "2026-08-22T05:03:12Z",
-          "ageDays": 72,
-          "idleDays": 72,
+          "ageDays": 79,
+          "idleDays": 79,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2685,7 +2780,108 @@
               "createdAt": "2026-08-25T13:44:52Z",
               "updatedAt": "2026-09-19T17:25:27Z",
               "mergedAt": null,
-              "ageDays": 68,
+              "ageDays": 75,
+              "idleDays": 50,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 50
+        },
+        {
+          "number": 57685,
+          "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
+          "url": "https://github.com/kubernetes/website/issues/57685",
+          "author": "starbea",
+          "assignees": [
+            "starbea"
+          ],
+          "createdAt": "2026-09-23T13:51:40Z",
+          "updatedAt": "2026-09-23T13:51:48Z",
+          "ageDays": 46,
+          "idleDays": 46,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57708,
+              "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
+              "url": "https://github.com/kubernetes/website/pull/57708",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "starbea",
+              "createdAt": "2026-09-24T01:24:45Z",
+              "updatedAt": "2026-09-26T00:16:42Z",
+              "mergedAt": null,
+              "ageDays": 46,
+              "idleDays": 44,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 44
+        },
+        {
+          "number": 57690,
+          "title": "[ko] Translate content/en/docs/tasks/job/pod-failure-policy.md",
+          "url": "https://github.com/kubernetes/website/issues/57690",
+          "author": "yucori",
+          "assignees": [
+            "yucori"
+          ],
+          "createdAt": "2026-09-23T14:30:53Z",
+          "updatedAt": "2026-09-23T14:31:02Z",
+          "ageDays": 46,
+          "idleDays": 46,
+          "comments": 1,
+          "labels": [
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57709,
+              "title": "[ko] Translate content/ko/docs/tasks/job/pod-failure-policy.md",
+              "url": "https://github.com/kubernetes/website/pull/57709",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "yucori",
+              "createdAt": "2026-09-24T01:42:53Z",
+              "updatedAt": "2026-09-26T06:17:49Z",
+              "mergedAt": null,
+              "ageDays": 46,
               "idleDays": 43,
               "reviewDecision": null,
               "labels": [
@@ -2707,107 +2903,6 @@
           "sortKey": 43
         },
         {
-          "number": 57685,
-          "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
-          "url": "https://github.com/kubernetes/website/issues/57685",
-          "author": "starbea",
-          "assignees": [
-            "starbea"
-          ],
-          "createdAt": "2026-09-23T13:51:40Z",
-          "updatedAt": "2026-09-23T13:51:48Z",
-          "ageDays": 39,
-          "idleDays": 39,
-          "comments": 1,
-          "labels": [
-            "kind/feature",
-            "language/ko",
-            "needs-triage",
-            "area/localization"
-          ],
-          "linkedPrs": [
-            {
-              "number": 57708,
-              "title": "[ko] Update content/ko/docs/tasks/administer-cluster/cluster-upgrade.md",
-              "url": "https://github.com/kubernetes/website/pull/57708",
-              "state": "OPEN",
-              "isDraft": false,
-              "author": "starbea",
-              "createdAt": "2026-09-24T01:24:45Z",
-              "updatedAt": "2026-09-26T00:16:42Z",
-              "mergedAt": null,
-              "ageDays": 39,
-              "idleDays": 37,
-              "reviewDecision": null,
-              "labels": [
-                "cncf-cla: yes",
-                "size/M",
-                "sig/docs",
-                "language/ko",
-                "area/localization"
-              ],
-              "flags": {
-                "lgtm": false,
-                "approved": false,
-                "hold": false,
-                "needsRebase": false,
-                "cncfUnsigned": false
-              }
-            }
-          ],
-          "sortKey": 37
-        },
-        {
-          "number": 57690,
-          "title": "[ko] Translate content/en/docs/tasks/job/pod-failure-policy.md",
-          "url": "https://github.com/kubernetes/website/issues/57690",
-          "author": "yucori",
-          "assignees": [
-            "yucori"
-          ],
-          "createdAt": "2026-09-23T14:30:53Z",
-          "updatedAt": "2026-09-23T14:31:02Z",
-          "ageDays": 39,
-          "idleDays": 39,
-          "comments": 1,
-          "labels": [
-            "language/ko",
-            "needs-triage",
-            "area/localization"
-          ],
-          "linkedPrs": [
-            {
-              "number": 57709,
-              "title": "[ko] Translate content/ko/docs/tasks/job/pod-failure-policy.md",
-              "url": "https://github.com/kubernetes/website/pull/57709",
-              "state": "OPEN",
-              "isDraft": false,
-              "author": "yucori",
-              "createdAt": "2026-09-24T01:42:53Z",
-              "updatedAt": "2026-09-26T06:17:49Z",
-              "mergedAt": null,
-              "ageDays": 39,
-              "idleDays": 36,
-              "reviewDecision": null,
-              "labels": [
-                "cncf-cla: yes",
-                "size/L",
-                "sig/docs",
-                "language/ko",
-                "area/localization"
-              ],
-              "flags": {
-                "lgtm": false,
-                "approved": false,
-                "hold": false,
-                "needsRebase": false,
-                "cncfUnsigned": false
-              }
-            }
-          ],
-          "sortKey": 36
-        },
-        {
           "number": 57758,
           "title": "[ko] Translate content/en/blog/_posts/2026/gateway-api-v1-6-release/index.md into Korean",
           "url": "https://github.com/kubernetes/website/issues/57758",
@@ -2817,8 +2912,8 @@
           ],
           "createdAt": "2026-09-27T14:28:19Z",
           "updatedAt": "2026-09-27T14:28:27Z",
-          "ageDays": 35,
-          "idleDays": 35,
+          "ageDays": 42,
+          "idleDays": 42,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2837,8 +2932,8 @@
               "createdAt": "2026-09-27T16:08:43Z",
               "updatedAt": "2026-09-27T16:11:19Z",
               "mergedAt": null,
-              "ageDays": 35,
-              "idleDays": 35,
+              "ageDays": 42,
+              "idleDays": 42,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2856,7 +2951,7 @@
               }
             }
           ],
-          "sortKey": 35
+          "sortKey": 42
         },
         {
           "number": 57745,
@@ -2868,8 +2963,8 @@
           ],
           "createdAt": "2026-09-27T07:58:09Z",
           "updatedAt": "2026-09-27T07:58:17Z",
-          "ageDays": 35,
-          "idleDays": 35,
+          "ageDays": 42,
+          "idleDays": 42,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2888,8 +2983,8 @@
               "createdAt": "2026-09-27T13:43:58Z",
               "updatedAt": "2026-09-27T13:46:37Z",
               "mergedAt": null,
-              "ageDays": 35,
-              "idleDays": 35,
+              "ageDays": 42,
+              "idleDays": 42,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2907,7 +3002,7 @@
               }
             }
           ],
-          "sortKey": 35
+          "sortKey": 42
         },
         {
           "number": 57694,
@@ -2919,8 +3014,8 @@
           ],
           "createdAt": "2026-09-23T16:55:42Z",
           "updatedAt": "2026-09-23T16:55:50Z",
-          "ageDays": 39,
-          "idleDays": 39,
+          "ageDays": 46,
+          "idleDays": 46,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2939,8 +3034,8 @@
               "createdAt": "2026-09-23T18:09:52Z",
               "updatedAt": "2026-09-27T11:46:43Z",
               "mergedAt": null,
-              "ageDays": 39,
-              "idleDays": 35,
+              "ageDays": 46,
+              "idleDays": 42,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -2959,7 +3054,7 @@
               }
             }
           ],
-          "sortKey": 35
+          "sortKey": 42
         },
         {
           "number": 57682,
@@ -2971,8 +3066,8 @@
           ],
           "createdAt": "2026-09-23T12:07:56Z",
           "updatedAt": "2026-09-23T12:08:04Z",
-          "ageDays": 39,
-          "idleDays": 39,
+          "ageDays": 46,
+          "idleDays": 46,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -2991,8 +3086,8 @@
               "createdAt": "2026-09-25T04:20:24Z",
               "updatedAt": "2026-09-27T08:54:48Z",
               "mergedAt": null,
-              "ageDays": 38,
-              "idleDays": 35,
+              "ageDays": 45,
+              "idleDays": 42,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3010,7 +3105,7 @@
               }
             }
           ],
-          "sortKey": 35
+          "sortKey": 42
         },
         {
           "number": 52792,
@@ -3023,8 +3118,8 @@
           ],
           "createdAt": "2025-10-19T12:47:02Z",
           "updatedAt": "2026-08-03T08:37:27Z",
-          "ageDays": 378,
-          "idleDays": 90,
+          "ageDays": 385,
+          "idleDays": 97,
           "comments": 3,
           "labels": [
             "kind/feature",
@@ -3042,8 +3137,8 @@
               "createdAt": "2026-08-03T10:04:30Z",
               "updatedAt": "2026-10-05T08:24:35Z",
               "mergedAt": "2026-10-05T08:24:35Z",
-              "ageDays": 90,
-              "idleDays": 27,
+              "ageDays": 97,
+              "idleDays": 34,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3073,8 +3168,8 @@
               "createdAt": "2025-12-14T09:37:03Z",
               "updatedAt": "2026-07-07T14:30:55Z",
               "mergedAt": null,
-              "ageDays": 322,
-              "idleDays": 117,
+              "ageDays": 329,
+              "idleDays": 124,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3102,8 +3197,8 @@
               "createdAt": "2025-11-05T13:27:15Z",
               "updatedAt": "2026-06-14T13:36:27Z",
               "mergedAt": null,
-              "ageDays": 361,
-              "idleDays": 140,
+              "ageDays": 368,
+              "idleDays": 147,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3132,8 +3227,8 @@
               "createdAt": "2026-08-03T09:57:20Z",
               "updatedAt": "2026-09-28T22:17:15Z",
               "mergedAt": null,
-              "ageDays": 90,
-              "idleDays": 34,
+              "ageDays": 97,
+              "idleDays": 41,
               "reviewDecision": null,
               "labels": [],
               "flags": {
@@ -3145,7 +3240,7 @@
               }
             }
           ],
-          "sortKey": 34
+          "sortKey": 41
         },
         {
           "number": 57634,
@@ -3157,8 +3252,8 @@
           ],
           "createdAt": "2026-09-20T06:51:01Z",
           "updatedAt": "2026-09-20T06:51:08Z",
-          "ageDays": 42,
-          "idleDays": 42,
+          "ageDays": 49,
+          "idleDays": 49,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3177,8 +3272,8 @@
               "createdAt": "2026-09-26T08:54:31Z",
               "updatedAt": "2026-10-01T01:10:39Z",
               "mergedAt": null,
-              "ageDays": 36,
-              "idleDays": 32,
+              "ageDays": 43,
+              "idleDays": 39,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3196,7 +3291,7 @@
               }
             }
           ],
-          "sortKey": 32
+          "sortKey": 39
         },
         {
           "number": 57773,
@@ -3208,8 +3303,8 @@
           ],
           "createdAt": "2026-09-28T05:23:46Z",
           "updatedAt": "2026-09-28T10:00:47Z",
-          "ageDays": 35,
-          "idleDays": 34,
+          "ageDays": 42,
+          "idleDays": 41,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3228,8 +3323,8 @@
               "createdAt": "2026-10-01T11:08:56Z",
               "updatedAt": "2026-10-01T11:12:10Z",
               "mergedAt": null,
-              "ageDays": 31,
-              "idleDays": 31,
+              "ageDays": 38,
+              "idleDays": 38,
               "reviewDecision": null,
               "labels": [
                 "cncf-cla: yes",
@@ -3247,7 +3342,517 @@
               }
             }
           ],
-          "sortKey": 31
+          "sortKey": 38
+        },
+        {
+          "number": 57872,
+          "title": "[ko] Translate content/en/blog/_posts/2026/experimenting-gateway-api-with-kind.md into Korean",
+          "url": "https://github.com/kubernetes/website/issues/57872",
+          "author": "suhyenim",
+          "assignees": [
+            "suhyenim"
+          ],
+          "createdAt": "2026-10-03T16:43:54Z",
+          "updatedAt": "2026-10-03T16:44:02Z",
+          "ageDays": 36,
+          "idleDays": 36,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57876,
+              "title": "[ko] Translate content/en/blog/_posts/2026/experimenting-gateway-api-with-kind.md into Korean",
+              "url": "https://github.com/kubernetes/website/pull/57876",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "suhyenim",
+              "createdAt": "2026-10-03T18:09:37Z",
+              "updatedAt": "2026-10-03T18:11:56Z",
+              "mergedAt": null,
+              "ageDays": 36,
+              "idleDays": 36,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 36
+        },
+        {
+          "number": 57795,
+          "title": "[ko] Translate content/en/docs/tutorials/stateless-application/canary-deployment.md into Korean",
+          "url": "https://github.com/kubernetes/website/issues/57795",
+          "author": "suhyenim",
+          "assignees": [
+            "suhyenim"
+          ],
+          "createdAt": "2026-09-28T15:06:17Z",
+          "updatedAt": "2026-09-28T15:06:27Z",
+          "ageDays": 41,
+          "idleDays": 41,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57875,
+              "title": "[ko] Translate content/en/docs/tutorials/stateless-application/canary-deployment.md into Korean",
+              "url": "https://github.com/kubernetes/website/pull/57875",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "suhyenim",
+              "createdAt": "2026-10-03T17:42:44Z",
+              "updatedAt": "2026-10-03T17:45:23Z",
+              "mergedAt": null,
+              "ageDays": 36,
+              "idleDays": 36,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 36
+        },
+        {
+          "number": 57760,
+          "title": "[ko] Update content/ko/docs/tutorials/configuration/pod-sidecar-containers.md",
+          "url": "https://github.com/kubernetes/website/issues/57760",
+          "author": "suhyenim",
+          "assignees": [
+            "narendra-sre",
+            "suhyenim"
+          ],
+          "createdAt": "2026-09-27T15:05:34Z",
+          "updatedAt": "2026-09-27T16:35:44Z",
+          "ageDays": 42,
+          "idleDays": 42,
+          "comments": 2,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57794,
+              "title": "[ko] Fix sidecar containers documentation link",
+              "url": "https://github.com/kubernetes/website/pull/57794",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "narendra-sre",
+              "createdAt": "2026-09-28T15:05:35Z",
+              "updatedAt": "2026-10-04T05:43:47Z",
+              "mergedAt": null,
+              "ageDays": 41,
+              "idleDays": 36,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/XS",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 36
+        },
+        {
+          "number": 56756,
+          "title": "[ko] Update content/ko/docs/concepts/architecture/cgroups.md",
+          "url": "https://github.com/kubernetes/website/issues/56756",
+          "author": "ytjdud",
+          "assignees": [
+            "ytjdud"
+          ],
+          "createdAt": "2026-08-02T14:03:11Z",
+          "updatedAt": "2026-11-02T13:54:44Z",
+          "ageDays": 98,
+          "idleDays": 6,
+          "comments": 7,
+          "labels": [
+            "kind/feature",
+            "lifecycle/stale",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 56404,
+              "title": "[ko] update outdated concepts/architecture/cgroups",
+              "url": "https://github.com/kubernetes/website/pull/56404",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "seokho-son",
+              "createdAt": "2026-07-06T18:32:06Z",
+              "updatedAt": "2026-10-03T13:08:42Z",
+              "mergedAt": null,
+              "ageDays": 125,
+              "idleDays": 36,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "lgtm",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": true,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 36
+        },
+        {
+          "number": 57874,
+          "title": "[ko] Update content/ko/docs/tutorials/services/source-ip.md",
+          "url": "https://github.com/kubernetes/website/issues/57874",
+          "author": "suhyenim",
+          "assignees": [
+            "suhyenim"
+          ],
+          "createdAt": "2026-10-03T17:04:56Z",
+          "updatedAt": "2026-10-03T17:05:04Z",
+          "ageDays": 36,
+          "idleDays": 36,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57882,
+              "title": "[ko] Update content/ko/docs/tutorials/services/source-ip.md",
+              "url": "https://github.com/kubernetes/website/pull/57882",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "suhyenim",
+              "createdAt": "2026-10-04T06:48:28Z",
+              "updatedAt": "2026-10-04T06:51:07Z",
+              "mergedAt": null,
+              "ageDays": 35,
+              "idleDays": 35,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 35
+        },
+        {
+          "number": 57873,
+          "title": "[ko] Translate content/en/blog/_posts/2025/introducing-gateway-api-inference-extension/index.md into Korean",
+          "url": "https://github.com/kubernetes/website/issues/57873",
+          "author": "suhyenim",
+          "assignees": [
+            "suhyenim"
+          ],
+          "createdAt": "2026-10-03T16:45:47Z",
+          "updatedAt": "2026-10-03T16:45:55Z",
+          "ageDays": 36,
+          "idleDays": 36,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57881,
+              "title": "[ko] Translate content/en/blog/_posts/2025/introducing-gateway-api-inference-extension/index.md into Korean",
+              "url": "https://github.com/kubernetes/website/pull/57881",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "suhyenim",
+              "createdAt": "2026-10-04T06:10:21Z",
+              "updatedAt": "2026-10-04T06:12:51Z",
+              "mergedAt": null,
+              "ageDays": 36,
+              "idleDays": 35,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 35
+        },
+        {
+          "number": 57798,
+          "title": "[ko] Update cluster administration overview",
+          "url": "https://github.com/kubernetes/website/issues/57798",
+          "author": "jiyubaek",
+          "assignees": [],
+          "createdAt": "2026-09-28T22:33:38Z",
+          "updatedAt": "2026-10-01T17:08:28Z",
+          "ageDays": 41,
+          "idleDays": 38,
+          "comments": 2,
+          "labels": [
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57800,
+              "title": "[ko] Update cluster administration overview",
+              "url": "https://github.com/kubernetes/website/pull/57800",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "jiyubaek",
+              "createdAt": "2026-09-28T22:43:47Z",
+              "updatedAt": "2026-10-04T11:07:16Z",
+              "mergedAt": null,
+              "ageDays": 41,
+              "idleDays": 35,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/S",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 35
+        },
+        {
+          "number": 57902,
+          "title": "[ko] Update DRA link in device plugins documentation",
+          "url": "https://github.com/kubernetes/website/issues/57902",
+          "author": "Dianaland1112",
+          "assignees": [
+            "Dianaland1112"
+          ],
+          "createdAt": "2026-10-05T08:16:14Z",
+          "updatedAt": "2026-10-05T08:16:23Z",
+          "ageDays": 34,
+          "idleDays": 34,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57907,
+              "title": "[ko] Update device plugins",
+              "url": "https://github.com/kubernetes/website/pull/57907",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "Dianaland1112",
+              "createdAt": "2026-10-05T10:05:37Z",
+              "updatedAt": "2026-10-05T10:08:14Z",
+              "mergedAt": null,
+              "ageDays": 34,
+              "idleDays": 34,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/L",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 34
+        },
+        {
+          "number": 57768,
+          "title": "[ko] Update content/ko/docs/concepts/scheduling-eviction/scheduler-perf-tuning.md",
+          "url": "https://github.com/kubernetes/website/issues/57768",
+          "author": "wlgusqkr",
+          "assignees": [
+            "wlgusqkr"
+          ],
+          "createdAt": "2026-09-28T01:20:32Z",
+          "updatedAt": "2026-09-28T01:20:41Z",
+          "ageDays": 42,
+          "idleDays": 42,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57897,
+              "title": "[ko] Update content/ko/docs/concepts/scheduling-eviction/scheduler-perf-tuning.md",
+              "url": "https://github.com/kubernetes/website/pull/57897",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "wlgusqkr",
+              "createdAt": "2026-10-05T06:42:00Z",
+              "updatedAt": "2026-10-05T06:51:44Z",
+              "mergedAt": null,
+              "ageDays": 34,
+              "idleDays": 34,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 34
+        },
+        {
+          "number": 57967,
+          "title": "[ko] Update content/ko/community/_index.html",
+          "url": "https://github.com/kubernetes/website/issues/57967",
+          "author": "m3k0813",
+          "assignees": [
+            "m3k0813"
+          ],
+          "createdAt": "2026-10-09T08:57:35Z",
+          "updatedAt": "2026-10-09T08:57:44Z",
+          "ageDays": 30,
+          "idleDays": 30,
+          "comments": 1,
+          "labels": [
+            "kind/feature",
+            "language/ko",
+            "needs-triage",
+            "area/localization"
+          ],
+          "linkedPrs": [
+            {
+              "number": 57971,
+              "title": "[ko] Update content/ko/community/_index.html",
+              "url": "https://github.com/kubernetes/website/pull/57971",
+              "state": "OPEN",
+              "isDraft": false,
+              "author": "m3k0813",
+              "createdAt": "2026-10-09T12:31:42Z",
+              "updatedAt": "2026-10-09T12:34:48Z",
+              "mergedAt": null,
+              "ageDays": 30,
+              "idleDays": 30,
+              "reviewDecision": null,
+              "labels": [
+                "cncf-cla: yes",
+                "size/M",
+                "sig/docs",
+                "language/ko",
+                "area/localization"
+              ],
+              "flags": {
+                "lgtm": false,
+                "approved": false,
+                "hold": false,
+                "needsRebase": false,
+                "cncfUnsigned": false
+              }
+            }
+          ],
+          "sortKey": 30
         }
       ]
     },
@@ -3268,8 +3873,8 @@
           "createdAt": "2026-03-05T09:25:53Z",
           "updatedAt": "2026-10-17T10:36:12Z",
           "mergedAt": null,
-          "ageDays": 241,
-          "idleDays": 15,
+          "ageDays": 248,
+          "idleDays": 22,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3308,7 +3913,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 241
+          "sortKey": 248
         },
         {
           "closingIssues": [
@@ -3328,8 +3933,8 @@
           "createdAt": "2026-05-29T17:08:42Z",
           "updatedAt": "2026-09-14T03:24:56Z",
           "mergedAt": null,
-          "ageDays": 156,
-          "idleDays": 49,
+          "ageDays": 163,
+          "idleDays": 56,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3379,7 +3984,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 156
+          "sortKey": 163
         },
         {
           "number": 55972,
@@ -3391,8 +3996,8 @@
           "createdAt": "2026-06-01T03:39:35Z",
           "updatedAt": "2026-10-14T08:30:37Z",
           "mergedAt": null,
-          "ageDays": 154,
-          "idleDays": 18,
+          "ageDays": 161,
+          "idleDays": 25,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3423,7 +4028,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 154
+          "sortKey": 161
         },
         {
           "number": 56376,
@@ -3435,8 +4040,8 @@
           "createdAt": "2026-07-03T22:49:21Z",
           "updatedAt": "2026-08-18T17:33:57Z",
           "mergedAt": null,
-          "ageDays": 121,
-          "idleDays": 75,
+          "ageDays": 128,
+          "idleDays": 82,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3465,7 +4070,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 121
+          "sortKey": 128
         },
         {
           "number": 56405,
@@ -3477,8 +4082,8 @@
           "createdAt": "2026-07-06T18:53:16Z",
           "updatedAt": "2026-09-15T09:42:55Z",
           "mergedAt": null,
-          "ageDays": 118,
-          "idleDays": 47,
+          "ageDays": 125,
+          "idleDays": 54,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3506,7 +4111,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 118
+          "sortKey": 125
         },
         {
           "number": 56404,
@@ -3518,8 +4123,8 @@
           "createdAt": "2026-07-06T18:32:06Z",
           "updatedAt": "2026-10-03T13:08:42Z",
           "mergedAt": null,
-          "ageDays": 118,
-          "idleDays": 29,
+          "ageDays": 125,
+          "idleDays": 36,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3548,7 +4153,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 118
+          "sortKey": 125
         },
         {
           "number": 56419,
@@ -3560,8 +4165,8 @@
           "createdAt": "2026-07-07T08:57:19Z",
           "updatedAt": "2026-09-18T15:56:18Z",
           "mergedAt": null,
-          "ageDays": 117,
-          "idleDays": 44,
+          "ageDays": 124,
+          "idleDays": 51,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3589,7 +4194,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 117
+          "sortKey": 124
         },
         {
           "number": 56417,
@@ -3601,8 +4206,8 @@
           "createdAt": "2026-07-07T08:28:44Z",
           "updatedAt": "2026-09-15T09:42:21Z",
           "mergedAt": null,
-          "ageDays": 117,
-          "idleDays": 47,
+          "ageDays": 124,
+          "idleDays": 54,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3630,7 +4235,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 117
+          "sortKey": 124
         },
         {
           "closingIssues": [
@@ -3648,10 +4253,10 @@
           "isDraft": false,
           "author": "pranavchoudhary-tech",
           "createdAt": "2026-07-31T08:20:20Z",
-          "updatedAt": "2026-10-08T09:07:29Z",
+          "updatedAt": "2026-11-05T10:11:31Z",
           "mergedAt": null,
-          "ageDays": 93,
-          "idleDays": 24,
+          "ageDays": 100,
+          "idleDays": 3,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3692,7 +4297,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 93
+          "sortKey": 100
         },
         {
           "closingIssues": [
@@ -3712,8 +4317,8 @@
           "createdAt": "2026-08-02T21:50:08Z",
           "updatedAt": "2026-11-02T04:48:59Z",
           "mergedAt": null,
-          "ageDays": 91,
-          "idleDays": 0,
+          "ageDays": 98,
+          "idleDays": 7,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3741,7 +4346,7 @@
           "by": "author",
           "touched": true,
           "koOnly": true,
-          "sortKey": 91
+          "sortKey": 98
         },
         {
           "closingIssues": [
@@ -3761,8 +4366,8 @@
           "createdAt": "2026-08-02T17:48:10Z",
           "updatedAt": "2026-10-30T12:50:40Z",
           "mergedAt": null,
-          "ageDays": 91,
-          "idleDays": 2,
+          "ageDays": 98,
+          "idleDays": 9,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3790,7 +4395,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 91
+          "sortKey": 98
         },
         {
           "closingIssues": [
@@ -3810,8 +4415,8 @@
           "createdAt": "2026-08-25T13:44:52Z",
           "updatedAt": "2026-09-19T17:25:27Z",
           "mergedAt": null,
-          "ageDays": 68,
-          "idleDays": 43,
+          "ageDays": 75,
+          "idleDays": 50,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3839,7 +4444,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": true,
-          "sortKey": 68
+          "sortKey": 75
         },
         {
           "closingIssues": [
@@ -3859,8 +4464,8 @@
           "createdAt": "2026-08-27T14:26:48Z",
           "updatedAt": "2026-09-08T23:01:45Z",
           "mergedAt": null,
-          "ageDays": 66,
-          "idleDays": 54,
+          "ageDays": 73,
+          "idleDays": 61,
           "reviewDecision": null,
           "labels": [
             "cncf-cla: yes",
@@ -3895,7 +4500,7 @@
           "by": "reviewer",
           "touched": true,
           "koOnly": false,
-          "sortKey": 66
+          "sortKey": 73
         }
       ]
     },
@@ -3916,8 +4521,8 @@
           ],
           "createdAt": "2026-02-14T14:53:26Z",
           "updatedAt": "2026-03-16T05:40:05Z",
-          "ageDays": 260,
-          "idleDays": 231,
+          "ageDays": 267,
+          "idleDays": 238,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3925,7 +4530,7 @@
             "triage/accepted"
           ],
           "linkedPrs": [],
-          "sortKey": 260
+          "sortKey": 267
         },
         {
           "number": 56426,
@@ -3937,8 +4542,8 @@
           ],
           "createdAt": "2026-07-07T16:18:06Z",
           "updatedAt": "2026-10-22T03:09:33Z",
-          "ageDays": 117,
-          "idleDays": 11,
+          "ageDays": 124,
+          "idleDays": 18,
           "comments": 4,
           "labels": [
             "kind/feature",
@@ -3948,7 +4553,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 117
+          "sortKey": 124
         },
         {
           "number": 56561,
@@ -3960,8 +4565,8 @@
           ],
           "createdAt": "2026-07-21T15:21:22Z",
           "updatedAt": "2026-10-23T09:22:33Z",
-          "ageDays": 103,
-          "idleDays": 9,
+          "ageDays": 110,
+          "idleDays": 16,
           "comments": 2,
           "labels": [
             "kind/feature",
@@ -3971,7 +4576,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 103
+          "sortKey": 110
         },
         {
           "number": 56677,
@@ -3983,8 +4588,8 @@
           ],
           "createdAt": "2026-07-30T14:07:11Z",
           "updatedAt": "2026-07-30T14:17:10Z",
-          "ageDays": 94,
-          "idleDays": 94,
+          "ageDays": 101,
+          "idleDays": 101,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -3993,7 +4598,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 94
+          "sortKey": 101
         },
         {
           "number": 56829,
@@ -4004,18 +4609,19 @@
             "callme-waffle"
           ],
           "createdAt": "2026-08-06T06:31:39Z",
-          "updatedAt": "2026-08-06T06:31:48Z",
-          "ageDays": 87,
-          "idleDays": 87,
-          "comments": 1,
+          "updatedAt": "2026-11-04T07:11:45Z",
+          "ageDays": 94,
+          "idleDays": 4,
+          "comments": 2,
           "labels": [
             "kind/feature",
+            "lifecycle/stale",
             "language/ko",
             "needs-triage",
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 87
+          "sortKey": 94
         },
         {
           "number": 57175,
@@ -4027,8 +4633,8 @@
           ],
           "createdAt": "2026-08-25T13:15:00Z",
           "updatedAt": "2026-08-25T13:15:09Z",
-          "ageDays": 68,
-          "idleDays": 68,
+          "ageDays": 75,
+          "idleDays": 75,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -4037,7 +4643,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 68
+          "sortKey": 75
         },
         {
           "number": 57769,
@@ -4049,8 +4655,8 @@
           ],
           "createdAt": "2026-09-28T01:23:59Z",
           "updatedAt": "2026-09-28T01:24:07Z",
-          "ageDays": 35,
-          "idleDays": 35,
+          "ageDays": 42,
+          "idleDays": 42,
           "comments": 1,
           "labels": [
             "kind/feature",
@@ -4059,7 +4665,7 @@
             "area/localization"
           ],
           "linkedPrs": [],
-          "sortKey": 35
+          "sortKey": 42
         }
       ]
     }
